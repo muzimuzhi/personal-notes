@@ -8,6 +8,7 @@ These are some notes in the result of my daily web searching and time wasting.
     * recommended LaTeX packages (TODO)
     * valuable documents on CTAN (TODO)
     * [other online resources](/latex/online-resources.md)
+  * [Tips](/latex/tips.md)
   * [List](/latex/interesting-packages.md) of interesting packages I'm not familiar with
   * [Something may help](/latex/may-help.md) in the future
 * Typography
