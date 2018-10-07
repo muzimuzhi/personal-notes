@@ -2,12 +2,14 @@
 
 ## Attractive Functions
 
-* hlist - Pro­vides the `hlist` en­vi­ron­ment in which `\hitem` starts a hor­i­zon­tal and columned item. Doc is in French only.
-* systeme - Provides a more intuitive way to en­ter sys­tems of equa­tions or in­equal­i­ties. Doc is in French only.
-* autoaligne - Al­lows to align terms and mem­bers be­tween lines con­tain­ing math ex­pres­sions. Doc is in French only.
-* lwarp - Allows LaTeX to directly produce html5 output, using external utility programs only for the final conversion of text and images.
-* layouts - Dis­plays in­for­ma­tion about a doc­u­ment, in­clud­ing: text po­si­tion­ing on a page; dis­po­si­tion of floats; lay­out of para­graphs, lists, foot­notes, ta­ble of con­tents, and sec­tional head­ings; font boxes.
+* [`hlist`](https://ctan.org/pkg/hlist) - Provides the `hlist` environment in which `\hitem` starts a horizontal and columned item. Doc is in French only.
+* [`systeme`](https://ctan.org/pkg/systeme) - Provides a more intuitive way to enter systems of equations or inequalities. Doc is in French only.
+* [`autoaligne`](https://ctan.org/pkg/autoaligne) - Allows to align terms and members between lines containing math expressions. Doc is in French only.
+* [`lwarp`](https://ctan.org/pkg/lwarp) - Allows LaTeX to directly produce html5 output, using external utility programs only for the final conversion of text and images.
+* [`layouts`](https://ctan.org/pkg/layouts) - Displays information about a document, including: text positioning on a page; disposition of floats; layout of paragraphs, lists, footnotes, table of contents, and sectional headings; font boxes.
+* [`hypdoc`](https://ctan.org/pkg/hypdoc) - adds hyper features to the package `doc` that is used in the documentation system of LaTeX2e. Bookmarks are added and references are linked as far as possible.<BR>
+Helpful when you want to add bookmark and/or hyperlinks to existing package docs---just load this package in the `dtx` file.
 
-## Just for fun
+## Just for fun
 
-* lisp-on-tex - Execute LISP code in a LaTeX document.
+* [`lisp-on-tex`](https://ctan.org/pkg/lisp-on-tex) - Execute LISP code in a LaTeX document.
