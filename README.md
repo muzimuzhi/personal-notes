@@ -14,3 +14,10 @@ These are some notes in the result of my daily web searching and time wasting.
 * Typography
   * Examples
     * [The MagPi](https://www.raspberrypi.org/magpi/), the official Raspberry (monthly) Pi magazine, started from May, 2012 and provides free downloads.
+
+---
+
+Markdown
+  * disable auto-linking: insert `<span></span>`<BR>
+    ref: https://gist.github.com/alexpeattie/4729247
+  * [GitHub Flavored Markdown Specification](https://github.github.com/gfm/)
