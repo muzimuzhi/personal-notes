@@ -11,7 +11,20 @@ Some notes on computer science, mostly online sources.
   * [MIT Scheme](https://www.gnu.org/software/mit-scheme/) maintained by GNU, or
   * [SICP collections](https://docs.racket-lang.org/sicp-manual/index.html) as a package of Racket
 
-## Books
+### C
+
+Textbook
+
+The C Programming Language, 2nd Edition, by Kernighan and Ritchie (K&R2)
+* [Solutions](https://clc-wiki.net/wiki/K&R2_solutions) provided by clc-wiki, an offshoot of the comp.lang.c newsgroup
+
+Discussion
+
+* [How to C in 2016](https://matt.sh/howto-c), by Matt
+  * [Critique](https://github.com/Keith-S-Thompson/how-to-c-response), by Keith Thompson
+
+
+## General Books
 
 ### Structure and Interpretation of Computer Programs (SICP)
 
