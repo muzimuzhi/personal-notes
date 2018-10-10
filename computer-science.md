@@ -40,3 +40,8 @@ Discussion
     * SICP Iteration Exercise: http://wiki.c2.com/?SicpIterationExercise
     * An Interactive Change-Counting Procedure: https://logicgrimoire.wordpress.com/2013/02/16/an-iterative-change-counting-procedure/
     * Attempting to Count Change, Iteratively: https://logicgrimoire.wordpress.com/2013/01/27/attempting-to-count-change-iteratively/
+
+### Category Theory for Programmers, by Bartosz Milewski
+
+* [HTML version](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) is on the main page of this unpublished book, accompanied by [PDF version](https://github.com/hmemcpy/milewski-ctfp-pdf) and [YouTube playlist](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_), each of them available for free.
+* Garfileo has made a [simplified Chinese translation](https://segmentfault.com/a/1190000003882331), covering the first 10 chapters of Part One, with the later two parts, containing another 21 chapters, left.
