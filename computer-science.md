@@ -16,7 +16,7 @@ Some notes on computer science, mostly online sources.
 Textbook
 
 The C Programming Language, 2nd Edition, by Kernighan and Ritchie (K&R2)
-* [Solutions](https://clc-wiki.net/wiki/K&R2_solutions) provided by clc-wiki, an offshoot of the comp.lang.c newsgroup
+* [Solutions](https://clc-wiki.net/wiki/K&R2_solutions) provided by clc-wiki, an offshoot of the comp.lang.c newsgroup
 
 Discussion
 
@@ -43,5 +43,5 @@ Discussion
 
 ### Category Theory for Programmers, by Bartosz Milewski
 
-* [HTML version](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) is on the main page of this unpublished book, accompanied by [PDF version](https://github.com/hmemcpy/milewski-ctfp-pdf) and [YouTube playlist](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_), each of them available for free.
-* Garfileo has made a [simplified Chinese translation](https://segmentfault.com/a/1190000003882331), covering the first 10 chapters of Part One, with the later two parts, containing another 21 chapters, left.
+* [HTML version](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/), [PDF version](https://github.com/hmemcpy/milewski-ctfp-pdf), and a link to a series of [lecture videos](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_) can be found on the main page of this unpublished 31-chapter book.
+* A partial [simplified Chinese translation](https://segmentfault.com/a/1190000003882331), covering the whole 10 chapters of the first part, is contributed by Garfileo.
