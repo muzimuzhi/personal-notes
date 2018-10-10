@@ -19,7 +19,7 @@ Here is a personal list of helpful online resources out of the CTAN (ctan.org) b
 For basic uses, some guidelines of MathJax can be a good learning resource of LaTeX math formula.
 
 * (MathJax Guides) [LaTeX math in less than 10 minutes](http://math-on-quora.surge.sh/) shows juicy examples, both  carefully classified and interactively displayed, made with love by Quora user [Gilles](https://www.quora.com/profile/Gilles-Castel-1).
-* (MathJax Guides) [MathJax basic tutorial and quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) from Mathematics Stack Exchange, provides more complete reference as well as more complex examples.
+* (MathJax Guides) [MathJax basic tutorial and quick reference](https://math.meta.stackexchange.com/questions/5020/) from Mathematics Stack Exchange, provides more complete reference as well as more complex examples.
 
 ### FAQ
 
