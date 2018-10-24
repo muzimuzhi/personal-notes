@@ -23,3 +23,7 @@ Some notes on college level math books.
 
 ### Serge Lang, Algebra
  * [A Companion to Lang's Algebra](https://math.berkeley.edu/~gbergman/.C.to.L/), by George Bergman from UCB
+
+### Herstein, I. N. Abstract Algebra. Macmillan, 1986.
+
+* Used by [MIT 18.703 (2013 spring)](https://ocw.mit.edu/courses/mathematics/18-703-modern-algebra-spring-2013/), Modern Algebra
