@@ -45,3 +45,24 @@ Discussion
 
 * [HTML version](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/), [PDF version](https://github.com/hmemcpy/milewski-ctfp-pdf), and a link to a series of [lecture videos](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_) can be found on the main page of this unpublished 31-chapter book.
 * A partial [simplified Chinese translation](https://segmentfault.com/a/1190000003882331), covering the whole 10 chapters of the first part, is contributed by Garfileo.
+
+## Tools
+
+### git
+
+Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044/8590320)):
+```bash
+$ git reflog expire --expire=now --all
+$ git gc --prune=now
+```
+
+Diff non-UTF8 files:
+```bash
+# Suppose the .tex files are GBK encoding
+$ cat .git/config
+[diff "gbk"]
+        textconv = "iconv -f gbk -t utf-8"
+
+$ cat .gitattributes
+*.tex diff=gbk
+```
