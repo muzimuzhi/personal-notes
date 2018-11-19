@@ -3,6 +3,40 @@ Some notes on computer science, mostly online sources.
 
 ## Programming Languages
 
+### Racket
+
+Load racket package
+```racket
+(#%require <racket package name>)
+
+; e.g.
+(#%require racket/base)   ; load racket base
+(#%require sicp-pict)     ; load sicp picture package
+```
+
+Load sub file
+```racket
+;; main file
+(#%require "<path to sub file>")
+
+; e.g.
+(#%require "exercise_1.43.rkt")
+; load file at the current directory
+
+(#%require "../chapter02/exercise_2.20.rkt")
+; load file using relative path
+
+;; sub file
+(#%require racket/base)
+(provide <function names, space seperated>)
+
+; e.g.
+(#%require racket/base)
+
+(provide square)
+(define (square x) (* x x))
+```
+
 ### Scheme
 
 * [Code Style](http://community.schemewiki.org/?scheme-style) from Community Scheme Wiki
