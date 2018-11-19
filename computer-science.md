@@ -30,7 +30,7 @@ Load racket package, when `#lang sicp` is used
 Load sub file, when `#lang sicp` is used
 
 * step 1. export identifiers in the included sub file
-```raeket
+```racket
 ;; sub file
 ; export selected identifiers
 (provide <identifiers, space seperated>) 
