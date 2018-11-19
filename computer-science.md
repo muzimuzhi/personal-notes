@@ -5,36 +5,67 @@ Some notes on computer science, mostly online sources.
 
 ### Racket
 
-Load racket package
+Load racket package, when `#lang sicp` is used
+
+* load a whole package
 ```racket
 (#%require <racket package name>)
 
-; e.g.
+;; e.g.
 (#%require racket/base)   ; load racket base
 (#%require sicp-pict)     ; load sicp picture package
 ```
 
-Load sub file
+* load selected identifiers from package
+```racket
+(#%require (only <racket package name> 
+                 <identifiers, space seperated>))
+
+;; e.g.
+; load `provide` and `all-defined-out` from racket base, 
+; and load these two only
+(#%require (racket/base provide all-defined-out))
+```
+
+Load sub file, when `#lang sicp` is used
+
+* step 1. export identifiers in the included sub file
+```raeket
+;; sub file
+; export selected identifiers
+(provide <identifiers, space seperated>) 
+
+; export all defined identifiers in the current file
+(provide (all-defined-out))
+
+;; e.g. 1
+(#%require (only racket/base provide))
+
+(provide square double)
+(define (square x) (* x x))
+(define (double x) (+ x x))
+
+;; e.g. 2
+(#%require (only racket/base provide all-defined-out))
+(provide (all-defined-out))
+
+(define (square x) (* x x))
+(define (double x) (+ x x))
+(define (halve x)
+  (if (even? x)
+      (/ x 2)
+      (error "ERROR: invalid input, not even")))
+```
+
+* step 2. load sub file in the main file
 ```racket
 ;; main file
 (#%require "<path to sub file>")
 
-; e.g.
+;; e.g.
+; load file with relative path
 (#%require "exercise_1.43.rkt")
-; load file at the current directory
-
 (#%require "../chapter02/exercise_2.20.rkt")
-; load file using relative path
-
-;; sub file
-(#%require racket/base)
-(provide <function names, space seperated>)
-
-; e.g.
-(#%require racket/base)
-
-(provide square)
-(define (square x) (* x x))
 ```
 
 ### Scheme
