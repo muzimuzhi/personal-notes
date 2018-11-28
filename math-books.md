@@ -11,20 +11,31 @@ Some notes on college level math books.
 
 ## Book Titles
 
-### H. Amann and J. Escher, Analysis, 3 volumes
+### Foundations
 
-* MMA Reviews
-  * [Analysis I, not included in BLL](https://www.maa.org/press/maa-reviews/analysis-i-0)
-  * [Analysis II, not included in BLL](https://www.maa.org/press/maa-reviews/analysis-ii)
-  * [Analysis III, won't get reviewed](https://www.maa.org/press/maa-reviews/analysis-iii)
+Felix Hausdorff, Set Theory
 
-### Gilbert Strang, Introduction to Linear Algebra, Fifth Edition (2016)
+### Analysis
+
+H. Amann and J. Escher, Analysis, 3 volumes
+
+* MMA reviews on [volume I](https://www.maa.org/press/maa-reviews/analysis-i-0) & [II](https://www.maa.org/press/maa-reviews/analysis-ii), notice the MMA dose not have plan to review the [volume III](https://www.maa.org/press/maa-reviews/analysis-iii)
+
+Elias Zakon, [The Zakon Series on Mathematical Analysis](http://www.trillia.com/products.html)
+
+* Basic Concepts of Mathematics
+* Mathematical Analysis I
+* Mathematical Analysis II
+
+### Algebra
+
+Gilbert Strang, Introduction to Linear Algebra, Fifth Edition (2016)
 
 * [Webpage](http://math.mit.edu/~gs/linearalgebra/) maintained by the book author, with solution manual
 
-### Serge Lang, Algebra
+Serge Lang, Algebra
  * [A Companion to Lang's Algebra](https://math.berkeley.edu/~gbergman/.C.to.L/), by George Bergman from UCB
 
-### Herstein, I. N. Abstract Algebra. Macmillan, 1986.
+Herstein, I. N. Abstract Algebra. Macmillan, 1986.
 
 * Used by [MIT 18.703 (2013 spring)](https://ocw.mit.edu/courses/mathematics/18-703-modern-algebra-spring-2013/), Modern Algebra
