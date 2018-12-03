@@ -111,6 +111,17 @@ Discussion
 * [HTML version](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/), [PDF version](https://github.com/hmemcpy/milewski-ctfp-pdf), and a link to a series of [lecture videos](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_) can be found on the main page of this unpublished 31-chapter book.
 * A partial [simplified Chinese translation](https://segmentfault.com/a/1190000003882331), covering the whole 10 chapters of the first part, is contributed by Garfileo.
 
+### Parsing Techniques - A Practical Guide, by Dick Grune and Ceriel J.H. Jacobs
+
+* [1st edition](https://dickgrune.com/Books/PTAPG_1st_Edition/) (1990)
+* [2nd edition](https://dickgrune.com/Books/PTAPG_2nd_Edition/) (2008)
+* [Chinese translation project (2e)](http://parsing-techniques.duguying.net/)
+
+### Pattern Recognition and Machine Learning, by Christopher Bishop
+
+* Springer (2006)
+* [Book page on MS research](https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/), PDF available
+
 ## Tools
 
 ### git
