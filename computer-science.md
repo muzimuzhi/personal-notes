@@ -122,6 +122,12 @@ Discussion
 * Springer (2006)
 * [Book page on MS research](https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/), PDF available
 
+### Dive into Deep Learning
+
+* Authors: Aston Zhang, Zack C. Lipton, Mu Li, and Alex J. Smola
+* Introduction: An interactive deep learning book for students, engineers, and researchers.
+* Online version: [en](http://en.diveintodeeplearning.org/), [zh-cn](http://zh.diveintodeeplearning.org/)
+
 ## Tools
 
 ### git
