@@ -128,6 +128,10 @@ Discussion
 * Introduction: An interactive deep learning book for students, engineers, and researchers.
 * Online version: [en](http://en.diveintodeeplearning.org/), [zh-cn](http://zh.diveintodeeplearning.org/)
 
+### Advanced Programming in the UNIX Environment
+
+http://www.apuebook.com/
+
 ## Tools
 
 ### git
