@@ -1,6 +1,6 @@
 # Tips About Using LaTeX
 
-## Which version of format am I using?
+## Get format version
 
 * The format version appears in the first line of every `.log` file <BR>(note the date **`2018.5.3`** following `preloaded format=xelatex `):
 
@@ -17,7 +17,7 @@
     \fmtversion:
     macro:->2018-04-01
     ```
-## Problem of using `tikzmark` pkg with `XeLaTeX`
+## Workaround: use `tikzmark` package with `xelatex`
 
 According to [discussions on TeX.SX](https://tex.stackexchange.com/questions/229500/) and [the bug report to `pgf` project](https://sourceforge.net/p/pgf/bugs/354/), this is a `pgf` driver bug. A workaround, which recovers the definition of `\pgfsys@hboxsynced` from `dvipdfmx` version to the common driver version, is firstly suggested in [an answer on TeX.SX](https://sourceforge.net/p/pgf/bugs/354/#72e2).
 
