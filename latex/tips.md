@@ -20,7 +20,12 @@
 
 ## Using extra fonts with `lualatex`
 
-`lualatex` can use fonts in directory `/Library/Fonts`, but not those added to new library of `Font Book.app`. Adding symlink to `/Library/Fonts` may solve the problem, as well as adding path to variable `OSFONTDIR` (see [here](https://tex.stackexchange.com/q/117129/79060)).
+`lualatex` can use fonts in directory `/Library/Fonts`, but not those added to new library of `Font Book.app`. Setting TeX Live variable `OSFONTDIR` by
+
+ - adding line `OSFONTDIR = <path>` to file `TEXMFROOT/texmf.cnf`, or
+ - using command `tlmgr conf texmf OSFONTDIR <path>`
+
+may both solve the problem.
 
 ## Workaround: use `tikzmark` package with `xelatex`
 
