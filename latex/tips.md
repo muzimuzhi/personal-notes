@@ -27,6 +27,8 @@
 
 may both solve the problem.
 
+Further reading: [every variable that `texmf.cnf` can contain](https://github.com/TeX-Live/texlive-source/blob/trunk/texk/kpathsea/texmf.cnf).
+
 ## Workaround: use `tikzmark` package with `xelatex`
 
 According to [discussions on TeX.SX](https://tex.stackexchange.com/questions/229500/) and [the bug report to `pgf` project](https://sourceforge.net/p/pgf/bugs/354/), this is a `pgf` driver bug. A workaround, which recovers the definition of `\pgfsys@hboxsynced` from `dvipdfmx` version to the common driver version, is firstly suggested in [an answer on TeX.SX](https://sourceforge.net/p/pgf/bugs/354/#72e2).
