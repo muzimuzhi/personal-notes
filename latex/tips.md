@@ -17,6 +17,11 @@
     \fmtversion:
     macro:->2018-04-01
     ```
+
+## Using extra fonts with `lualatex`
+
+`lualatex` can use fonts in directory `/Library/Fonts`, but not those added to new library of `Font Book.app`. Adding symlink to `/Library/Fonts` may solve the problem, as well as adding path to variable `OSFONTDIR` (see [here](https://tex.stackexchange.com/q/117129/79060)).
+
 ## Workaround: use `tikzmark` package with `xelatex`
 
 According to [discussions on TeX.SX](https://tex.stackexchange.com/questions/229500/) and [the bug report to `pgf` project](https://sourceforge.net/p/pgf/bugs/354/), this is a `pgf` driver bug. A workaround, which recovers the definition of `\pgfsys@hboxsynced` from `dvipdfmx` version to the common driver version, is firstly suggested in [an answer on TeX.SX](https://sourceforge.net/p/pgf/bugs/354/#72e2).
