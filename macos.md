@@ -6,6 +6,10 @@
 | ---------------------- | ------------------------------------------ |
 | cmd + ` (grave accent) | switch between windows of a same program |
 
+Shortcut List
+ * [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236) - support.apple.com
+ * [Mac OS X Finder Keyboard Shortcuts](https://www.dummies.com/computers/macs/macbook/mac-os-x-finder-keyboard-shortcuts/) - dummies.com
+
 ## Program Installation
 
 `smlnj`
