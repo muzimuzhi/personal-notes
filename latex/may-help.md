@@ -3,6 +3,7 @@
 ## Q&A Found in TeX.SX
 
 * Multiline Root Symbol ([link](https://tex.stackexchange.com/a/111433/79060))
+* List of Expandable Primitives ([link](https://tex.stackexchange.com/a/467372/79060), also see Sec. 12.2 of *TeX by Topic*)
 
 ## MiKTeX - A LaTeX Distribution
 
