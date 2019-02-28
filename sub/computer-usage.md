@@ -22,12 +22,9 @@
 
 ## Convert `DjVu` to `PDF`
 
-* Preparation
-  * `brew info djvulibre`, or
-  * [DjVuLibre](http://djvu.sourceforge.net/index.html) on SourceForge
-* Usage<BR>
-  `ddjvu -format=pdf input.djvu output.pdf`
-  * resolution controlling option<BR>
-    `-<num> -subsample=<num>, default 1`<BR>
-    The dimensions of the full output image will be `<num>` times smaller than the DjVu image size. The legal values for argument `<num>` range from 1 to 12.
-* [Online doc](http://djvu.sourceforge.net/doc/man/ddjvu.html) 
+| Steps       | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| Preparation | install [DjVuLibre](http://djvu.sourceforge.net/index.html), see `brew info djvulibre` |
+| Usage       | `ddjvu -format=pdf [options] input.djvu output.pdf`          |
+| Option      | `-<n> -subsample=<n>`, downsize `n` times; default 1, max 12 |
+| Doc         | http://djvu.sourceforge.net/doc/man/ddjvu.html               |
