@@ -9,8 +9,8 @@ These are some notes in the result of my daily web searching and time wasting.
   * [Math Notes](sub/math-notes.md)
 * Computer
   * [Computer Science](sub/computer-science.md)
-  * [Software Usage](sub/computer-usage.md)
-  * [macOS](sub/macos.md)
+  * [Usage](sub/computer-usage.md)
+  * [macOS Only](sub/macos.md)
 * LaTeX
   * Guideline to docs and other resources
     * recommended LaTeX packages (TODO)

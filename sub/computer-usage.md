@@ -21,6 +21,7 @@
   [extract.me](https://extract.me/)
 
 ## Convert `DjVu` to `PDF`
+
 * Preparation
   * `brew info djvulibre`, or
   * [DjVuLibre](http://djvu.sourceforge.net/index.html) on SourceForge
