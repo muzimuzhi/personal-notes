@@ -19,6 +19,10 @@ These are some notes in the result of my daily web searching and time wasting.
   * [Tips](sub/tips.md)
   * [List](sub/interesting-packages.md) of interesting packages I'm not familiar with
   * [Something may help](sub/may-help.md) in the future
+* Font
+  * Font list
+    * [Win 10](https://docs.microsoft.com/en-us/typography/fonts/windows_10_font_list)
+    * [macOS Mojave](https://support.apple.com/en-us/HT208968)
 * Typography
   * Examples
     * [The MagPi](https://www.raspberrypi.org/magpi/), the official Raspberry (monthly) Pi magazine, started from May, 2012 and provides free downloads.
