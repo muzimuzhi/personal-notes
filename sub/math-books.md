@@ -17,6 +17,12 @@ Felix Hausdorff, Set Theory
 
 ### Analysis
 
+Walter Rudin, Principles of Mathematical Analysis (3e). 1976
+
+* Also called "baby Rudin"
+* [Book review](https://www.maa.org/press/maa-reviews/principles-of-mathematical-analysis) on MAA, Basic Library List
+* [Solutions Manual](http://digital.library.wisc.edu/1793/67009) (CC license)
+
 H. Amann and J. Escher, Analysis, 3 volumes
 
 * MMA reviews on [volume I](https://www.maa.org/press/maa-reviews/analysis-i-0) & [II](https://www.maa.org/press/maa-reviews/analysis-ii), notice the MMA dose not have plan to review the [volume III](https://www.maa.org/press/maa-reviews/analysis-iii)
