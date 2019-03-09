@@ -23,8 +23,11 @@ These are some notes in the result of my daily web searching and time wasting.
   * Font list
     * [Win 10](https://docs.microsoft.com/en-us/typography/fonts/windows_10_font_list)
     * [macOS Mojave](https://support.apple.com/en-us/HT208968)
+  * [Modern Fonts](sub/fonts-modern.md)
 * Typography
   * Examples
     * [The MagPi](https://www.raspberrypi.org/magpi/), the official Raspberry (monthly) Pi magazine, started from May, 2012 and provides free downloads.
+  * Online Resource
+    * [Fontology](https://www.fonts.com/content/learning/fontology) on fonts.com
 
 
