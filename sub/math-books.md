@@ -7,7 +7,7 @@ Some notes on college level math books.
   Provides both webpage and PDF forms, as well as other sources for math book reviews.
 * [All The Math Books You’ll Ever Need](https://mathblog.com/mathematics-books/) on mathblog.<span></span>com<BR>
   26 topics, ~2 essential books per topic, and short review of each book
-* [Shiu-chun Wong's List](/math-wongs-list.md)
+* [Shiu-chun Wong's (黄兆镇) List](sub/math-wongs-list.md)
 
 ## Book Titles
 
