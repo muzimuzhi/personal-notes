@@ -18,6 +18,15 @@
     macro:->2018-04-01
     ```
 
+## [xetex] Show full path of fonts
+
+Add `\XeTeXtracingfonts=1` before `\documentclass`, and find full path of fonts in `.log`, like
+```
+Requested font "[lmroman10-bold]:mapping=tex-text;" at 10.0pt
+ -> /usr/local/texlive/2018basic/texmf-dist/fonts/opentype/public/lm/lmroman10-
+bold.otf
+```
+
 ## Using extra fonts with `lualatex`
 
 `lualatex` can use fonts in directory `/Library/Fonts`, but not those added to new library of `Font Book.app`. Setting TeX Live variable `OSFONTDIR` by
