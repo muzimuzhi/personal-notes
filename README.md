@@ -16,6 +16,8 @@ These are some notes in the result of my daily web searching and time wasting.
     * recommended LaTeX packages (TODO)
     * valuable documents on CTAN (TODO)
     * [other online resources](sub/online-resources.md)
+  * Cheatsheet
+    * [`xparse`](sub/latex-xparse.md)
   * [Tips](sub/tips.md)
   * [List](sub/interesting-packages.md) of interesting packages I'm not familiar with
   * [Something may help](sub/may-help.md) in the future
