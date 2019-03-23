@@ -62,13 +62,13 @@
 
 ## Argument Processors
 
-| Processors                             | Meaning                                                      |      |
-| -------------------------------------- | ------------------------------------------------------------ | ---- |
-| `\ReverseBoolean`                      | reverse logic of specifiers `s` and `t`                      |      |
-| `\SplitArgument{<number>}{<token(s)>}` | split argument into `<number>` + 1 parts by `<tokens(s)>`    |      |
-| `\SplitList{<token(s)>}`               | split argument into variable parts by `<tokens(s)>`          |      |
-| `\TrimSpaces`                          |                                                              |      |
-| define new                             | - accept one argument<br />- return processed argument as variable `\ProcessedArgument` |      |
+| Processors                             | Meaning                                                      |
+| -------------------------------------- | ------------------------------------------------------------ |
+| `\ReverseBoolean`                      | reverse logic of specifiers `s` and `t`                      |
+| `\SplitArgument{<number>}{<token(s)>}` | split argument into `<number>` + 1 parts by `<tokens(s)>`    |
+| `\SplitList{<token(s)>}`               | split argument into variable parts by `<tokens(s)>`          |
+| `\TrimSpaces`                          |                                                              |
+| define new                             | - accept one argument<br />- return processed argument as variable `\ProcessedArgument` |
 
 Examples
 ```latex
