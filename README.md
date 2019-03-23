@@ -24,7 +24,7 @@ These are some notes in the result of my daily web searching and time wasting.
 * Font
   * Font list
     * [Win 10](https://docs.microsoft.com/en-us/typography/fonts/windows_10_font_list)
-    * [macOS Mojave](https://support.apple.com/en-us/HT208968)
+    * [macOS Mojave](https://support.apple.com/en-us/HT208968), [more versions](https://github.com/CTeX-org/ctex-kit/wiki/macOS%7COS-X%7CMac-OS-X-各版本预装字体列表)
   * [Modern Fonts](sub/fonts-modern.md)
 * Typography
   * Examples
