@@ -17,7 +17,7 @@ These are some notes in the result of my daily web searching and time wasting.
     * valuable documents on CTAN (TODO)
     * [other online resources](sub/online-resources.md)
   * Cheatsheet
-    * [geometry](sub/latex-geometry.md)
+    * [`geometry`](sub/latex-geometry.md)
     * [`xparse`](sub/latex-xparse.md)
   * [Tips](sub/tips.md)
   * [List](sub/interesting-packages.md) of interesting packages I'm not familiar with
