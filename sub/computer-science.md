@@ -106,6 +106,11 @@ Discussion
     * An Interactive Change-Counting Procedure: https://logicgrimoire.wordpress.com/2013/02/16/an-iterative-change-counting-procedure/
     * Attempting to Count Change, Iteratively: https://logicgrimoire.wordpress.com/2013/01/27/attempting-to-count-change-iteratively/
 
+### Algorithms in a Nutshell (2e)
+
+* [Code Repo](https://github.com/heineman/algorithms-nutshell-2ed)
+* [Errata](http://shop.oreilly.com/product/0636920032885.do)
+
 ### Category Theory for Programmers, by Bartosz Milewski
 
 * [HTML version](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/), [PDF version](https://github.com/hmemcpy/milewski-ctfp-pdf), and a link to a series of [lecture videos](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_) can be found on the main page of this unpublished 31-chapter book.
