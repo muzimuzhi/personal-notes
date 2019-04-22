@@ -33,5 +33,6 @@ These are some notes in the result of my daily web searching and time wasting.
     * [The MagPi](https://www.raspberrypi.org/magpi/), the official Raspberry (monthly) Pi magazine, started from May, 2012 and provides free downloads.
   * Online Resource
     * [Fontology](https://www.fonts.com/content/learning/fontology) on fonts.com
+    * [Practical Typography](https://practicaltypography.com/), 2nd Edition by Matthew Butterick
 
 
