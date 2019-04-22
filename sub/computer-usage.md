@@ -20,6 +20,13 @@
 * Archive Extractor<BR>
   [extract.me](https://extract.me/)
 
+## Atom (editor)
+
+[Script Package] [Change font size of output window](https://github.com/rgbkrk/atom-script/issues/1191)
+
+ - Location of config file: `~/.atom/packages/script/styles/script.less`
+
+
 ## Convert `DjVu` to `PDF`
 
 | Item       | Content                                                  |
