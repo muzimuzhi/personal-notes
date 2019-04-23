@@ -123,3 +123,14 @@ end
 \feynmandiagram[ ... ]{ ... };
 \end{document}
 ```
+
+## [hyperref] Allow `unicode-math` math symbols in bookmark
+
+```latex
+\hypersetup{
+    psdextra          = true,
+    unicode           = true
+}
+```
+
+ref: [answer on tex.sx](https://tex.stackexchange.com/a/69354/79060) by Heiko Oberdiek
