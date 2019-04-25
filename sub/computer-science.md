@@ -130,8 +130,8 @@ Discussion
 ### Dive into Deep Learning
 
 * Authors: Aston Zhang, Zack C. Lipton, Mu Li, and Alex J. Smola
-* Introduction: An interactive deep learning book for students, engineers, and researchers.
-* Online version: [en](http://en.diveintodeeplearning.org/), [zh-cn](http://zh.diveintodeeplearning.org/)
+* Introduction: A free and interactive deep learning book for students, engineers, and researchers.
+* Online version: [en](https://d2l.ai/), [zh-cn](https://zh.d2l.ai/)
 
 ### Advanced Programming in the UNIX Environment
 
