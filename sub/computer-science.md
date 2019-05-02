@@ -158,6 +158,11 @@ $ cat .gitattributes
 *.tex diff=gbk
 ```
 
+Delete remote branch ([ref](https://gist.github.com/magnusbae/10182865)):
+```bash
+$ git push --delete <remote_name> <branch_name>
+```
+
 ### MySql
 
 When `SHOW DATABASES;` showing
