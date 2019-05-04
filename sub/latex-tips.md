@@ -18,6 +18,24 @@
     macro:->2018-04-01
     ```
 
+## [tlmgr] List installed packages
+
+```bash
+$ tlmgr list --only-installed
+```
+Example output lines (`i` denotes "installed"):
+```
+i adjustbox: Graphics package-alike macros for "general" boxes
+i ae: Virtual fonts for T1 encoded CMR-fonts
+i amscls: AMS document classes for LaTeX
+```
+
+Get space separated list of installed packages (use GNU `ggrep` for `-P` option):
+```bash
+$ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' --color=always | tr '\n' ' '
+```
+
+
 ## [xetex] Show full path of fonts
 
 Add `\XeTeXtracingfonts=1` before `\documentclass`, and find full path of fonts in `.log`, like
