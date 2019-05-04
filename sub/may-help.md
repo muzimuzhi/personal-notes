@@ -5,6 +5,12 @@
 * Multiline Root Symbol ([link](https://tex.stackexchange.com/a/111433/79060))
 * List of Expandable Primitives ([link](https://tex.stackexchange.com/a/467372/79060), also see Sec. 12.2 of *TeX by Topic*)
 
+## TeX Live
+
+* SVN Repo: http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/
+* Historic Images: ftp://tug.org/historic/systems/texlive/
+
+
 ## MiKTeX - A LaTeX Distribution
 
 * MiKTeX now [supports Win/Mac/Linux](https://miktex.org/download), and provides Docker image.
