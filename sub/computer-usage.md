@@ -22,10 +22,30 @@
 
 ## Atom (editor)
 
-[Script Package] [Change font size of output window](https://github.com/rgbkrk/atom-script/issues/1191)
+[Script Package] Change font size of output window ([ref](https://github.com/rgbkrk/atom-script/issues/1191))
 
  - Location of config file: `~/.atom/packages/script/styles/script.less`
 
+## Typora (markdown editor)
+
+MathJax config used by Typora for macOS, version 0.9.9.23.4 (2293).
+```js
+/* /Applications/Typora.app/Contents/Resources/TypeMark/index.html */
+<script type="text/x-mathjax-config" aria-hidden="true">
+  MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    jax: ["input/TeX", "output/SVG"],
+    extensions: ["tex2jax.js", "toMathML.js"],
+    TeX: {
+      extensions: ["noUndefined.js", "autoload-all.js", "AMSmath.js", "AMSsymbols.js", "mediawiki-texvc.js"],
+      mhchem: { legacy: false }
+    },
+    /* more */
+  });
+</script>
+
+<script src="./lib/MathJax/MathJax.js" aria-hidden="true"></script>
+```
 
 ## Convert `DjVu` to `PDF`
 
