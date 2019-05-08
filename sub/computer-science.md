@@ -158,7 +158,12 @@ $ cat .gitattributes
 *.tex diff=gbk
 ```
 
-Delete remote branch ([ref](https://gist.github.com/magnusbae/10182865)):
+Delete remote tracking branch (delete the local tracking only, [ref](https://gist.github.com/magnusbae/10182865))
+```bash
+$ git branch --delete --rebase <remote_name>/<branch_name>
+```
+
+Delete remote branch (delete the remote branch while pushing)
 ```bash
 $ git push --delete <remote_name> <branch_name>
 ```
