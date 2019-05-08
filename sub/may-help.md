@@ -10,6 +10,12 @@
 * SVN Repo: http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/
 * Historic Images: ftp://tug.org/historic/systems/texlive/
 
+## XeTeX
+
+* Precedence of font names used by XeTeX ([ref](https://tex.stackexchange.com/a/43819/79060))
+  * `Full name > Family-Style > PostScript name > Family`
+  * To let XeTeX auto-load variations, `Family` is recommended
+
 ## dvipdfm-x
 
 * SVN Repo (as part of TeX Live): http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/
