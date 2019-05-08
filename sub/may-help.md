@@ -10,6 +10,10 @@
 * SVN Repo: http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/
 * Historic Images: ftp://tug.org/historic/systems/texlive/
 
+## dvipdfm-x
+
+* SVN Repo (as part of TeX Live): http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/
+* GitHub Repo of Shunsaku Hirata: https://github.com/shirat74/dvipdfm-x/
 
 ## MiKTeX - A LaTeX Distribution
 
