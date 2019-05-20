@@ -5,10 +5,13 @@
 | Name           | Category            | Description                                                  |
 | -------------- | ------------------- | ------------------------------------------------------------ |
 | `relsize` | font | Changes font size relative to current size. |
+| `savesym` | font/math | Redefines and restores name of symbol command|
 |  |  |  |
 | `mismath`      | math                | Miscellaneous mathematical macros                            |
 | `systeme`      | math                | Provides a more intuitive way to enter systems of equations or inequalities. <br />Doc is in French only. |
 | `autoaligne`   | math                | Aligns lines of math expressions by operators and relations.<br />Doc is in French only. |
+| `mleftright` | math | Variants of delimiters that act as maths open/close |
+| `mathpunctspace` | math | Controls the space after punctuation in math expressions |
 |                |                     |                                                              |
 | `layouts`      | layout show         | Shows layout of document elements.                           |
 | `extramarks`   | marks               | More marks other than `\markleft` and `\markboth`            |
@@ -19,10 +22,13 @@
 | `hlist`          | tabular/list        | Provides  `hlist` environment in which `\hitem` starts a horizontal and columned item. <br />Doc is in French only. |
 |  |  |  |
 | `graphbox` | graphics | Adds options to `\includegraphicx` |
+| `pgfgantt` | graphics/pgf | Draws Gantt charts |
 |                |                     |                                                              |
 | `lisp-on-tex`  | programming         | Implements static scoping, dynamic typing, and eager evaluation LISP interpreter written in TeX macros |
+| `texapi` | programming | Format-independent `etoolbox` |
 | `silence`      | compilation/log     | Filters errors and warnings produced by standard macros.     |
-| `hypdoc`       | pdf feature         | Adds more links of references.                               |
+| `hypdoc`       | PDF feature         | Adds more links of references.                               |
+| `navigator` | PDF feature | format-independent `hyperref` |
 | `lwarp`        | convert format      | Convert LaTeX output (PDF) to HTML.                         |
 
 
