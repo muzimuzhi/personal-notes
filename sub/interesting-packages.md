@@ -24,6 +24,7 @@
 | `graphbox` | graphics | Adds options to `\includegraphicx` |
 | `pgfgantt` | graphics/pgf | Draws Gantt charts |
 |                |                     |                                                              |
+| `unravel` | programming | Watches TeX digest tokens |
 | `lisp-on-tex`  | programming         | Implements static scoping, dynamic typing, and eager evaluation LISP interpreter written in TeX macros |
 | `texapi` | programming | Format-independent `etoolbox` |
 | `silence`      | compilation/log     | Filters errors and warnings produced by standard macros.     |
