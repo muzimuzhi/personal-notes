@@ -1,25 +1,37 @@
 # Something May Help in the Future
 
-## Q&A Found in TeX.SX
+Core
+  * Full [list of primitives](https://zhuanlan.zhihu.com/p/59151033) by engine
+  * [List of expandable primitives](https://tex.stackexchange.com/a/467372/79060)
+    * For expandable TeX primitives, see also *TeX by Topic*, Sec. 12.2.
 
-* Multiline Root Symbol ([link](https://tex.stackexchange.com/a/111433/79060))
-* List of Expandable Primitives ([link](https://tex.stackexchange.com/a/467372/79060), also see Sec. 12.2 of *TeX by Topic*)
+Font
+  * OpenType Math Fonts
+    * Ulrik Vieth, [OpenType Math Fonts: What’s new or noteworthy?](http://www.gust.org.pl/bachotex/2019-pl/presentations/uvieth-1-2019.pdf) (slide), BachoTEX 2019
+
+Equation
+  * [Multiline Root Symbol (`\sqrt`)](https://tex.stackexchange.com/a/111433/79060)
+
+Meta
+  * [Minimal working example](https://tex.meta.stackexchange.com/q/228/79060) (MWE), what and how
+    * [Prefer `article` to `minimal` LaTeX class](https://tex.stackexchange.com/a/42115/79060) in MWE
+  * [How to upgrade TeX distribution?](https://tex.stackexchange.com/q/55437/79060)
 
 ## TeX Live
 
-* SVN Repo: http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/
-* Historic Images: ftp://tug.org/historic/systems/texlive/
+* [SVN repo](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/), [GitHub mirror](https://github.com/TeX-Live/texlive-source)
+* [Historic images](ftp://tug.org/historic/systems/texlive/)
 
 ## XeTeX
 
 * Precedence of font names used by XeTeX ([ref](https://tex.stackexchange.com/a/43819/79060))
   * `Full name > Family-Style > PostScript name > Family`
   * To let XeTeX auto-load variations, `Family` is recommended
+* Show font info `aat-info.tex` and `opentype-info.tex`, located in `$TEXMFDIST/tex/xetex/xetexfontinfo`
 
 ## dvipdfm-x
 
-* SVN Repo (as part of TeX Live): http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/
-* GitHub Repo of Shunsaku Hirata: https://github.com/shirat74/dvipdfm-x/
+* [SVN repo](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata: 
 
 ## MiKTeX - A LaTeX Distribution
 
