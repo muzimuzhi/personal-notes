@@ -91,6 +91,12 @@ Discussion
 
 ## General Books
 
+### Introduction to Computation and Programming Using Python, Second Edition
+
+* Subtitle: With Application to Understanding Data
+* [Page on MIT Press](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition), containing errata
+* Page of book author [John Guttag](https://people.csail.mit.edu/guttag/)
+
 ### Structure and Interpretation of Computer Programs (SICP)
 
 * Scheme vs Python (discussions about learning SICP with Scheme or with Python)
