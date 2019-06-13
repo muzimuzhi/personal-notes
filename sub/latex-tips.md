@@ -18,21 +18,34 @@
     macro:->2018-04-01
     ```
 
-## [tlmgr] List installed packages
 
-```bash
-$ tlmgr list --only-installed
-```
-Example output lines (`i` denotes "installed"):
-```
-i adjustbox: Graphics package-alike macros for "general" boxes
-i ae: Virtual fonts for T1 encoded CMR-fonts
-i amscls: AMS document classes for LaTeX
-```
+## [tlmgr] Show info about schemes, collections, and packages
 
-Get space separated list of installed packages (use GNU `ggrep` for `-P` option):
+* Show full list
 ```bash
-$ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' --color=always | tr '\n' ' '
+  # list of schemes
+  $ tlmgr info schemes
+
+  # list of collections
+  $ tlmgr info collections
+
+  # list of packages
+  $ tlmgr info 
+```
+  With option `--only-installed`, only installed items are shown.
+* Show contents of specific item
+  ```bash
+  # list contents of specific scheme
+  # e.g.
+  # tlmgr info --list scheme-medium
+  $ tlmgr info --list <scheme-name>
+
+  # list contents of specific collection
+  $ tlmgr info --list <collection-name>
+```
+* More example: get space separated list of installed packages (use GNU `ggrep` for its `-P` option):
+```bash
+  $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
 ```
 
 
