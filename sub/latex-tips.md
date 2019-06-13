@@ -22,7 +22,7 @@
 ## [tlmgr] Show info about schemes, collections, and packages
 
 * Show full list
-```bash
+  ```bash
   # list of schemes
   $ tlmgr info schemes
 
@@ -31,7 +31,7 @@
 
   # list of packages
   $ tlmgr info 
-```
+  ```
   With option `--only-installed`, only installed items are shown.
 * Show contents of specific item
   ```bash
@@ -42,12 +42,17 @@
 
   # list contents of specific collection
   $ tlmgr info --list <collection-name>
-```
+  ```
 * More example: get space separated list of installed packages (use GNU `ggrep` for its `-P` option):
-```bash
+  ```bash
   $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
-```
+  ```
 
+## Font encodings
+
+* Main doc: `texdoc fontenc`
+* EU1 encoding (`eu1enc.def`): provided by package `euenc`
+* T3 encoding (`t3enc.def`): provided by package `tipa`
 
 ## [xetex] Show full path of fonts
 
@@ -165,3 +170,9 @@ end
 ```
 
 ref: [answer on tex.sx](https://tex.stackexchange.com/a/69354/79060) by Heiko Oberdiek
+
+## [beamer] Doc of `pgfpicture` environment
+
+Manual of `pgf` only documents `pgfpicture` environment without any arguments, while source code of `beamer` uses an old version of that environment, 
+
+The usage of `pgfpicture` environment in `beamer`, with four braced arguments, is defined in `pgfcorescopes.code.tex` and not documented in pgf manual yet.
