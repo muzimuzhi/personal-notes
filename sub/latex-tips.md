@@ -176,3 +176,25 @@ ref: [answer on tex.sx](https://tex.stackexchange.com/a/69354/79060) by Heiko Ob
 Manual of `pgf` only documents `pgfpicture` environment without any arguments, while source code of `beamer` uses an old version of that environment, 
 
 The usage of `pgfpicture` environment in `beamer`, with four braced arguments, is defined in `pgfcorescopes.code.tex` and not documented in pgf manual yet.
+
+## [minted] Highlight `@` as command name letter
+
+Modify class `TeXLexer`, currently contained in file [pygments/lexers/markup.py](https://github.com/dagwieers/pygments/blob/master/pygments/lexers/markup.py).
+
+```python
+'root': [
+    (r'\\\[', String.Backtick, 'displaymath'),
+    (r'\\\(', String, 'inlinemath'),
+    (r'\$\$', String.Backtick, 'displaymath'),
+    (r'\$', String, 'inlinemath'),
+    (r'\\([a-zA-Z]+|.)', Keyword, 'command'),
+    (r'\\$', Keyword),
+    include('general'),
+    (r'[^\\$%&_^{}]+', Text),
+],
+
+# before
+(r'\\([a-zA-Z]+|.)', Keyword, 'command'),
+# after
+(r'\\([a-zA-Z@]+|.)', Keyword, 'command'),
+```
