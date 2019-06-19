@@ -179,22 +179,35 @@ The usage of `pgfpicture` environment in `beamer`, with four braced arguments, i
 
 ## [minted] Highlight `@` as command name letter
 
-Modify class `TeXLexer`, currently contained in file [pygments/lexers/markup.py](https://github.com/dagwieers/pygments/blob/master/pygments/lexers/markup.py).
+Modify python class `TeXLexer` in file [pygments/lexers/markup.py](https://github.com/dagwieers/pygments/blob/master/pygments/lexers/markup.py).
 
 ```python
-'root': [
-    (r'\\\[', String.Backtick, 'displaymath'),
-    (r'\\\(', String, 'inlinemath'),
-    (r'\$\$', String.Backtick, 'displaymath'),
-    (r'\$', String, 'inlinemath'),
-    (r'\\([a-zA-Z]+|.)', Keyword, 'command'),
-    (r'\\$', Keyword),
-    include('general'),
-    (r'[^\\$%&_^{}]+', Text),
-],
+class TexLexer(RegexLexer):
+    ... ...
 
-# before
-(r'\\([a-zA-Z]+|.)', Keyword, 'command'),
-# after
-(r'\\([a-zA-Z@]+|.)', Keyword, 'command'),
+    tokens = {
+        ...
+        'root': [
+            (r'\\\[', String.Backtick, 'displaymath'),
+            (r'\\\(', String, 'inlinemath'),
+            (r'\$\$', String.Backtick, 'displaymath'),
+            (r'\$', String, 'inlinemath'),
+            # (r'\\([a-zA-Z]+|.)', Keyword, 'command'), # before
+            (r'\\([a-zA-Z@]+|.)', Keyword, 'command'),  # after
+            (r'\\$', Keyword),
+            include('general'),
+            (r'[^\\$%&_^{}]+', Text),
+        ],
+        'math': [
+            # (r'\\([a-zA-Z]+|.)', Name.Variable), # before
+            (r'\\([a-zA-Z@]+|.)', Name.Variable),  # after
+            include('general'),
+            (r'[0-9]+', Number),
+            (r'[-=!+*/()\[\]]', Operator),
+            (r'[^=!+*/()\[\]\\$%&_^{}0-9-]+', Name.Builtin),
+        ],
+        ...
+    }
+    
+    ... ...
 ```
