@@ -7,7 +7,8 @@ Core
 
 Font
   * OpenType Math Fonts
-    * Ulrik Vieth, [OpenType Math Fonts: What’s new or noteworthy?](http://www.gust.org.pl/bachotex/2019-pl/presentations/uvieth-1-2019.pdf) (slide), BachoTEX 2019
+    * [Slide] Ulrik Vieth, [OpenType Math Fonts: What’s new or noteworthy?](http://www.gust.org.pl/bachotex/2019-pl/presentations/uvieth-1-2019.pdf), BachoTEX 2019
+    * [Resource list] Xiangdong Zeng, [Bibliography](https://github.com/firamath/firamath.github.io/blob/master/bibliography.md) of font firamath
 
 Equation
   * [Multiline Root Symbol (`\sqrt`)](https://tex.stackexchange.com/a/111433/79060)
