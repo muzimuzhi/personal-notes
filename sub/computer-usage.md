@@ -31,6 +31,12 @@
 
  - Location of config file: `~/.atom/packages/script/styles/script.less`
 
+## Ghostscript
+
+Query settings:
+ * https://superuser.com/a/440573
+ * https://stackoverflow.com/a/11002313/8590320
+
 ## Typora (markdown editor)
 
 MathJax config used by Typora for macOS, version 0.9.9.23.4 (2293).
