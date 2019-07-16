@@ -15,6 +15,11 @@
   [Background Music](https://github.com/kyleneideck/BackgroundMusic)<BR>
   `brew cask info background-music`
 
+## Libraries
+
+* [pyl](https://github.com/dabeaz/ply) - Python Lex-Yacc
+
+
 ## Utility Websites
 
 * Archive Extractor<BR>
