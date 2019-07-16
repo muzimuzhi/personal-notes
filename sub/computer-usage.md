@@ -47,6 +47,12 @@ MathJax config used by Typora for macOS, version 0.9.9.23.4 (2293).
 <script src="./lib/MathJax/MathJax.js" aria-hidden="true"></script>
 ```
 
+## Telegram (IM software)
+
+Hashtag
+ * Clickable combination of a `#` and a word like `#smile` showing in messages is called _hashtag_.
+ * It is first [introduced in March 2015](https://telegram.org/blog/replies-mentions-hashtags), and can be used to [bring order and structure into group chats](https://telegram.org/blog/replies-mentions).
+
 ## Convert `DjVu` to `PDF`
 
 | Item       | Content                                                  |
