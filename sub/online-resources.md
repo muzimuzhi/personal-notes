@@ -7,7 +7,7 @@ Here is a personal list of helpful online resources out of the CTAN (ctan.org) b
 * [CTAN](https://ctan.org/) (The Comprehensive TeX Archive Network)<BR>
   Like CPAN (P stands for "Perl") and CRAN (R stands for programming language "R"), CTAN is a central place for all kinds of material around TeX.<BR>
 * Q & A sites
-  * [TeX - LaTeX Stack Exchange](https://tex.stackexchange.com), nicknamed as TeX.<span></span>SX
+  * [TeX - LaTeX Stack Exchange](https://tex.stackexchange.com), nicknamed as TeX-SX
   * [LaTeX Community](https://latex.org/forum/), a somewhat more traditional site
 * [Overleaf](https://www.overleaf.com/), an online editor, compiler, and project manager<BR>
   Overleaf has joint forces with [ShareLaTeX](https://www.sharelatex.com/) since Jun 2017, and the two sites now provide the same service, called overleaf v2.

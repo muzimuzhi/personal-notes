@@ -76,7 +76,7 @@ Further reading: [every variable that `texmf.cnf` can contain](https://github.co
 
 ## Workaround: use `tikzmark` package with `xelatex`
 
-According to [discussions on TeX.SX](https://tex.stackexchange.com/questions/229500/) and [the bug report to `pgf` project](https://sourceforge.net/p/pgf/bugs/354/), this is a `pgf` driver bug. A workaround, which recovers the definition of `\pgfsys@hboxsynced` from `dvipdfmx` version to the common driver version, is firstly suggested in [an answer on TeX.SX](https://sourceforge.net/p/pgf/bugs/354/#72e2).
+According to [discussions on TeX-SX](https://tex.stackexchange.com/questions/229500/) and [the bug report to `pgf` project](https://sourceforge.net/p/pgf/bugs/354/), this is a `pgf` driver bug. A workaround, which recovers the definition of `\pgfsys@hboxsynced` from `dvipdfmx` version to the common driver version, is firstly suggested in [an answer on TeX-SX](https://sourceforge.net/p/pgf/bugs/354/#72e2).
 
 Workaround: redefine `\pgfsys@hboxsynced`, see below
 ```latex
@@ -169,7 +169,7 @@ end
 }
 ```
 
-ref: [answer on tex.sx](https://tex.stackexchange.com/a/69354/79060) by Heiko Oberdiek
+ref: [answer on TeX-SX](https://tex.stackexchange.com/a/69354) by Heiko Oberdiek
 
 ## [beamer] Doc of `pgfpicture` environment
 

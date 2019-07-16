@@ -2,8 +2,9 @@
 
 Core
   * Full [list of primitives](https://zhuanlan.zhihu.com/p/59151033) by engine
-  * [List of expandable primitives](https://tex.stackexchange.com/a/467372/79060)
+  * [List of expandable primitives](https://tex.stackexchange.com/a/467372)
     * For expandable TeX primitives, see also *TeX by Topic*, Sec. 12.2.
+  * [List of tracing commands](https://tex.stackexchange.com/a/60494)
 
 Font
   * OpenType Math Fonts
@@ -11,12 +12,15 @@ Font
     * [Resource list] Xiangdong Zeng, [Bibliography](https://github.com/firamath/firamath.github.io/blob/master/bibliography.md) of font firamath
 
 Equation
-  * [Multiline Root Symbol (`\sqrt`)](https://tex.stackexchange.com/a/111433/79060)
+  * [Multiline Root Symbol (`\sqrt`)](https://tex.stackexchange.com/a/111433)
+
+PGF/TikZ
+  * [Reflecting a line and/or point with named coordinates](https://tex.stackexchange.com/q/467295)
 
 Meta
-  * [Minimal working example](https://tex.meta.stackexchange.com/q/228/79060) (MWE), what and how
-    * [Prefer `article` to `minimal` LaTeX class](https://tex.stackexchange.com/a/42115/79060) in MWE
-  * [How to upgrade TeX distribution?](https://tex.stackexchange.com/q/55437/79060)
+  * [Minimal working example](https://tex.meta.stackexchange.com/q/228) (MWE), what and how
+    * [Prefer `article` to `minimal` LaTeX class](https://tex.stackexchange.com/a/42115) in MWE
+  * [How to upgrade TeX distribution?](https://tex.stackexchange.com/q/55437)
 
 ## TeX Live
 
@@ -25,7 +29,7 @@ Meta
 
 ## XeTeX
 
-* Precedence of font names used by XeTeX ([ref](https://tex.stackexchange.com/a/43819/79060))
+* Precedence of font names used by XeTeX ([ref](https://tex.stackexchange.com/a/43819))
   * `Full name > Family-Style > PostScript name > Family`
   * To let XeTeX auto-load variations, `Family` is recommended
 * Show font info `aat-info.tex` and `opentype-info.tex`, located in `$TEXMFDIST/tex/xetex/xetexfontinfo`
@@ -45,7 +49,7 @@ Meta
 
 ## ConTeXt - A LaTeX Format
 
-* Recommended ConTeXt Docs, [Q&A on TeX.SX](https://tex.stackexchange.com/questions/2839/where-can-i-find-good-context-documentation)
+* Recommended ConTeXt Docs, [Q&A on TeX-SX](https://tex.stackexchange.com/questions/2839/where-can-i-find-good-context-documentation)
 * Auto-generated [list](http://www.pragma-ade.com/general/qrcs/setup-en.pdf) of all commands, without descriptions
 
 ## Projects implementing TeX by Different Programming Languages
