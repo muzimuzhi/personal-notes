@@ -169,6 +169,14 @@ end
 }
 ```
 
+## [fontspec] Use with math font packages
+
+Pass `no-math` option to `fontspec`, e.g.,
+```latex
+\usepackage[no-math]{fontspec}
+\usepackage{stix2}
+```
+
 ref: [answer on TeX-SX](https://tex.stackexchange.com/a/69354) by Heiko Oberdiek
 
 ## [beamer] Doc of `pgfpicture` environment
