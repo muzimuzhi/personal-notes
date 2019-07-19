@@ -219,3 +219,15 @@ class TexLexer(RegexLexer):
     
     ... ...
 ```
+
+## [listings] Reset output style for `-` (U+002D)
+
+By default, `listings` prints character `-` as in text mode if the current font family is `\ttfamily` and as in math mode (`$-$`) otherwise. One can [overwrite this scheme](https://tex.stackexchange.com/a/424193) by
+```latex
+\makeatletter
+\lst@CCPutMacro
+    \lst@ProcessOther{"2D}{-{}}
+    \@empty\z@\@empty
+\makeatother
+```
+
