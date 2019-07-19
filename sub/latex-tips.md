@@ -231,3 +231,36 @@ By default, `listings` prints character `-` as in text mode if the current font 
 \makeatother
 ```
 
+## [listings] `literate`d input absorbs following space in `(full)flexible` mode
+
+Example (with [workaround](https://tex.stackexchange.com/a/445764) included):
+```latex
+\documentclass{article}
+\usepackage{listings}
+\usepackage{etoolbox}
+
+% adapted from example in `texdoc listings`, Sec. 5.4
+\lstset{
+  literate={:=}{{$\gets$}}1 {<=}{{$\leq$}}1
+}
+
+\makeatletter
+\patchcmd\lst@Literate
+  {\lst@XPrintToken}
+  {\lst@XPrintToken\lst@whitespacefalse}
+  {}{\fail}
+\makeatother
+
+\begin{document}
+\begin{lstlisting}[columns=flexible]
+flexible:
+  if (i <= 0) i := 1;
+\end{lstlisting}
+
+\begin{lstlisting}[columns=fullflexible]
+fullflexible:
+  if (i <= 0) i := 1;
+\end{lstlisting}
+\end{document}
+```
+
