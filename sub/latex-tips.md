@@ -264,3 +264,13 @@ fullflexible:
 \end{document}
 ```
 
+## [equation] Disregard indent of displayed equations inside list env
+
+```latex
+\everydisplay\expandafter{%
+  \the\everydisplay
+  \displayindent=0pt%
+  \displaywidth=\hsize
+}
+```
+
