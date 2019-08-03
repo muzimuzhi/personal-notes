@@ -88,6 +88,24 @@ Discussion
 * [How to C in 2016](https://matt.sh/howto-c), by Matt
   * [Critique](https://github.com/Keith-S-Thompson/how-to-c-response), by Keith Thompson
 
+### Python
+
+ decorator
+  * Glossary - [decorator][python-decorator]
+
+ | Reference                                          | First joined version                 | Python Enhancement Proposals |
+ | -------------------------------------------------- | ------------------------------------ | ---------------------------- |
+ | [Function decorator][function-decorator-reference] | [2.4.1][function-decorator-whatsnew] | [PEP 318][pep-318]           |
+ | [Class decorator][class-decorator-reference]       | [2.6][class-decorator-whatsnew]      | [PEP 3129][pep-3129]         |
+
+
+[python-decorator]: https://docs.python.org/3/glossary.html#term-decorator
+[function-decorator-reference]: https://docs.python.org/3/reference/compound_stmts.html#function-definitions
+[class-decorator-reference]: https://docs.python.org/3/reference/compound_stmts.html#class-definitions
+[function-decorator-whatsnew]: https://docs.python.org/3/whatsnew/2.4.html#pep-318-decorators-for-functions-and-methods
+[class-decorator-whatsnew]: https://docs.python.org/3/whatsnew/2.6.html#pep-3129-class-decorators
+[pep-318]: https://www.python.org/dev/peps/pep-0318/
+[pep-3129]: https://www.python.org/dev/peps/pep-3129/
 
 ## General Books
 
