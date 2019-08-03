@@ -4,9 +4,11 @@ Core
   * Full [list of primitives](https://zhuanlan.zhihu.com/p/59151033) by engine
   * [List of tracing commands](https://tex.stackexchange.com/a/60494)
 
+Expansion
   * [List of expandable primitives](https://tex.stackexchange.com/a/467372)
     * For expandable TeX primitives, see also *TeX by Topic*, Sec. 12.2.
-  * [List of tracing commands](https://tex.stackexchange.com/a/60494)
+  * Use `\romannumeral` to get full expansion [[1](http://texhacks.blogspot.com/2010/12/forcing-full-expansion.html), [2](https://www.texdev.net/2011/07/05/expansion-using-romannumeral/)]
+
 
 Font
   * OpenType Math Fonts
