@@ -2,6 +2,8 @@
 
 Core
   * Full [list of primitives](https://zhuanlan.zhihu.com/p/59151033) by engine
+  * [List of tracing commands](https://tex.stackexchange.com/a/60494)
+
   * [List of expandable primitives](https://tex.stackexchange.com/a/467372)
     * For expandable TeX primitives, see also *TeX by Topic*, Sec. 12.2.
   * [List of tracing commands](https://tex.stackexchange.com/a/60494)
