@@ -9,6 +9,11 @@ Expansion
     * For expandable TeX primitives, see also *TeX by Topic*, Sec. 12.2.
   * Use `\romannumeral` to get full expansion [[1](http://texhacks.blogspot.com/2010/12/forcing-full-expansion.html), [2](https://www.texdev.net/2011/07/05/expansion-using-romannumeral/)]
 
+Record file i/o
+  * `-recorder` command line option <BR>
+     record every file input and output into `.fls` file 
+  * `\listfiles` control sequence<BR>
+     record every file input caused by `\input{...}` and `\include` (but not `\input <filename>`) into the very end of `.log` file
 
 Font
   * OpenType Math Fonts
