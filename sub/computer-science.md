@@ -189,7 +189,7 @@ git diff --no-index <old-file> <new-file>
 
 Delete remote tracking branch (delete the local tracking only, [ref](https://gist.github.com/magnusbae/10182865))
 ```bash
-$ git branch --delete --rebase <remote_name>/<branch_name>
+$ git branch --delete --remotes <remote_name>/<branch_name>
 ```
 
 Delete remote branch (delete the remote branch while pushing)
