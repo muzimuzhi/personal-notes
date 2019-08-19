@@ -31,6 +31,12 @@
 
  - Location of config file: `~/.atom/packages/script/styles/script.less`
 
+## DrRacket (IDE)
+
+Shortcuts
+ - Add line comment: `Esc-Ctrl-;`
+ - Remove line comment: `Esc-Ctrl-=`
+
 ## Ghostscript
 
 Query settings:
