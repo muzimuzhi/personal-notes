@@ -189,12 +189,26 @@ git diff --no-index <old-file> <new-file>
 
 Delete remote tracking branch (delete the local tracking only, [ref](https://gist.github.com/magnusbae/10182865))
 ```bash
-$ git branch --delete --remotes <remote_name>/<branch_name>
+$ git branch --delete --remotes <remote>/<branch>
 ```
 
 Delete remote branch (delete the remote branch while pushing)
 ```bash
-$ git push --delete <remote_name> <branch_name>
+$ git push --delete <remote> <branch>
+```
+
+Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574)):
+```bash
+# shallow clone
+$ git clone --depth=<num> <repository> [<directory>]
+
+# change the list of branches tracked
+$ git remote set-branches <remote> '*'
+# or
+$ git remote set-branches --add <remote> <new_branch>
+
+# add track to new remote branch
+$ git fetch <remote> <new_branch>
 ```
 
 ### MySql
