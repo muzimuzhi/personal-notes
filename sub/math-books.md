@@ -3,9 +3,9 @@ Some notes on college level math books.
 
 ## Book Recommendations
 
-* [The Basic Library List: MAA's Recommendations for Undergraduate Libraries](https://www.maa.org/press/maa-reviews/the-basic-library-list-maas-recommendations-for-undergraduate-libraries)<BR>
+* [The Basic Library List: MAA's Recommendations for Undergraduate Libraries](https://www.maa.org/press/maa-reviews/the-basic-library-list-maas-recommendations-for-undergraduate-libraries)<br />
   Provides both webpage and PDF forms, as well as other sources for math book reviews.
-* [All The Math Books You’ll Ever Need](https://mathblog.com/mathematics-books/) on mathblog.<span></span>com<BR>
+* [All The Math Books You’ll Ever Need](https://mathblog.com/mathematics-books/) on mathblog.<span></span>com<br />
   26 topics, ~2 essential books per topic, and short review of each book
 * [Shiu-chun Wong's (黄兆镇) List](sub/math-wongs-list.md)
 

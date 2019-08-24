@@ -4,12 +4,12 @@ Here is a personal list of helpful online resources out of the CTAN (ctan.org) b
 
 ## Must Know Sites
 
-* [CTAN](https://ctan.org/) (The Comprehensive TeX Archive Network)<BR>
-  Like CPAN (P stands for "Perl") and CRAN (R stands for programming language "R"), CTAN is a central place for all kinds of material around TeX.<BR>
+* [CTAN](https://ctan.org/) (The Comprehensive TeX Archive Network)<br />
+  Like CPAN (P stands for "Perl") and CRAN (R stands for programming language "R"), CTAN is a central place for all kinds of material around TeX.
 * Q & A sites
   * [TeX - LaTeX Stack Exchange](https://tex.stackexchange.com), nicknamed as TeX-SX
   * [LaTeX Community](https://latex.org/forum/), a somewhat more traditional site
-* [Overleaf](https://www.overleaf.com/), an online editor, compiler, and project manager<BR>
+* [Overleaf](https://www.overleaf.com/), an online editor, compiler, and project manager<br />
   Overleaf has joint forces with [ShareLaTeX](https://www.sharelatex.com/) since Jun 2017, and the two sites now provide the same service, called overleaf v2.
 
 ## Online Documentations
@@ -33,13 +33,13 @@ For basic uses, some guidelines of MathJax can be a good learning resource of La
 
 ## Useful Tools
 
-* [Symbol recognizer](http://detexify.kirelabs.org/classify.html)<BR>
+* [Symbol recognizer](http://detexify.kirelabs.org/classify.html)<br />
   Draw desired (math) symbols and receive suggestions about symbol appearance, respective LaTeX command, and relied package.
-* [Table generator](http://www.tablesgenerator.com/)<BR>
+* [Table generator](http://www.tablesgenerator.com/)<br />
   Draw tables as using MS Office, and export output in LaTeX codes.
-* [Commutative diagram editor](https://tikzcd.yichuanshen.de/)<BR>
+* [Commutative diagram editor](https://tikzcd.yichuanshen.de/)<br />
   Draw commutative diagram interactively with multiple kinds of arrows, and export it as LaTeX codes based on package `tikzcd`.
-* [Chemical molecules editor](https://py-chemist.com/mol_2_chemfig)<BR>
+* [Chemical molecules editor](https://py-chemist.com/mol_2_chemfig)<br />
   Input with mouse, name of compound, or `mol` format, and get chemical molecules in PDF, LaTeX package `chemfig`, or `mol` format.
 
 ## Collections

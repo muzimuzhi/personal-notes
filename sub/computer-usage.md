@@ -2,17 +2,17 @@
 
 ## Markdown
 
-  * disable auto-linking: insert `<span></span>`<BR>
+  * disable auto-linking: insert `<span></span>`<br />
     ref: https://gist.github.com/alexpeattie/4729247
   * [GitHub Flavored Markdown Specification](https://github.github.com/gfm/)
 
 ## Tiny Useful Softwares
 
-* Show live battery information of Mac and iOS device<BR>
-  [coconut Battery](https://www.coconut-flavour.com/coconutbattery/)<BR>
+* Show live battery information of Mac and iOS device<br />
+  [coconut Battery](https://www.coconut-flavour.com/coconutbattery/)<br />
   `brew cask info coconutbattery`
-* Control volume slider each app<BR>
-  [Background Music](https://github.com/kyleneideck/BackgroundMusic)<BR>
+* Control volume slider each app<br />
+  [Background Music](https://github.com/kyleneideck/BackgroundMusic)<br />
   `brew cask info background-music`
 
 ## Libraries
@@ -22,7 +22,7 @@
 
 ## Utility Websites
 
-* Archive Extractor<BR>
+* Archive Extractor<br />
   [extract.me](https://extract.me/)
 
 ## Atom (editor)

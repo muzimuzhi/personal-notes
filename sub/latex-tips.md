@@ -2,7 +2,8 @@
 
 ## Get format version
 
-* The format version appears in the first line of every `.log` file <BR>(note the date **`2018.5.3`** following `preloaded format=xelatex `):
+* The format version appears in the first line of every `.log` file <br />
+  (note the date **`2018.5.3`** following `preloaded format=xelatex `):
 
    ```
    This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) 
