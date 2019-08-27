@@ -2,96 +2,126 @@
 
 ## Syntax
 
+```abnf
+xparse-declare ::= cmd-declare <cmd name> arg-spec <definition code>
+                 | env-declare <env name> arg-spec <begin code> <end code>
+
+cmd-declare    ::= "\\" prefix ["Expandable"] "DocumentCommand"
+env-declare    ::= "\\" prefix "DocumentEnvironment"
+prefix         ::= "New" | "Renew" | "Provide" | "Declare"
+
+arg-spec       ::= argument*
+argument       ::= processor* [modifier] arg-type
+```
+_Note_: notation introduced by [Python Language Reference](https://docs.python.org/3/reference/introduction.html#notation) is used.
+
+Example
 ```latex
-\NewDocumentCommand <function> {<arg specs>} {<code>}
+\ExplSyntaxOn
+\NewDocumentCommand \myCmd { s O{default} m }
+  {
+    \IfBooleanTF {#1} {star} {no-star},
+    #1, #2
+  }
 
-\NewDocumentEnvironment {<environment>} {<arg specs>}
-  {<start code>} {<end code>}
+\NewDocumentEnvironment {myEnv} { +m }
+  {begin code} {end code}
+\ExpleSyntaxOff
 
-<arg specs> := <arg spec> <arg specs> | ε
-<arg spec>  := <processors> <modifiers> <spec>
+\myCmd{arg2}        % -> "no-star,default,arg2"
+\myCmd*{arg2}       % -> "star,default,arg2"
+\myCmd[arg1]{arg2}  % -> "no-star,arg1,arg2"
+
+\begin{myEnv}{...}
+\end{myEnv}
 ```
 
-## Variants of Commands
+## `<prefix>`: Name Prefix
 
-| Series    | Commands                  | Environments                  | Expandable Commands                 |
-| --------- | ------------------------- | ----------------------------- | ----------------------------------- |
-| `New`     | `\NewDocumentCommand`     | `\NewDocumentEnvironment`     | `\NewExpandableDocumentCommand`     |
-| `Renew`   | `\RenewDocumentCommand`   | `\RenewDocumentEnvironment`   | `\RenewExpandableDocumentCommand`   |
-| `Provide` | `\ProvideDocumentCommand` | `\ProvideDocumentEnvironment` | `\ProvideExpandableDocumentCommand` |
-| `Declare` | `\DeclareDocumentCommand` | `\DeclareDocumentEnvironment` | `\DeclareExpandableDocumentCommand` |
+| Prefix      | If `<cmd-name>/<env-name>` defined | If not defined |
+| ----------- | ---------------------- | -------------- |
+| `"New"`     | ERROR                  | run            |
+| `"Renew"`   | run                    | ERROR          |
+| `"Provide"` | ignored                | run            |
+| `"Declare"` | run                    | run            |
 
-## Differences of different naming prefix
+## `<arg-type>`: Argument Type
 
-| Prefix    | If `<function>`defined | If not defined |
-| --------- | ---------------------- | -------------- |
-| `New`     | ERROR                  | ✓              |
-| `Renew`   | ✓                      | ERROR          |
-| `Provide` | ignore `<code>`        | ✓              |
-| `Declare` | ✓                      | ✓              |
+### Denoting Mandatory Argument
 
-## Argument Specification
+| Type                       | Meaning                              |
+| -------------------------- | ------------------------------------ |
+| `m`                        | standard                             |
+| `r<char1><char2>`          | delimited by `<char1>` and `<char2>` |
+| `R<char1><char2>{default}` | variant of `r`                       |
+| `v`                        | delimited like `\verb`               |
+| `b`                        | denote the body of environment       |
 
-### Mandatory Arguments
+### Denoting Optional Argument
 
-| Types             | Meaning                                                      | Variant with `{<default>}` |
-| ----------------- | ------------------------------------------------------------ | -------------------------- |
-| `m`               | standard mandatory argument                                  |                            |
-| `r<char1><char2>` | "required" delimited argument, using `<char1>` and `<char2>` as delimiters | `R`                        |
-|                   |                                                              |                            |
-| `v`               | "verbatim" argument, similar to `\verb`                      |                            |
-| `b`               | body of environment argument                                 |                            |
+| Type                       | Meaning                              | Tester           |
+| -------------------------- | ------------------------------------ | ---------------- |
+| `o`                        | standard                             | `\If(No)ValueTF` |
+| `O{default}`               | variant of `o`                       |                  |
+| `d<char1><char2>`          | delimited by `<char1>` and `<char2>` | `\If(No)ValueTF` |
+| `D<char1><char2>{default}` | variant of `d`                       |                  |
+| `s`                        | optional star `*` argument           | `\IfBooleanTF`   |
+| `t<char>`                  | optional `<char>` argument           | `\IfBooleanTF`   |
 
-### Optional Arguments
-
-| Types             | Meaning                     | Variant with `{<default>}` | Tester                               |
-| ----------------- | --------------------------- | -------------------------- | ------------------------------------ |
-| `o`               | standard optional argument  | `O`                        | `\IfValue(TF)`<br />`\IfNoValue(TF)` |
-| `d<char1><char2>` | delimited optional argument | `D`                        | `\IfValue(TF)`<br />`\IfNoValue(TF)` |
-|                   |                             |                            |                                      |
-| `s`               | optional star argument      |                            | `\IfBoolean(TF)`                     |
-| `t<char>`         | optional `<char>` argument  |                            | `\IfBoolean(TF)`                     |
-
-## Modifiers of Argument Specifiers
+## `<modifier>`: Argument Modifier
 
 | Modifiers | Meaning                                            | Examples           |
 | --------- | -------------------------------------------------- | ------------------ |
 | `+`       | mark next argument as long                         | `+m`               |
-| `>`       | declare argument processors, composited from right | `>{<processor>} m` |
 | `!`       | ignore space-prefixed optional argument            | `!o`               |
 
-## Argument Processors
+## `<processor>`: Argument Processor
 
-| Processors                             | Meaning                                                      |
+```abnf
+processor ::= ">{" processor-function "}"
+```
+
+| Processor function                     | Meaning                                                      |
 | -------------------------------------- | ------------------------------------------------------------ |
-| `\ReverseBoolean`                      | reverse logic of specifiers `s` and `t`                      |
+| `\ReverseBoolean`                      | reverse logic of specifiers `s` or `t`                       |
 | `\SplitArgument{<number>}{<token(s)>}` | split argument into `<number>` + 1 parts by `<tokens(s)>`    |
 | `\SplitList{<token(s)>}`               | split argument into variable parts by `<tokens(s)>`          |
 | `\TrimSpaces`                          |                                                              |
-| define new                             | - accept one argument<br />- return processed argument as variable `\ProcessedArgument` |
+| user defined `\procFunc<n args>`       | - `\procFunc` accepts `n` + 1 argument(s)<br />- return processed argument as variable `\ProcessedArgument` |
 
 Examples
 ```latex
-% \SplitArgument: split argument into 3 parts by `;`
+% \SplitArgument: split argument into fixed parts
 > { \SplitArgument { 2 } { ; } } m
 
 {a;b}     => {a}{b}{-NoValue-}
 {a;b;c}   => {a}{b}{c}
 {a;b;c;d} => ERROR (too many `;`s are present)
 
-% \SplitList: split argument by `;`
+% \SplitList: split argument into variable parts
 > { \SplitList { ; } } m
 
 {a;b}     => {a}{b}
 {a;b;c}   => {a}{b}{c}
 {a;b;c;d} => {a}{b}{c}{d}
 
-% \ProcessList: helper function
-\NewDocumentCommand \foo
-  { > { \SplitList { ; } } m }
-  { \ProcessList {#1} { \MappingFunction } }
+% \ProcessList: list-processing helper function
+> { \foo } m
+
+\NewDocumentCommand \foo { > { \SplitList { ; } } m }
+  { \ProcessList {#1} { \map } }
+\NewDocumentCommand \map { m }
+  { |#1| }
+
+{a;b}     => {|a|}{|b|}
+{a;b;c}   => {|a|}{|b|}{|c|}
+{a;b;c;d} => {|a|}{|b|}{|c|}{|d|}
 ```
 
 ## Not Included
 
-Argument specifiers: `e/E`, `l`, `u`, `g/G`
+Argument types
+ - denoting optional argument: `e/E`
+ - backwards compatibility: mandatory `l` and `u`, optional `g/G`
+
+See documentation of `xparse` package for full introduction.
