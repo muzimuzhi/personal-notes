@@ -165,8 +165,8 @@ end
 
 ```latex
 \hypersetup{
-    psdextra          = true,
-    unicode           = true
+    psdextra = true,
+    unicode  = true
 }
 ```
 
