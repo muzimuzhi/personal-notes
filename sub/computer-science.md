@@ -115,6 +115,11 @@ Discussion
 * [Page on MIT Press](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition), containing errata
 * Page of book author [John Guttag](https://people.csail.mit.edu/guttag/)
 
+### How to Design Programs (2e)
+
+* [Online full-text](https://htdp.org), both 1st (with full solutions) and 2nd editions.
+* From [slides of talk](https://con.racket-lang.org/2011/matthias-slides.pdf) Matthias Felleisen gave at RacketCon 2011, there is a four-books plan with HtDP and How to Design Components (now called Classes, see [webpage of HtDC](https://felleisen.org/matthias/htdc)) the first two.
+
 ### Structure and Interpretation of Computer Programs (SICP)
 
 * Scheme vs Python (discussions about learning SICP with Scheme or with Python)
