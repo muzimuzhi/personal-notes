@@ -2,9 +2,16 @@
 
 ## Markdown
 
+  * [GitHub Flavored Markdown Specification](https://github.github.com/gfm/)
   * disable auto-linking: insert `<span></span>`<br />
     ref: https://gist.github.com/alexpeattie/4729247
-  * [GitHub Flavored Markdown Specification](https://github.github.com/gfm/)
+  * Use `<summary>` element to hide long content ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)):
+    ```html
+    <details>
+      <summary>short summary</summary>
+      loooooooong contents
+    </details>
+    ```  
 
 ## Tiny Useful Softwares
 
