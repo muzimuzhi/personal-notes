@@ -10,12 +10,15 @@
 | `stickstoo`       | font/math           | Extra number styles and blackboard bold choices, based on STIX2 |
 |                   |                     |                                                              |
 | `mismath`         | math                | Miscellaneous mathematical macros                            |
+| `nicematrix`      | math                | Improved typesetting of mathematical matrices with TikZ |
 | `systeme`         | math                | Provides a more intuitive way to enter systems of equations or inequalities. <br />Doc is in French only. |
 | `autoaligne`      | math                | Aligns lines of math expressions by operators and relations. <br />Doc is in French only. |
 | `mleftright`      | math                | Variants of delimiters that act as maths open/close          |
 | `mathpunctspace`  | math                | Controls the space after punctuation in math expressions     |
 | `mismath`         | math                | (New) Miscellaneous mathematical macros                      |
 |                   |                     |                                                              |
+| `flowframe`       | layout              | Create text frames that flow from one to another             |
+| `paracol`         | layout              | Multiple columns with texts "in parallel"                    |
 | `layouts`         | layout show         | Shows layout of document elements.                           |
 | `extramarks`      | marks               | More marks other than `\markleft` and `\markboth`            |
 | `centeredline`    | paragraph alignment | Extends latex2e macro`\centerline`                           |
