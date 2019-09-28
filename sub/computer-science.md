@@ -90,7 +90,7 @@ Discussion
 
 ### Python
 
- decorator
+ Decorator
   * Glossary - [decorator][python-decorator]
 
  | Reference                                          | First joined version                 | Python Enhancement Proposals |
@@ -98,6 +98,11 @@ Discussion
  | [Function decorator][function-decorator-reference] | [2.4.1][function-decorator-whatsnew] | [PEP 318][pep-318]           |
  | [Class decorator][class-decorator-reference]       | [2.6][class-decorator-whatsnew]      | [PEP 3129][pep-3129]         |
 
+Upgrade all outdated pip packages
+```bash
+pip3 install pip-upgrade-outdated
+pip_upgrade_outdated -3
+```
 
 [python-decorator]: https://docs.python.org/3/glossary.html#term-decorator
 [function-decorator-reference]: https://docs.python.org/3/reference/compound_stmts.html#function-definitions
