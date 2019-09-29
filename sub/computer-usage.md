@@ -115,3 +115,12 @@ Format of outline
     ("2.2 second section" "#13" ))
 )
 ```
+
+## Use `QPDF` to check and fix `PDF` file
+```bash
+# program
+brew info qpdf
+# usage
+qpdf --check file.pdf
+qpdf --qdf input.pdf - | fix-qdf > output.pdf
+```
