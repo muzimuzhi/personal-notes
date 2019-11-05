@@ -20,6 +20,7 @@ These are some notes in the result of my daily web searching and time wasting.
     * [`geometry`](sub/latex-geometry.md)
     * [`xparse`](sub/latex-xparse.md)
     * [`ctex`](sub/latex-ctex.md), under construction
+  * [Default settings](sub/latex-default.md) of packages/classes
   * [Tips](sub/latex-tips.md)
   * [List](sub/interesting-packages.md) of interesting packages I'm not familiar with
   * [Something may help](sub/may-help.md) in the future
