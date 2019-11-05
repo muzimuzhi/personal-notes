@@ -112,6 +112,39 @@ pip_upgrade_outdated -3
 [pep-318]: https://www.python.org/dev/peps/pep-0318/
 [pep-3129]: https://www.python.org/dev/peps/pep-3129/
 
+## Other Languages
+
+### Markdown
+
+* Specification: [GFM](https://github.github.com/gfm/) (GitHub Flavored Markdown)
+* Use `<span></span>` to disable auto-linking ([ref](https://gist.github.com/alexpeattie/4729247))
+* Use `<summary>` element to hide long contents ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)):
+  ```html
+  <details>
+    <summary>short summary</summary>
+    loooooooong contents
+  </details>
+  ```
+
+### JSON (JavaScript Object Notation)
+
+* Specification: [RFC 7159](https://tools.ietf.org/html/rfc7159.html) (with [errata](https://www.rfc-editor.org/errata_search.php?rfc=7159)) and [ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)
+
+### ABNF (Augmented BNF)
+
+* Introduction: [wikipedia page](https://en.wikipedia.org/wiki/Augmented_Backus–Naur_form)
+* Specification: 
+  * [RFC 7405](https://tools.ietf.org/html/rfc7405), which adds syntax for case-sensitive string literals based on [RFC 5234](https://tools.ietf.org/html/rfc5234)
+* Lex used by GitHub: [language-grammars](https://github.com/Alhadis/language-grammars/blob/master/grammars/abnf.cson) by Alhadis, not finished yet (19 Aug 27)
+
+### EBNF (Extended BNF)
+
+* Introduction: [wikipedia page](https://en.wikipedia.org/wiki/Extended_Backus–Naur_form)
+* Specifications: 
+  * [ISO/IEC 14977:1996](https://standards.iso.org/ittf/PubliclyAvailableStandards/s026153_ISO_IEC_14977_1996(E).zip), not recommended
+  * Varient used by [XML Spec. 5th](https://www.w3.org/TR/REC-xml/#sec-notation)
+* Lex used by GitHub: [language-grammars](https://github.com/Alhadis/language-grammars/blob/master/grammars/abnf.cson) by Alhadis, not finished yet (19 Aug 27)
+
 ## General Books
 
 ### Introduction to Computation and Programming Using Python, Second Edition
@@ -220,6 +253,16 @@ $ git remote set-branches --add <remote> <new_branch>
 # add track to new remote branch
 $ git fetch <remote> <new_branch>
 ```
+wait for test: `git fetch --update-shallow <remote> <branch>`)
+
+Pretty `git log` in one line ([ref](https://ma.ttias.be/pretty-git-log-in-one-line/))
+```bash
+# set git alias
+$ git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+# use git alias
+$ git logline
+```
+
 
 ### MySql
 

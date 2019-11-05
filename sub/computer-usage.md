@@ -1,18 +1,5 @@
 # Computer Usage
 
-## Markdown
-
-  * [GitHub Flavored Markdown Specification](https://github.github.com/gfm/)
-  * disable auto-linking: insert `<span></span>`<br />
-    ref: https://gist.github.com/alexpeattie/4729247
-  * Use `<summary>` element to hide long content ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)):
-    ```html
-    <details>
-      <summary>short summary</summary>
-      loooooooong contents
-    </details>
-    ```  
-
 ## Tiny Useful Softwares
 
 * Show live battery information of Mac and iOS device<br />
@@ -31,7 +18,7 @@
     * [#1529 unicode not working for python](https://bitbucket.org/birkenfeld/pygments-main/issues/1529/unicode-not-working-for-python)
 * [linguist](https://github.com/github/linguist) - blob languages detection used by GitHub
   * [known languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) to GitHub
-  * [grammars used to provide syntax highlight](https://github.com/github/linguist/blob/master/vendor/README.md) on GitHub
+  * [grammars used by GitHub](https://github.com/github/linguist/blob/master/vendor/README.md) to do syntax highlighting
   * [test page](https://github-lightshow.herokuapp.com/?utf8=✓&scope=from-url&grammar_format=auto&grammar_url=https%3A%2F%2Fraw.githubusercontent.com%2FAlhadis%2Flanguage-grammars%2Fmaster%2Fgrammars%2Fabnf.cson&grammar_text=&code_source=from-url&code_url=https%3A%2F%2Fraw.githubusercontent.com%2FTadiT7%2Fxiaomi_violet_dump%2F5edc11ebb2c4b5d9a4bfd5ebc335ee7e47f69f56%2Fsystem%2Fsystem%2Fusr%2Fsrec%2Fen-US%2Fcontacts.abnf&code=)
 
 
@@ -116,11 +103,23 @@ Format of outline
 )
 ```
 
-## Use `QPDF` to check and fix `PDF` file
+## PDF Utilities
+
+### Use `QPDF` to check and fix `PDF` file
 ```bash
-# program
+# program info
 brew info qpdf
 # usage
 qpdf --check file.pdf
 qpdf --qdf input.pdf - | fix-qdf > output.pdf
+```
+
+### `poppler` utilities
+```bash
+# program info
+brew info poppler
+# utility list
+pdfinfo     # show general info
+pdffonts    # list info of used fonts
+pdfdetach   # extract embedded files
 ```
