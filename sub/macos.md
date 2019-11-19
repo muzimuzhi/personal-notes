@@ -38,3 +38,11 @@ $ open x-man-page://<name>
 | `ggrep` | `brew info grep`    |
 | `gsed`  | `brew info gnu-sed` |
 | `gsort` | `brew info coreutils` |
+
+## Where PATHs come from
+
+1. `/etc/profiles`
+1. `/usr/libexec/path_helper -s`
+1. `/etc/paths` + file lines under `/etc/paths.d`
+1. shell profiles (e.g., [zsh startup files](http://zsh.sourceforge.net/Doc/Release/Files.html#Startup_002fShutdown-Files))
+see [ref](https://scriptingosx.com/2017/05/where-paths-come-from/)
