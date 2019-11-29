@@ -23,7 +23,7 @@ These are some notes in the result of my daily web searching and time wasting.
   * [Default settings](sub/latex-default.md) of packages/classes
   * [Tips](sub/latex-tips.md)
   * [List](sub/interesting-packages.md) of interesting packages I'm not familiar with
-  * [Something may help](sub/may-help.md) in the future
+  * [Something may help](sub/latex-may-help.md) in the future
 * Font
   * Font list
     * [Win 10](https://docs.microsoft.com/en-us/typography/fonts/windows_10_font_list)
