@@ -37,6 +37,13 @@ Meta
 * [SVN repo](https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/), [GitHub mirror](https://github.com/TeX-Live/texlive-source)
 * [Historic images](ftp://tug.org/historic/systems/texlive/)
 
+## pdfTeX
+
+* TUG page: https://www.tug.org/applications/pdftex/
+* Mailing Archives: https://tug.org/pipermail/pdftex/
+* Repository: https://tug.org/svn/pdftex/branches/stable
+    * [Release news](http://tug.org/svn/pdftex/branches/stable/source/src/texk/web2c/pdftexdir/NEWS?view=markup)
+
 ## XeTeX
 
 * Precedence of font names used by XeTeX ([ref](https://tex.stackexchange.com/a/43819))
