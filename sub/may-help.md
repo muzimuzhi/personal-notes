@@ -34,7 +34,7 @@ Meta
 
 ## TeX Live
 
-* [SVN repo](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/), [GitHub mirror](https://github.com/TeX-Live/texlive-source)
+* [SVN repo](https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/), [GitHub mirror](https://github.com/TeX-Live/texlive-source)
 * [Historic images](ftp://tug.org/historic/systems/texlive/)
 
 ## XeTeX
@@ -46,7 +46,7 @@ Meta
 
 ## dvipdfm-x
 
-* [SVN repo](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata: 
+* [SVN repo](https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata: 
 
 ## MiKTeX - A LaTeX Distribution
 
