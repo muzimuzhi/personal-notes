@@ -1,8 +1,11 @@
 # Something May Help in the Future
 
-Core
+TeX Core
   * Full [list of primitives](https://zhuanlan.zhihu.com/p/59151033) by engine
   * [List of tracing commands](https://tex.stackexchange.com/a/60494)
+  * `whatsits`
+    * ... represent commands whose execution is delayed or are special commands associated with a particular device or system and are not part of TeX's normal processing flow. ([ref](https://tex.stackexchange.com/a/43174))
+    * _TeX by Topic_, sec. 30.3
 
 Expansion
   * [List of expandable primitives](https://tex.stackexchange.com/a/467372)
