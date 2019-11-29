@@ -45,7 +45,7 @@ Meta
 * TUG page: https://www.tug.org/applications/pdftex/
 * Mailing Archives: https://tug.org/pipermail/pdftex/
 * Repository: https://tug.org/svn/pdftex/branches/stable
-    * [Release news](http://tug.org/svn/pdftex/branches/stable/source/src/texk/web2c/pdftexdir/NEWS?view=markup)
+* Release news: on [TUG website](http://www.tug.org/applications/pdftex/NEWS) or from [source repo](http://tug.org/svn/pdftex/branches/stable/source/src/texk/web2c/pdftexdir/NEWS?view=markup)
 
 ## XeTeX
 
