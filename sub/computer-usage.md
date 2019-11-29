@@ -31,7 +31,30 @@
 
 [Script Package] Change font size of output window ([ref](https://github.com/rgbkrk/atom-script/issues/1191))
 
- - Location of config file: `~/.atom/packages/script/styles/script.less`
+ - Open config file `~/.atom/packages/script/styles/script.less` and add `font-size` property.
+
+    ```less
+    .script-view {
+      .panel-body pre {
+        background: @tool-panel-background-color;
+        color: @text-color;
+      }
+
+      .output {
+      }
+
+      .stderr {
+        color: @text-color-error;
+      }
+
+      .line {
+        border-radius: 0px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;  // added here
+      }
+    }
+    ```
 
 ## DrRacket (IDE)
 
