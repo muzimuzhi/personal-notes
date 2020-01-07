@@ -16,11 +16,13 @@
 | `mleftright`      | math                | Variants of delimiters that act as maths open/close          |
 | `mathpunctspace`  | math                | Controls the space after punctuation in math expressions     |
 | `mismath`         | math                | (New) Miscellaneous mathematical macros                      |
+| `letterswitharrows` | math & pgf        | Arrows over math letters                                     |
 |                   |                     |                                                              |
 | `flowframe`       | layout              | Create text frames that flow from one to another             |
 | `paracol`         | layout              | Multiple columns with texts "in parallel"                    |
 | `layouts`         | layout show         | Shows layout of document elements.                           |
 | `extramarks`      | marks               | More marks other than `\markleft` and `\markboth`            |
+| `tocdata`         | table of contents   | Add a small amount of data to an entry in `toc`              |
 | `centeredline`    | paragraph alignment | Extends latex2e macro`\centerline`                           |
 |                   |                     |                                                              |
 | `keyvaltable`     | tabular             | Re-usable table layouts separating content and presentation  |
@@ -32,8 +34,11 @@
 |                   |                     |                                                              |
 | `graphbox`        | graphics            | Adds options to `\includegraphicx`                           |
 | `pgfgantt`        | graphics/pgf        | Draws Gantt charts                                           |
+| `floatrow`        | float               | Float layouts                                                |
 |                   |                     |                                                              |
 | `lstaddons`       | code listing        | add-on for `listings`: autogobble and line background        |
+|                   |                     |                                                              |
+| `changes`         | editorial           | Markup change in text manually                               |
 |                   |                     |                                                              |
 | `sesamanuel`      | class or template   | Class and package for sesamath books or paper                |
 |                   |                     |                                                              |
@@ -47,6 +52,12 @@
 | `navigator`       | PDF feature         | format-independent `hyperref`                                |
 | `lwarp`           | convert format      | Convert LaTeX output (PDF) to HTML.                          |
 | `around-the-bend` | exercise bank       | Typeset exercises in TeX, with answers                       |
+
+## Documentation Packages
+
+| Name                  | Category              |
+| `tamethebeast`        | bibtex                |
+| `biblatex-cheatsheet` | biblatex, cheatsheet  |
 
 ## Supporting Tools
 
