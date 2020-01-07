@@ -222,7 +222,7 @@ Configuration
     $ cat .gitattributes
     *.tex diff=gbk
     ```
- * Pretty `git log` in one line ([ref](https://ma.ttias.be/pretty-git-log-in-one-line/))
+ * Pretty one-line `git log` ([ref](https://ma.ttias.be/pretty-git-log-in-one-line/))
     ```bash
     # set git alias
     $ git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -235,11 +235,13 @@ Branch tracking
 
  * Create a local branch that tracks a remote branch
     ```bash
-    git checkout --track <remote>/<branch>
+    git checkout -b <branch> --track <remote>/<branch>
     ```
- * Delete  a local branch that tracks a remote branch (delete the local tracking only, [ref](https://gist.github.com/magnusbae/10182865))
+ * Delete a remote-tracking branch (the local branch itself is not deleted, [ref](https://stackoverflow.com/a/3046478))
     ```bash
     git branch --delete --remotes <remote>/<branch>
+    # or
+    git branch --unset-upstream <branch>
     ```
  * Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574)):
     ```bash
