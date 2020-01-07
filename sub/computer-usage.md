@@ -29,6 +29,14 @@
 
 ## Atom (editor)
 
+Manually install an Atom package ([ref](https://github.com/atom/apm/issues/355#issuecomment-99210591)):
+```
+git clone <package-repo>
+cd package-name
+apm install
+apm link .
+```
+
 [Script Package] Change font size of output window ([ref](https://github.com/rgbkrk/atom-script/issues/1191))
 
  - Open config file `~/.atom/packages/script/styles/script.less` and add `font-size` property.
