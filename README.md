@@ -42,5 +42,6 @@ These are some notes in the result of my daily web searching and time wasting.
   * Online Resource
     * [Fontology](https://www.fonts.com/content/learning/fontology) on fonts.com
     * [Practical Typography](https://practicaltypography.com/), 2nd Edition by Matthew Butterick
-
-
+  * Citation Styles
+    * General Guidelines from [library of Harvard](https://guides.library.harvard.edu/cite/guides)
+    * Author-date style (aka. Harvard style): [Introduction from UWA](https://guides.library.uwa.edu.au/harvard)
