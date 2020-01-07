@@ -39,16 +39,18 @@ Meta
 
 * [SVN repo](https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/), [GitHub mirror](https://github.com/TeX-Live/texlive-source)
 * [Historic images](ftp://tug.org/historic/systems/texlive/)
+* Latest package files (compressed) [distributed by CTAN mirrors](https://ctan.org/tex-archive/systems/texlive/tlnet/archive)
 
 ## pdfTeX
 
 * TUG page: https://www.tug.org/applications/pdftex/
-* Mailing Archives: https://tug.org/pipermail/pdftex/
+* Mailing List Archives: https://tug.org/pipermail/pdftex/
 * Repository: https://tug.org/svn/pdftex/branches/stable
 * Release news: on [TUG website](http://www.tug.org/applications/pdftex/NEWS) or from [source repo](http://tug.org/svn/pdftex/branches/stable/source/src/texk/web2c/pdftexdir/NEWS?view=markup)
 
 ## XeTeX
 
+* Git repo [hosted on sourceforge](https://sourceforge.net/projects/xetex/) and the mirror [on GitHub](https://github.com/TeX-Live/xetex)
 * Precedence of font names used by XeTeX ([ref](https://tex.stackexchange.com/a/43819))
   * `Full name > Family-Style > PostScript name > Family`
   * To let XeTeX auto-load variations, `Family` is recommended
@@ -56,7 +58,9 @@ Meta
 
 ## dvipdfm-x
 
-* [SVN repo](https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata: 
+* [SVN repo](https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata
+* Build and test (on macOS). See the exact example in _Building TeX Live (2019)_, [Sec. 4.5](https://www.tug.org/texlive/doc/tlbuild.html#Build-one-package).
+    * Update binary file. Substitute file `xdvipdfmx` resides in `` `kpsewhich --var-value TEXMFDIST`/../bin/<os-dependent-dir> ``.
 
 ## MiKTeX - A LaTeX Distribution
 
@@ -66,6 +70,7 @@ Meta
   * list of package usage
   * additional input directories
   * specific directory for auxiliary files
+* [List of packages](https://miktex.org/packages) contained in MiKTeX, and the current (compressed) packages files [distributed by CTAN mirrors](https://ctan.org/tex-archive/systems/win32/miktex/tm/packages)
 
 ## ConTeXt - A LaTeX Format
 
