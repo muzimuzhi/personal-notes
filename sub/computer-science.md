@@ -208,13 +208,9 @@ http://www.apuebook.com/
 
 ### git
 
-Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044/8590320)):
-```bash
-$ git reflog expire --expire=now --all
-$ git gc --prune=now
-```
+Configuration
 
-Diff non-UTF8 files:
+ * Diff non-UTF8 files:
 ```bash
 # Suppose the .tex files are GBK encoding
 $ cat .git/config
@@ -224,23 +220,26 @@ $ cat .git/config
 $ cat .gitattributes
 *.tex diff=gbk
 ```
-
-Diff between arbitrary files:
+ * Pretty `git log` in one line ([ref](https://ma.ttias.be/pretty-git-log-in-one-line/))
 ```bash
-git diff --no-index <old-file> <new-file>
+    # set git alias
+    $ git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+    # use git alias
+    $ git logline
 ```
 
-Delete remote tracking branch (delete the local tracking only, [ref](https://gist.github.com/magnusbae/10182865))
-```bash
-$ git branch --delete --remotes <remote>/<branch>
-```
+Branch tracking
 
-Delete remote branch (delete the remote branch while pushing)
+ * Create a local branch that tracks a remote branch
 ```bash
-$ git push --delete <remote> <branch>
+    git checkout --track <remote>/<branch>
 ```
-
-Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574)):
+ * Delete  a local branch that tracks a remote branch (delete the local tracking only, [ref](https://gist.github.com/magnusbae/10182865))
+```bash
+    git branch --delete --remotes <remote>/<branch>
+```
+ * Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574)):
 ```bash
 # shallow clone
 $ git clone --depth=<num> <repository> [<directory>]
@@ -253,16 +252,24 @@ $ git remote set-branches --add <remote> <new_branch>
 # add track to new remote branch
 $ git fetch <remote> <new_branch>
 ```
-wait for test: `git fetch --update-shallow <remote> <branch>`)
+    wait for test: `git fetch --update-shallow <remote> <branch>`
 
-Pretty `git log` in one line ([ref](https://ma.ttias.be/pretty-git-log-in-one-line/))
+Change remote
+ * Delete remote branch
+    ```bash
+    git push --delete <remote> <branch>
+    ```
+
+Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044/8590320)):
 ```bash
-# set git alias
-$ git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-# use git alias
-$ git logline
+$ git reflog expire --expire=now --all
+$ git gc --prune=now
 ```
 
+Diff between arbitrary files:
+```bash
+git diff --no-index <file a> <file b>
+```
 
 ### MySql
 
