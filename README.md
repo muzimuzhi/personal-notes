@@ -29,6 +29,8 @@ These are some notes in the result of my daily web searching and time wasting.
     * [Win 10](https://docs.microsoft.com/en-us/typography/fonts/windows_10_font_list)
     * [macOS Mojave](https://support.apple.com/en-us/HT208968), [more versions](https://github.com/CTeX-org/ctex-kit/wiki/macOS%7COS-X%7CMac-OS-X-各版本预装字体列表)
   * [Modern Fonts](sub/fonts-modern.md)
+  * Font Stories
+    * Shanghai Type Project, Digital Archive: Xuecheng Xu （[上海活字项目数字档案：徐学成](https://shanghaitype.org/%E5%BE%90%E5%AD%A6%E6%88%90%E6%A1%A3%E6%A1%88/start)）
 * PDF
   * PDF Reference
     * [v1.7](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdf_reference_archive/pdf_reference_1-7.pdf) (with [errata](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdf_reference_archive/pdf_17_errata.pdf)) is freely downloadable from [adobe.com](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html).
