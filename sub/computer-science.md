@@ -211,47 +211,47 @@ http://www.apuebook.com/
 Configuration
 
  * Diff non-UTF8 files:
-```bash
-# Suppose the .tex files are GBK encoding
-$ cat .git/config
-[diff "gbk"]
-        textconv = "iconv -f gbk -t utf-8"
+    ```bash
+    # Suppose the .tex files are GBK encoding
+    $ cat .git/config
+    [diff "gbk"]
+            textconv = "iconv -f gbk -t utf-8"
 
-$ cat .gitattributes
-*.tex diff=gbk
-```
+    $ cat .gitattributes
+    *.tex diff=gbk
+    ```
  * Pretty `git log` in one line ([ref](https://ma.ttias.be/pretty-git-log-in-one-line/))
-```bash
+    ```bash
     # set git alias
     $ git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
     # use git alias
     $ git logline
-```
+    ```
 
 Branch tracking
 
  * Create a local branch that tracks a remote branch
-```bash
+    ```bash
     git checkout --track <remote>/<branch>
-```
+    ```
  * Delete  a local branch that tracks a remote branch (delete the local tracking only, [ref](https://gist.github.com/magnusbae/10182865))
-```bash
+    ```bash
     git branch --delete --remotes <remote>/<branch>
-```
+    ```
  * Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574)):
-```bash
-# shallow clone
-$ git clone --depth=<num> <repository> [<directory>]
+    ```bash
+    # shallow clone
+    $ git clone --depth=<num> <repository> [<directory>]
 
-# change the list of branches tracked
-$ git remote set-branches <remote> '*'
-# or
-$ git remote set-branches --add <remote> <new_branch>
+    # change the list of branches tracked
+    $ git remote set-branches <remote> '*'
+    # or
+    $ git remote set-branches --add <remote> <new_branch>
 
-# add track to new remote branch
-$ git fetch <remote> <new_branch>
-```
+    # add track to new remote branch
+    $ git fetch <remote> <new_branch>
+    ```
     wait for test: `git fetch --update-shallow <remote> <branch>`
 
 Change remote
