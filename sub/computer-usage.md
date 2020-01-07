@@ -39,8 +39,8 @@ apm link .
 
 [Script Package] Change font size of output window ([ref](https://github.com/rgbkrk/atom-script/issues/1191))
 
- - Open config file `~/.atom/packages/script/styles/script.less` and add `font-size` property.
-
+ - Open config file `~/.atom/packages/script/styles/script.less`
+ - add property `font-size: 14px;`.
     ```less
     .script-view {
       .panel-body pre {
