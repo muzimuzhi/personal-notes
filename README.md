@@ -47,3 +47,7 @@ These are some notes in the result of my daily web searching and time wasting.
   * Citation Styles
     * General Guidelines from [library of Harvard](https://guides.library.harvard.edu/cite/guides)
     * Author-date style (aka. Harvard style): [Introduction from UWA](https://guides.library.uwa.edu.au/harvard)
+* Unicode
+  * http://www.fileformat.info/index.htm
+  * https://www.compart.com/en/unicode
+  * Converter: https://r12a.github.io/app-conversion/
