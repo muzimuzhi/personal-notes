@@ -5,15 +5,15 @@
 
 ```tex
 \geometry{
-                          % paper size is unchanged
-  scale=0.7,              % body size is 70% of paper size
-                          % one-sided documents
-  hmarginratio=1:1,       %   left margin : right margin = 1:1
-                          % two-sided documents
-  % hmarginratio=2:3,     %   left margin : right margin = 2:3
-  vmarginratio=2:3,       % top margin : bottom margin = 2:3
-  ignoreall               % the header, footer, marginal notes are excluded 
-                          %   when calculating the size of body
+                      % paper size is unchanged
+  scale=0.7,          % body size is 70% of paper size
+                      % one-sided documents
+  hmarginratio=1:1,   %   left margin : right margin = 1:1
+                      % two-sided documents
+  % hmarginratio=2:3, %   left margin : right margin = 2:3
+  vmarginratio=2:3,   % top margin : bottom margin = 2:3
+  ignoreall           % the header, footer, marginal notes are excluded 
+                      %   when calculating the size of body
 }
 ```
 Source: `texdoc geometry`, sec. 6.4
