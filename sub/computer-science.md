@@ -262,6 +262,12 @@ Change remote
     git push --delete <remote> <branch>
     ```
 
+Show log
+ * List commits that changed a specific file ([ref](https://stackoverflow.com/a/8808453))
+    ```bash
+    git log --follow -- filename
+    ```
+
 Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044/8590320)):
 ```bash
 $ git reflog expire --expire=now --all
