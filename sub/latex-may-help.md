@@ -30,6 +30,9 @@ Equation
 PGF/TikZ
   * [Reflecting a line and/or point with named coordinates](https://tex.stackexchange.com/q/467295)
 
+Color Stack
+  * In split footnote, [latex2e#1](https://github.com/latex3/latex2e/issues/1)
+
 Meta
   * [Minimal working example](https://tex.meta.stackexchange.com/q/228) (MWE), what and how
     * [Prefer `article` to `minimal` LaTeX class](https://tex.stackexchange.com/a/42115) in MWE
