@@ -98,7 +98,7 @@ Discussion
  | [Function decorator][function-decorator-reference] | [2.4.1][function-decorator-whatsnew] | [PEP 318][pep-318]           |
  | [Class decorator][class-decorator-reference]       | [2.6][class-decorator-whatsnew]      | [PEP 3129][pep-3129]         |
 
-Upgrade all outdated pip packages
+Upgrade all outdated pip packages ([homepage](https://github.com/defjaf/pip_upgrade_outdated))
 ```bash
 pip3 install pip-upgrade-outdated
 pip_upgrade_outdated -3
