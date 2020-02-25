@@ -154,3 +154,11 @@ pdfinfo     # show general info
 pdffonts    # list info of used fonts
 pdfdetach   # extract embedded files
 ```
+
+## Image Processing
+
+### Remove transparency from a PNG image ([ref](http://www.imagemagick.org/Usage/masking/#alpha_remove), also see [this Q&A](https://stackoverflow.com/q/2322750))
+```bash
+# use program ImageMagick
+convert input.png -background white -alpha remove output.png
+```
