@@ -241,7 +241,7 @@ Branch tracking
 
  * Create a local branch that tracks a remote branch
     ```bash
-    git checkout -b <branch> --track <remote>/<branch>
+    git fetch <remote> <branch>:<local branch>
     ```
  * Delete a remote-tracking branch (the local branch itself is not deleted, [ref](https://stackoverflow.com/a/3046478))
     ```bash
