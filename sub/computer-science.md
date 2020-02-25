@@ -126,7 +126,7 @@ $ pip3 install -r requirements.txt
   * [GitHub Flavored Markdown](https://github.github.com/gfm/) (GFM)
 * Special Usages
   * Use `<span></span>` to disable auto-linking ([ref](https://gist.github.com/alexpeattie/4729247))
-  * Use `<summary>` element to hide long contents ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)):
+  * Use `<summary>` element to hide long contents ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary), [usage example on GitHub](https://github.com/T-F-S/tcolorbox/issues/93#issuecomment-574827784)):
     ```html
     <details>
         <summary>short summary</summary>
