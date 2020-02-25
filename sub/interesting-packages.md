@@ -52,13 +52,13 @@
 | `hypdoc`          | PDF feature         | Adds more links of references.                               |
 | `navigator`       | PDF feature         | format-independent `hyperref`                                |
 | `lwarp`           | convert format      | Convert LaTeX output (PDF) to HTML.                          |
-| `around-the-bend` | exercise bank       | Typeset exercises in TeX, with answers                       |
 
 ## Documentation Packages
 
-| Name                  | Category              |
-| `tamethebeast`        | bibtex                |
-| `biblatex-cheatsheet` | biblatex, cheatsheet  |
+| Name                  | Category               |
+| `around-the-bend`     | answered tex exercises | 
+| `tamethebeast`        | bibtex                 |
+| `biblatex-cheatsheet` | biblatex, cheatsheet   |
 
 ## Supporting Tools
 
