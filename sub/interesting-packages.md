@@ -4,6 +4,7 @@
 
 | Name              | Category            | Description                                                  |
 | ----------------- | ------------------- | ------------------------------------------------------------ |
+| `wiki`            | text markup         | Use wiki-style markup                                        |
 | `relsize`         | font                | Changes font size relative to current size.                  |
 | `xcharter`        | font                | Extension of Bitstream Charter fonts                         |
 | `savesym`         | font/math           | Redefines and restores name of symbol command                |
