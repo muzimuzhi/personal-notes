@@ -104,6 +104,12 @@ pip3 install pip-upgrade-outdated
 pip_upgrade_outdated -3
 ```
 
+Sync installed pip packages ([official doc](https://pip.pypa.io/en/stable/reference/pip_freeze/))
+```bash
+$ pip3 freeze > requirements.txt
+$ pip3 install -r requirements.txt
+```
+
 [python-decorator]: https://docs.python.org/3/glossary.html#term-decorator
 [function-decorator-reference]: https://docs.python.org/3/reference/compound_stmts.html#function-definitions
 [class-decorator-reference]: https://docs.python.org/3/reference/compound_stmts.html#class-definitions
