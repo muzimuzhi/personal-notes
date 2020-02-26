@@ -6,9 +6,7 @@
 | ----------------- | ------------------- | ------------------------------------------------------------ |
 | `wiki`            | text markup         | Use wiki-style markup                                        |
 | `relsize`         | font                | Changes font size relative to current size.                  |
-| `xcharter`        | font                | Extension of Bitstream Charter fonts                         |
 | `savesym`         | font/math           | Redefines and restores name of symbol command                |
-| `stickstoo`       | font/math           | Extra number styles and blackboard bold choices, based on STIX2 |
 |                   |                     |                                                              |
 | `mismath`         | math                | Miscellaneous mathematical macros                            |
 | `nicematrix`      | math                | Improved typesetting of mathematical matrices with TikZ      |
@@ -51,6 +49,16 @@
 | `hypdoc`          | PDF feature         | Adds more links of references.                               |
 | `navigator`       | PDF feature         | format-independent `hyperref`                                |
 | `lwarp`           | convert format      | Convert LaTeX output (PDF) to HTML.                          |
+
+## Font Packages
+
+| Name                  | Category   | Description                                  |
+| --------------------- | ---------- | -------------------------------------------- |
+| `xcharter`            | font & pkg | Extension of Bitstream Charter fonts         |
+| `oldstandard`         | font & pkg | Serif, late 19th to early 20th century style |
+| `stickstoo`           | font & pkg | Extra number styles and blackboard bold choices to STIX2 |
+| `noto-emoji`          | font       | Google's emoji, Android and Linux only       |
+| `twemoji-colr`        | font       | Twitter's emoji                              |
 
 ## Documentation Packages
 
