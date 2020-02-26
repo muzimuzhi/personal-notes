@@ -16,7 +16,6 @@
 | `autoaligne`      | math                | Aligns lines of math expressions by operators and relations. <br />Doc is in French only. |
 | `mleftright`      | math                | Variants of delimiters that act as maths open/close          |
 | `mathpunctspace`  | math                | Controls the space after punctuation in math expressions     |
-| `mismath`         | math                | (New) Miscellaneous mathematical macros                      |
 | `letterswitharrows` | math & pgf        | Arrows over math letters                                     |
 |                   |                     |                                                              |
 | `flowframe`       | layout              | Create text frames that flow from one to another             |
