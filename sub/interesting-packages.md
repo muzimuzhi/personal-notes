@@ -56,6 +56,7 @@
 ## Documentation Packages
 
 | Name                  | Category               |
+| --------------------- | ---------------------- |
 | `around-the-bend`     | answered tex exercises | 
 | `tamethebeast`        | bibtex                 |
 | `biblatex-cheatsheet` | biblatex, cheatsheet   |
