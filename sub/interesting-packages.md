@@ -19,6 +19,8 @@
 | `flowframe`       | layout              | Create text frames that flow from one to another             |
 | `paracol`         | layout              | Multiple columns with texts "in parallel"                    |
 | `layouts`         | layout show         | Shows layout of document elements.                           |
+| `floatrow`        | layout/float        | Float layouts                                                |
+| `marginfix`       | layout/marginal     | A `\marginpar` patch to avoid overfull margins               |
 | `extramarks`      | marks               | More marks other than `\markleft` and `\markboth`            |
 | `tocdata`         | table of contents   | Add a small amount of data to an entry in `toc`              |
 | `centeredline`    | paragraph alignment | Extends latex2e macro`\centerline`                           |
@@ -32,7 +34,7 @@
 |                   |                     |                                                              |
 | `graphbox`        | graphics            | Adds options to `\includegraphicx`                           |
 | `pgfgantt`        | graphics/pgf        | Draws Gantt charts                                           |
-| `floatrow`        | float               | Float layouts                                                |
+| `tikzlings`       | graphics/pgf        | Predefined small animals                                     |
 |                   |                     |                                                              |
 | `lstaddons`       | code listing        | add-on for `listings`: autogobble and line background        |
 |                   |                     |                                                              |
@@ -44,6 +46,7 @@
 | `lisp-on-tex`     | programming         | Implements static scoping, dynamic typing, and eager evaluation LISP interpreter written in TeX macros |
 | `texapi`          | programming         | Format-independent `etoolbox`                                |
 | `ltxcmds`         | programming         | Utility macros from LaTeX kernel                             |
+| `parselines`      | programming         | A simple input line parser                                   |
 | `silence`         | compilation/log     | Filters errors and warnings produced by standard macros.     |
 | `snapshot`        | compilation         | List the external dependencies                               |
 | `hypdoc`          | PDF feature         | Adds more links of references.                               |
@@ -73,3 +76,4 @@
 * [latexindent](https://ctan.org/pkg/latexindent) - a `Perl` script that indents `.tex` (and other) files according to an indentation scheme that the user can modify to suit their taste.
 * [TLCockpit](https://ctan.org/pkg/tlcockpit) - A GUI frontend to TeX Live Manager (`tlmgr`), requiring JavaFX
 * [ClutTeX](https://ctan.org/pkg/cluttex) - a program to automatically process LaTeX document without clutter working directory with `.aux`, `.log`, etc. files
+* `mkjobtexmf` - a `Perl` script that generates a texmf tree for a particular job
