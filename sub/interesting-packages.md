@@ -8,6 +8,7 @@
 | `relsize`         | font                | Changes font size relative to current size.                  |
 | `savesym`         | font/math           | Redefines and restores name of symbol command                |
 |                   |                     |                                                              |
+| `nath`            | math                |                                                              |
 | `mismath`         | math                | Miscellaneous mathematical macros                            |
 | `nicematrix`      | math                | Improved typesetting of mathematical matrices with TikZ      |
 | `systeme`         | math                | Provides a more intuitive way to enter systems of equations or inequalities. <br />Doc is in French only. |
@@ -42,10 +43,12 @@
 |                   |                     |                                                              |
 | `sesamanuel`      | class or template   | Class and package for sesamath books or paper                |
 |                   |                     |                                                              |
+| `expkv-def`       | key-value           | A key-defining frontend for `expkv`                          |
 | `unravel`         | programming         | Watches TeX digest tokens                                    |
 | `lisp-on-tex`     | programming         | Implements static scoping, dynamic typing, and eager evaluation LISP interpreter written in TeX macros |
 | `texapi`          | programming         | Format-independent `etoolbox`                                |
 | `ltxcmds`         | programming         | Utility macros from LaTeX kernel                             |
+| `letltxmacro`     | programming         | `\LetLtxMacro` takes care of robust or opt-arg macros        |
 | `parselines`      | programming         | A simple input line parser                                   |
 | `silence`         | compilation/log     | Filters errors and warnings produced by standard macros.     |
 | `snapshot`        | compilation         | List the external dependencies                               |
