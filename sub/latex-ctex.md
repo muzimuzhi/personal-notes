@@ -3,11 +3,11 @@
 # Loading
 
 ```latex
-% As document class
+% as document class
 \documentclass[<class options>]{<ctex class>}
 <ctex class> := ctexart | ctexrep | ctexbook | ctexbeamer
 
-% As package
+% as package
 \usepackage[<package options>]{ctex} % without section config features
 \usepackage[<package options>, heading]{ctex} % full features
 
@@ -59,7 +59,7 @@
 |                         | `break(+)`        | `<code>`                 | see table 18       | inserted between heading and following text                  |
 | `toc`, `lof`, and `lot` | `tocline` | `<code>` | see table 19 | format of items in `toc`, see the doc |
 |  | `lofskip`         | `<glue>`                 | `10pt`             | vertical rubber space between items of different chapters in `lof` |
-|                         | `lotskip`         | `<glue>`                 | `10pt`             | … in `lot`                                                   |
+|                         | `lotskip`         | `<glue>`                 | `10pt`             | ... in `lot`                                                   |
 | others                  | `pagestyle`       | `<page style>`           | `plain`            | `\chapter` and `\part` only                                  |
 | appendix | `appendix/numbering` | see option `numbering` |                    | affect level 1 heading after `\appendix` |
 |  | `appendix/name` | see option `name` | | the same as above |
