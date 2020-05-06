@@ -65,3 +65,23 @@
 |  | `appendix/name` | see option `name` | | the same as above |
 |  | `appendix/number` | see option `number` | | the same as above |
 
+### Output or apply order
+```tex
+Example:
+With section/name={pre,after}, section/number={\Roman{section}},
+\CTEXthesection is defined to "pre\Roman{section}after"
+
+.../break(+)
+.../beforeskip      = <glue>
+.../format(+)       = <overall format, maybe-one-arg>
+.../nameformat(+)   = <name format, maybe-one-arg>
+.../name            = {<pre name>, <after name>} | {<pre name>}
+.../numbering       = true|false
+.../numberformat(+) = <number format, maybe-one-arg>
+.../number          = <output counter> % change commands \CTEXthe<section>
+.../aftername(+)    = <code>
+.../titleformat(+)  = <title format, maybe-one-arg>
+.../aftertitle(+)   = <code>
+.../runin           = true|false
+.../afterskip       = <glue>
+```
