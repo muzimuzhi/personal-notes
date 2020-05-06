@@ -120,6 +120,10 @@ $ pip3 freeze > requirements.txt
 $ pip3 install -r requirements.txt
 ```
 
+#### Packages
+
+* [`colorama`](https://github.com/tartley/colorama) - Print colored terminal text.
+
 
 ## Other Languages
 
