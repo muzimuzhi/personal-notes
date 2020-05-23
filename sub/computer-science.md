@@ -254,6 +254,21 @@ Configuration
     $ git logline
     ```
 
+Show status
+
+  * Show individual files in untracked directories ([ref](https://git-scm.com/docs/git-status#Documentation/git-status.txt--ultmodegt))
+    ```bash
+    # short option: -u
+    git status --untracked-files
+    ```
+
+Clone and fetch
+ * Shadow clone: `git clone --depth=<num>`
+ * Convert a shadow clone to full clone ([ref](https://stackoverflow.com/a/17937889))
+    ```bash
+    git fetch --unshallow
+    ```
+
 Branch tracking
 
  * Create a local branch that tracks a remote branch
@@ -292,8 +307,12 @@ Show log
     ```bash
     git log --follow -- filename
     ```
+ * Show first commit ([ref](https://stackoverflow.com/a/5188990))
+    ```bash
+    git log --reverse
+    ```
 
-Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044/8590320)):
+Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044)):
 ```bash
 $ git reflog expire --expire=now --all
 $ git gc --prune=now
@@ -302,6 +321,11 @@ $ git gc --prune=now
 Diff between arbitrary files:
 ```bash
 git diff --no-index <file a> <file b>
+```
+
+Count the commits for current branch ([ref](https://stackoverflow.com/a/11657647))
+```bash
+git rev-list --count HEAD
 ```
 
 ### MySql
