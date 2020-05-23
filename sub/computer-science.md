@@ -341,7 +341,7 @@ mysql_upgrade --force -uroot -p
 to upgrade tables.
 
 Related links:
- - [Column count of mysql.user is wrong. Expected 42, found 44.](https://stackoverflow.com/a/45434694/8590320) - Answer on StackOverflow
- - [Can't find mysql.infoschema after update from 5.7](https://stackoverflow.com/a/51155179/8590320) - Answer on StackOverflow
+ - [Column count of mysql.user is wrong. Expected 42, found 44.](https://stackoverflow.com/a/45434694) - Answer on StackOverflow
+ - [Can't find mysql.infoschema after update from 5.7](https://stackoverflow.com/a/51155179) - Answer on StackOverflow
  - [4.4.5 mysql_upgrade - Check and Upgrade MySQL Tables](https://dev.mysql.com/doc/refman/8.0/en/mysql-upgrade.html) - MySql Ref Manual
  

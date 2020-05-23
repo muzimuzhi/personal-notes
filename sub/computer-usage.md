@@ -74,7 +74,7 @@ Shortcuts
 
 Query settings:
  * https://superuser.com/a/440573
- * https://stackoverflow.com/a/11002313/8590320
+ * https://stackoverflow.com/a/11002313
 
 ## Typora (markdown editor)
 
