@@ -167,7 +167,7 @@ $ pip3 install -r requirements.txt
 * Introduction: [wikipedia page](https://en.wikipedia.org/wiki/Extended_Backus–Naur_form)
 * Specifications: 
   * [ISO/IEC 14977:1996](https://standards.iso.org/ittf/PubliclyAvailableStandards/s026153_ISO_IEC_14977_1996(E).zip), not recommended
-  * Varient used by [XML Spec. 5th](https://www.w3.org/TR/REC-xml/#sec-notation)
+  * Variant used by [XML Spec. 5th](https://www.w3.org/TR/REC-xml/#sec-notation)
 * Lex used by GitHub: [language-grammars](https://github.com/Alhadis/language-grammars/blob/master/grammars/abnf.cson) by Alhadis, not finished yet (19 Aug 27)
 
 ## General Books
@@ -263,8 +263,8 @@ Show status
     ```
 
 Clone and fetch
- * Shadow clone: `git clone --depth=<num>`
- * Convert a shadow clone to full clone ([ref](https://stackoverflow.com/a/17937889))
+ * Shallow clone: `git clone --depth=<num>`
+ * Convert a shallow clone to full clone ([ref](https://stackoverflow.com/a/17937889))
     ```bash
     git fetch --unshallow
     ```
