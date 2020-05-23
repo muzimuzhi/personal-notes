@@ -141,6 +141,16 @@ $ pip3 install -r requirements.txt
     </details>
     ```
 
+### HTML
+
+  * Default link colors ([ref](https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-3), [answer](https://stackoverflow.com/a/4774037))
+    ```css
+    :link { color: #0000EE; }
+    :visited { color: #551A8B; }
+    :link:active, :visited:active { color: #FF0000; }
+    :link, :visited { text-decoration: underline; cursor: pointer; }
+    ```
+
 ### JSON (JavaScript Object Notation)
 
 * Specification: [RFC 7159](https://tools.ietf.org/html/rfc7159.html) (with [errata](https://www.rfc-editor.org/errata_search.php?rfc=7159)) and [ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)
