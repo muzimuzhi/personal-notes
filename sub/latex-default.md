@@ -1,5 +1,39 @@
 # Default settings of packages
 
+## `amsthm`
+
+```tex
+\newtheoremstyle{plain}
+  {\topsep}     % ABOVESPACE
+  {\topsep}     % BELOWSPACE
+  {\itshape}    % BODYFONT
+  {0pt}         % INDENT (empty value is the same as 0pt)
+  {\bfseries}   % HEADFONT
+  {.}           % HEADPUNCT
+  {5pt plus 1pt minus 1pt} % HEADSPACE
+  {}            % CUSTOM-HEAD-SPEC
+
+\newtheoremstyle{definition}
+  {\topsep}     % ABOVESPACE
+  {\topsep}     % BELOWSPACE
+  {\normalfont} % BODYFONT
+  {0pt}         % INDENT (empty value is the same as 0pt)
+  {\bfseries}   % HEADFONT
+  {.}           % HEADPUNCT
+  {5pt plus 1pt minus 1pt} % HEADSPACE
+  {}            % CUSTOM-HEAD-SPEC
+
+\newtheoremstyle{remark}
+  {.5\topsep}   % ABOVESPACE
+  {.5\topsep}   % BELOWSPACE
+  {\normalfont} % BODYFONT
+  {0pt}         % INDENT (empty value is the same as 0pt)
+  {\itshape}    % HEADFONT
+  {.}           % HEADPUNCT
+  {5pt plus 1pt minus 1pt} % HEADSPACE
+  {}            % CUSTOM-HEAD-SPEC
+```
+Source: https://tex.stackexchange.com/a/17555/
 
 ## `geometry`
 
