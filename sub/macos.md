@@ -18,10 +18,15 @@ Display disk usage statistics sorted by human readable numbers ([ref](https://se
 $ du -hd 1 | gsort -h
 ```
 
-Open manpage in new terminal window ([ref](https://scriptingosx.com/2017/04/on-viewing-man-pages/))
+Open man page in new terminal window ([ref](https://scriptingosx.com/2017/04/on-viewing-man-pages/))
 ```bash
 $ open x-man-page://<name>
 ```
+
+## Homebrew and Homebrew-cask
+
+* [`version` Stanza Details](https://github.com/Homebrew/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/version.md)
+  * Example: [Homebrew/homebrew-cask-fonts#2082](https://github.com/Homebrew/homebrew-cask-fonts/issues/2082)
 
 ## GNU, instead of BSD CLI Tools
 
