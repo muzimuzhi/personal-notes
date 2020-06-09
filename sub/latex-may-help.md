@@ -64,6 +64,10 @@ Meta
 * [SVN repo](https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata
 * Build and test (on macOS). See the exact example in _Building TeX Live (2019)_, [Sec. 4.5](https://www.tug.org/texlive/doc/tlbuild.html#Build-one-package).
     * Update binary file. Substitute file `xdvipdfmx` resides in `` `kpsewhich --var-value TEXMFDIST`/../bin/<os-dependent-dir> ``.
+* Config file: `dvipdfmx.cfg`, located in
+    ```bash
+    kpsewhich --progname=dvipdfmx --format=othertext [-all] dvipdfmx.cfg
+    ```
 
 ## MiKTeX - A LaTeX Distribution
 
