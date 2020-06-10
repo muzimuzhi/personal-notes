@@ -136,6 +136,7 @@ $ pip3 install -r requirements.txt
 ### Markdown
 
 * Specification
+  * [CommonMark](https://spec.commonmark.org/)
   * [GitHub Flavored Markdown](https://github.github.com/gfm/) (GFM)
 * Special Usages
   * Use `<span></span>` to disable auto-linking ([ref](https://gist.github.com/alexpeattie/4729247))
