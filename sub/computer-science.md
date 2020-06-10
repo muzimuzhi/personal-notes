@@ -124,6 +124,12 @@ $ pip3 install -r requirements.txt
 
 * [`colorama`](https://github.com/tartley/colorama) - Print colored terminal text.
 
+#### `pyenv`
+
+* Install `pyenv` itself: `brew info pyenv`
+* Set PATH: `PATH=$(pyenv root)/shims:$PATH` ([ref](https://opensource.com/article/20/4/pyenv))
+* Install another version of Python: `PYTHON_BUILD_HOMEBREW_OPENSSL_FORMULA=openssl@1.0 pyenv install 3.4.4` ([ref](https://github.com/pyenv/pyenv/issues/950#issuecomment-624252667))
+* Locally set Python version: `cd <path> && pyenv local 3.4.4`
 
 ## Other Languages
 
