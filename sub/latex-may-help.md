@@ -57,12 +57,12 @@ Meta
 * Precedence of font names used by XeTeX ([ref](https://tex.stackexchange.com/a/43819))
   * `Full name > Family-Style > PostScript name > Family`
   * To let XeTeX auto-load variations, `Family` is recommended
-* Show font info `aat-info.tex` and `opentype-info.tex`, located in `$TEXMFDIST/tex/xetex/xetexfontinfo`
+* Show font info: `aat-info.tex` and `opentype-info.tex`, located in `$TEXMFDIST/tex/xetex/xetexfontinfo`
 
 ## dvipdfm-x
 
 * [SVN repo](https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata
-* Build and test (on macOS). See the exact example in _Building TeX Live (2019)_, [Sec. 4.5](https://www.tug.org/texlive/doc/tlbuild.html#Build-one-package).
+* Build and test: _Building TeX Live (2020)_, [Sec. 4.5](https://www.tug.org/texlive/doc/tlbuild.html#Build-one-package).
     * Update binary file. Substitute file `xdvipdfmx` resides in `` `kpsewhich --var-value TEXMFDIST`/../bin/<os-dependent-dir> ``.
 * Config file: `dvipdfmx.cfg`, located in
     ```bash
