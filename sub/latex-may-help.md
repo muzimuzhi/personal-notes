@@ -68,6 +68,8 @@ Meta
     ```bash
     kpsewhich --progname=dvipdfmx --format=othertext [-all] dvipdfmx.cfg
     ```
+* Set single letter command line options from inside tex file: `\special{dvipdfmx:config <opt> <val>}`.
+    * Example: Use `\special{dvipdfmx:config C 0x0010}` to not optimize PDF destinations. (option `-C` is documented in `texdoc dvipdfmx`, sec. 6.1)
 
 ## MiKTeX - A LaTeX Distribution
 
