@@ -24,6 +24,7 @@
 | `marginfix`       | layout/marginal     | A `\marginpar` patch to avoid overfull margins               |
 | `extramarks`      | marks               | More marks other than `\markleft` and `\markboth`            |
 | `tocdata`         | table of contents   | Add a small amount of data to an entry in `toc`              |
+| `fncychap`        | section style       | Seven predefined chapter heading styles                      |
 | `centeredline`    | paragraph alignment | Extends latex2e macro`\centerline`                           |
 |                   |                     |                                                              |
 | `keyvaltable`     | tabular             | Re-usable table layouts separating content and presentation  |
@@ -33,7 +34,10 @@
 | `ehhline`         | tabular             | Extend the `\hhline` command                                 |
 | `hlist`           | tabular/list        | Provides  `hlist` environment in which `\hitem` starts a horizontal and columned item. <br />Doc is in French only. |
 |                   |                     |                                                              |
+| `csvsimple`       | data processing     | Lightweight CSV processing including filtering and table generation |
+|                   |                     |                                                              |
 | `graphbox`        | graphics            | Adds options to `\includegraphicx`                           |
+| `smartdiagram`    | graphics/pgf        | Generates (SmartArt-like) diagrams from lists                |
 | `pgfgantt`        | graphics/pgf        | Draws Gantt charts                                           |
 | `tikzlings`       | graphics/pgf        | Predefined small animals                                     |
 |                   |                     |                                                              |
@@ -63,6 +67,7 @@
 | `xcharter`            | font & pkg | Extension of Bitstream Charter fonts         |
 | `oldstandard`         | font & pkg | Serif, late 19th to early 20th century style |
 | `stickstoo`           | font & pkg | Extra number styles and blackboard bold choices to STIX2 |
+| `logix`               | font & pkg | Supplemental Unicode math symbols, esp. used in logic |
 | `noto-emoji`          | font       | Google's emoji, Android and Linux only       |
 | `twemoji-colr`        | font       | Twitter's emoji                              |
 
