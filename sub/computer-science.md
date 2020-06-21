@@ -335,6 +335,11 @@ Count the commits for current branch ([ref](https://stackoverflow.com/a/11657647
 git rev-list --count HEAD
 ```
 
+### SSH
+
+* [GitHub SSH Docs](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+* [GitLab SSH Docs](https://docs.gitlab.com/ee/ssh/)
+
 ### MySql
 
 When `SHOW DATABASES;` showing
