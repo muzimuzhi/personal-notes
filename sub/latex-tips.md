@@ -30,21 +30,23 @@
   # list of collections
   $ tlmgr info collections
 
-  # list of packages
+  # list of all packages
   $ tlmgr info 
   ```
   With option `--only-installed`, only installed items are shown.
 * Show contents of specific item
   ```bash
-  # list contents of specific scheme
-  # e.g.
-  # tlmgr info --list scheme-medium
+  # list contents of specified package
+  $ tlmgr info --list <pkg-name>
+
+  # list contents of specified scheme
+  # e.g., tlmgr info --list scheme-medium
   $ tlmgr info --list <scheme-name>
 
-  # list contents of specific collection
+  # list contents of specified collection
   $ tlmgr info --list <collection-name>
   ```
-* More example: get space separated list of installed packages (use GNU `ggrep` for its `-P` option):
+* Get space separated list of installed packages (use GNU `ggrep` for its `-P` option):
   ```bash
   $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
   ```
