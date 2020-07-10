@@ -107,16 +107,22 @@ MathJax config used by Typora for macOS, version 0.9.9.23.4 (2293).
 
 Hashtag
  * Clickable combination of a `#` and a word like `#smile` showing in messages is called _hashtag_.
- * It is first [introduced in March 2015](https://telegram.org/blog/replies-mentions-hashtags), and can be used to [bring order and structure into group chats](https://telegram.org/blog/replies-mentions).
+ * It is first [introduced in March 2015][tg-blog hashtag], and can be used to [bring order and structure into group chats][tg-blog reply].
+
+[tg-blog hashtag]: https://telegram.org/blog/replies-mentions-hashtags
+[tg-blog reply]: https://telegram.org/blog/replies-mentions
 
 ## Convert `DjVu` to `PDF`
 
-| Item       | Content                                                  |
-| ----------- | ------------------------------------------------------------ |
-| Preparation | install [DjVuLibre](http://djvu.sourceforge.net/index.html), see `brew info djvulibre` |
-| Usage       | `ddjvu -format=pdf [options] input.djvu output.pdf`          |
-| Option      | `-<n> -subsample=<n>`, downsize `n` times; default 1, max 12 |
-| Doc         | http://djvu.sourceforge.net/doc/man/ddjvu.html               |
+| Item          | Content                                                      |
+| ------------- | ------------------------------------------------------------ |
+| Preparation   | install [DjVuLibre][djvulibre], see `brew info djvulibre`    |
+| Basic Usage   | `ddjvu -format=pdf [options] input.djvu output.pdf`          |
+| Useful option | `-<n> -subsample=<n>`, downsize `n` times; default 1, max 12 |
+| Doc           | [`ddjvu`'s man page][ddjvu doc]                              |
+
+[djvulibre]: http://djvu.sourceforge.net/index.html
+[ddjvu doc]: http://djvu.sourceforge.net/doc/man/ddjvu.html
 
 ## Read and Write Outline of `DjVu`
 
@@ -124,9 +130,11 @@ Hashtag
 | ------------- | ---------------------------------------------------- |
 | Read Outline  | `djvused input.djvu -e 'print-outline'`              |
 | Write Outline | `djvused -e 'set-outline outline.txt' -s input.djvu` |
-| Doc           | http://djvu.sourceforge.net/doc/man/djvused.html     |
+| Doc           | [`djvused`'s man page][djvused doc]                  |
 
-Format of outline
+[djvused doc]: http://djvu.sourceforge.net/doc/man/djvused.html
+
+Format of an outline
 
 ```lisp
 (bookmarks
