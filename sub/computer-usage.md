@@ -76,6 +76,12 @@ Query settings:
  * https://superuser.com/a/440573
  * https://stackoverflow.com/a/11002313
 
+## MathJax
+
+ * [Convert configuration from `MathJax` 2.x to 3.x][mathjax config converter]
+
+[mathjax config converter]: https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
+
 ## Typora (markdown editor)
 
 MathJax config used by Typora for macOS, version 0.9.9.23.4 (2293).
