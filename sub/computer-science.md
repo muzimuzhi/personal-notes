@@ -135,9 +135,9 @@ $ pip3 install -r requirements.txt
 
 ### Markdown
 
-* Specification
-  * [CommonMark](https://spec.commonmark.org/)
-  * [GitHub Flavored Markdown](https://github.github.com/gfm/) (GFM)
+* Specification and Implementation (parsing and rendering library)
+  * [CommonMark](https://spec.commonmark.org/) and library [`commonmark/cmark`](https://github.com/commonmark/cmark)
+  * [GitHub Flavored Markdown](https://github.github.com/gfm/) (GFM) and library [`github/cmark-gfm`](https://github.com/github/cmark-gfm), both based on CommonMark's
 * Special Usages
   * Use `<span></span>` to disable auto-linking ([ref](https://gist.github.com/alexpeattie/4729247))
   * Use `<summary>` element to hide long contents ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary), [usage example on GitHub](https://github.com/T-F-S/tcolorbox/issues/93#issuecomment-574827784)):
