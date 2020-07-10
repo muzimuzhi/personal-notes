@@ -161,12 +161,14 @@ qpdf --qdf input.pdf - | fix-qdf > output.pdf
 
 ### `poppler` utilities
 ```bash
-# program info
+# info
 brew info poppler
-# utility list
-pdfinfo     # show general info
-pdffonts    # list info of used fonts
-pdfdetach   # extract embedded files
+brew list poppler
+
+# utilities
+pdfinfo     # show pdf info
+pdffonts    # list used fonts in a pdf
+pdfdetach   # extract embedded files from pdf
 ```
 
 ## Image Processing
