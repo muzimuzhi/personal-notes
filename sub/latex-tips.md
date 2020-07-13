@@ -277,3 +277,20 @@ fullflexible:
 }
 ```
 
+## [PDF] Produce uncompressed PDF
+
+```tex
+\ifdefined\directlua
+  % if luatex
+  \edef\pdfcompresslevel{\pdfvariable compresslevel}
+  \edef\pdfobjcompresslevel{\pdfvariable objcompresslevel}
+\fi
+\ifdefined\pdfcompresslevel
+  % if pdftex and luatex
+  \pdfcompresslevel=0
+  \pdfobjcompresslevel=0
+\else
+  % if xetex
+  \special{dvipdfmx:config z 0}
+\fi
+```
