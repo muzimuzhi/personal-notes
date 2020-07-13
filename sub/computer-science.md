@@ -240,6 +240,11 @@ http://www.apuebook.com/
 
 ### git
 
+General info
+ 
+ * Per command documentation: `https://git-scm.com/docs/git-<command>`
+ * [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes) 
+
 Configuration
 
  * Print pathnames in Unicode, other than octal UTF-8 ([ref](https://stackoverflow.com/a/22828826))
