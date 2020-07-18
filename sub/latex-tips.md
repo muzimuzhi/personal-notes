@@ -294,3 +294,41 @@ fullflexible:
   \special{dvipdfmx:config z 0}
 \fi
 ```
+
+## [pstricks] Get Ghostscript permission required by `xdvipdfmx`
+
+From:
+ - https://tex.stackexchange.com/a/554111
+ - https://discourse.brew.sh/t/mactex-ghostscript-permission-issue-on-macos-10-15-catalina/6086
+
+Example:
+```tex
+\documentclass{article}
+\usepackage{pstricks}
+
+\begin{document}
+\pscircle(.5,.5){1.5}
+\end{document}
+```
+`xelatex` produces
+```tex
+GPL Ghostscript 9.52: Unrecoverable error, exit code 1
+```
+`xdvipdfmx` produces more detailed
+```
+[1Error: /invalidfileaccess in --run--
+
+[...]
+
+Last OS error: Permission denied
+Current file position is 74
+GPL Ghostscript 9.52: Unrecoverable error, exit code 1
+
+xdvipdfmx:warning: Filtering file via command -->[...]<-- failed.
+xdvipdfmx:warning: Image format conversion for PSTricks failed.
+```
+
+ - Ghostscript uses flag `-dSAFER` by default from [9.50](https://www.ghostscript.com/doc/9.50/History9.htm#Version9.50), which forbids reading `pstricks` header files located in `$TEXMFDIST/dvips/pstricks`.
+ - Edit `dvipdfmx.cfg` by inserting `-dNOSAFER` to line starting with `D  "rungs -q`.
+ - Flag `-dNOSAFER` or finer `--permit-file-read` can be added to TeX Live's wrapper `rungs`, which is a Lua script.
+
