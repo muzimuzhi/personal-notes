@@ -1,4 +1,4 @@
-# List of Interesting and Interested Packages Not Familiar with
+# List of Interested LaTeX Packages
 
 ## Macro Packages
 
