@@ -114,6 +114,13 @@ Hashtag
 [tg-blog hashtag]: https://telegram.org/blog/replies-mentions-hashtags
 [tg-blog reply]: https://telegram.org/blog/replies-mentions
 
+## Decompress files
+
+ - in `.tar.gz`
+    ```shell
+    tar -zxvf file.tar.gz
+    ```
+
 ## Convert `DjVu` to `PDF`
 
 | Item          | Content                                                      |
