@@ -73,9 +73,10 @@
 
 ## Documentation Packages
 
-| Name                  | Category               |
+| Name                  | Description            |
 | --------------------- | ---------------------- |
-| `around-the-bend`     | answered tex exercises | 
+| `around-the-bend`     | answered TeX exercises |
+| `tex-nutshell`        | summary of TeX features and plain TeX macros |
 | `tamethebeast`        | bibtex                 |
 | `biblatex-cheatsheet` | biblatex, cheatsheet   |
 
