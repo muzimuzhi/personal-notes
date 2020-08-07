@@ -28,6 +28,9 @@ Equation
   * [Multiline Root Symbol (`\sqrt`)](https://tex.stackexchange.com/a/111433)
   * [`amsmath`] Use `\ifmeasuring@` to determine the current phase (measure or production), see [example](https://tex.stackexchange.com/a/548004)
 
+Log message
+  * Understand log of an [overfull `\hbox`](https://tex.stackexchange.com/a/171219)
+
 PGF/TikZ
   * [Reflecting a line and/or point with named coordinates](https://tex.stackexchange.com/q/467295)
 
