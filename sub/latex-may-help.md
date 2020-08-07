@@ -90,7 +90,7 @@ Meta
 * Recommended ConTeXt Docs, [Q&A on TeX-SX](https://tex.stackexchange.com/questions/2839/where-can-i-find-good-context-documentation)
 * Auto-generated [list](http://www.pragma-ade.com/general/qrcs/setup-en.pdf) of all commands, without descriptions
 
-## Projects implementing TeX by Different Programming Languages
+## TeX in Other Programming Languages
 
 ### JavaTeX Project, by Timothy Murphy
 

@@ -131,7 +131,7 @@ $ pip3 install -r requirements.txt
 * Install another version of Python: `PYTHON_BUILD_HOMEBREW_OPENSSL_FORMULA=openssl@1.0 pyenv install 3.4.4` ([ref](https://github.com/pyenv/pyenv/issues/950#issuecomment-624252667))
 * Locally set Python version: `cd <path> && pyenv local 3.4.4`
 
-## Other Languages
+## Other Languages, mostly markup ones
 
 ### Markdown
 
@@ -287,17 +287,17 @@ Clone and fetch
 
 Branch tracking
 
- * Create a local branch that tracks a remote branch
+ * Create a local branch that tracks a remote one
     ```bash
     git fetch <remote> <branch>:<local branch>
     ```
- * Delete a remote-tracking branch (the local branch itself is not deleted, [ref](https://stackoverflow.com/a/3046478))
+ * Delete a remote-tracking branch (the corresponding local branch is unchanged, [ref](https://stackoverflow.com/a/3046478))
     ```bash
     git branch --delete --remotes <remote>/<branch>
     # or
     git branch --unset-upstream <branch>
     ```
- * Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574)):
+ * Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574))
     ```bash
     # shallow clone
     $ git clone --depth=<num> <repository> [<directory>]
@@ -313,9 +313,9 @@ Branch tracking
     wait for test: `git fetch --update-shallow <remote> <branch>`
 
 Change remote
- * Delete remote branch
+ * Delete remote branch or tag
     ```bash
-    git push --delete <remote> <branch>
+    git push --delete <remote> <branch/tag>
     ```
 
 Show log
@@ -347,7 +347,7 @@ git rev-list --count HEAD
 ### SSH
 
 * [GitHub SSH Docs](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-* [GitLab SSH Docs](https://docs.gitlab.com/ee/ssh/)
+* [GitLab SSH Docs](https://gitlab.com/help/ssh/README.md)
 
 ### MySql
 
