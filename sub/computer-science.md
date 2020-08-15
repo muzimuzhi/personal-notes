@@ -164,7 +164,7 @@ $ pip3 install -r requirements.txt
 
 ### JSON (JavaScript Object Notation)
 
-* Specification: [RFC 7159](https://tools.ietf.org/html/rfc7159.html) (with [errata](https://www.rfc-editor.org/errata_search.php?rfc=7159)) and [ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)
+* Specification: [RFC 8259](https://tools.ietf.org/html/rfc8259) (with [errata](https://www.rfc-editor.org/errata_search.php?rfc=8259)) and [ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)
 
 ### ABNF (Augmented BNF)
 
