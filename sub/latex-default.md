@@ -46,7 +46,7 @@ Source: https://tex.stackexchange.com/a/17555/
                       % two-sided documents
   % hmarginratio=2:3, %   left margin : right margin = 2:3
   vmarginratio=2:3,   % top margin : bottom margin = 2:3
-  ignoreall           % the header, footer, marginal notes are excluded 
+  ignoreall           % the header, footer, marginal notes are excluded
                       %   when calculating the size of body
 }
 ```

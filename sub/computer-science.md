@@ -18,11 +18,11 @@ Load racket package, when `#lang sicp` is used
 
 * load selected identifiers from package
 ```racket
-(#%require (only <racket package name> 
+(#%require (only <racket package name>
                  <identifiers, space seperated>))
 
 ;; e.g.
-; load `provide` and `all-defined-out` from racket base, 
+; load `provide` and `all-defined-out` from racket base,
 ; and load these two only
 (#%require (racket/base provide all-defined-out))
 ```
@@ -33,7 +33,7 @@ Load sub file, when `#lang sicp` is used
 ```racket
 ;; sub file
 ; export selected identifiers
-(provide <identifiers, space seperated>) 
+(provide <identifiers, space seperated>)
 
 ; export all defined identifiers in the current file
 (provide (all-defined-out))
@@ -169,14 +169,14 @@ $ pip3 install -r requirements.txt
 ### ABNF (Augmented BNF)
 
 * Introduction: [wikipedia page](https://en.wikipedia.org/wiki/Augmented_Backus–Naur_form)
-* Specification: 
+* Specification:
   * [RFC 7405](https://tools.ietf.org/html/rfc7405), which adds syntax for case-sensitive string literals based on [RFC 5234](https://tools.ietf.org/html/rfc5234)
 * Lex used by GitHub: [language-grammars](https://github.com/Alhadis/language-grammars/blob/master/grammars/abnf.cson) by Alhadis, not finished yet (19 Aug 27)
 
 ### EBNF (Extended BNF)
 
 * Introduction: [wikipedia page](https://en.wikipedia.org/wiki/Extended_Backus–Naur_form)
-* Specifications: 
+* Specifications:
   * [ISO/IEC 14977:1996](https://standards.iso.org/ittf/PubliclyAvailableStandards/s026153_ISO_IEC_14977_1996(E).zip), not recommended
   * Variant used by [XML Spec. 5th](https://www.w3.org/TR/REC-xml/#sec-notation)
 * Lex used by GitHub: [language-grammars](https://github.com/Alhadis/language-grammars/blob/master/grammars/abnf.cson) by Alhadis, not finished yet (19 Aug 27)
@@ -245,9 +245,9 @@ http://www.apuebook.com/
 ### git
 
 General info
- 
+
  * Per command documentation: `https://git-scm.com/docs/git-<command>`
- * [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes) 
+ * [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes)
 
 Configuration
 
@@ -369,4 +369,3 @@ Related links:
  - [Column count of mysql.user is wrong. Expected 42, found 44.](https://stackoverflow.com/a/45434694) - Answer on StackOverflow
  - [Can't find mysql.infoschema after update from 5.7](https://stackoverflow.com/a/51155179) - Answer on StackOverflow
  - [4.4.5 mysql_upgrade - Check and Upgrade MySQL Tables](https://dev.mysql.com/doc/refman/8.0/en/mysql-upgrade.html) - MySql Ref Manual
- 

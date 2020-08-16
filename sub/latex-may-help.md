@@ -14,7 +14,7 @@ Expansion
 
 Record file i/o
   * `-recorder` command line option<br />
-     record every file input and output into `.fls` file 
+     record every file input and output into `.fls` file
   * `\listfiles` control sequence<br />
      record every file input caused by `\input{...}` and `\include` (but not `\input <filename>`) into the very end of `.log` file
 
