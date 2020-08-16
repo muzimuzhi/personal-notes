@@ -86,3 +86,10 @@
 * [TLCockpit](https://ctan.org/pkg/tlcockpit) - A GUI frontend to TeX Live Manager (`tlmgr`), requiring JavaFX
 * [ClutTeX](https://ctan.org/pkg/cluttex) - a program to automatically process LaTeX document without clutter working directory with `.aux`, `.log`, etc. files
 * `mkjobtexmf` - a `Perl` script that generates a texmf tree for a particular job
+* `dviasm` - DVI editing utility
+    ```bash
+    # convert dvi to human readable contents
+    dviasm file.[dvi|xdv] > file.dviasm
+    # create dvi
+    dviasm file.dviasm -o file.[dvi|xdv]
+    ```
