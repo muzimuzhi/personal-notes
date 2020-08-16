@@ -170,6 +170,25 @@ pdffonts    # list used fonts in a pdf
 pdfdetach   # extract embedded files from pdf
 ```
 
+### Read and Write Outlines
+```bash
+pip3 install PyMuPDF
+```
+
+```python3
+import fitz
+
+doc = fitz.open('test.pdf')
+toc = doc.getToc()  # read outlines
+
+# modify toc: List[List]
+
+doc.setToC(toc)     # write outlines
+doc.saveIncr()      # saves incrementally
+```
+
+Doc: https://pymupdf.readthedocs.io/en/latest/document.html
+
 ## Image Processing
 
 ### Remove transparency from a PNG image ([ref](http://www.imagemagick.org/Usage/masking/#alpha_remove), also see [this Q&A](https://stackoverflow.com/q/2322750))
