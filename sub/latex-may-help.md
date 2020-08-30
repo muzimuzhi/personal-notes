@@ -48,6 +48,48 @@ Meta
 * [Historic images](ftp://tug.org/historic/systems/texlive/)
 * Latest package files (compressed) [distributed by CTAN mirrors](https://ctan.org/tex-archive/systems/texlive/tlnet/archive)
 
+### `tlmgr` Usages
+
+* Show list of request type
+  ```bash
+  # list of schemes
+  $ tlmgr info schemes
+
+  # list of collections
+  $ tlmgr info collections
+
+  # list of all packages
+  $ tlmgr info
+  ```
+   - With option `--only-installed`, only installed items are shown.
+* Show contents of specific item
+  ```bash
+  # list contents of specified package
+  $ tlmgr info --list <pkg-name>
+
+  # list contents of specified scheme
+  # e.g., tlmgr info --list scheme-medium
+  $ tlmgr info --list <scheme-name>
+
+  # list contents of specified collection
+  $ tlmgr info --list <collection-name>
+  ```
+* Set `max_print_line` (see explanations in [texstudio-org/texstudio#325 (comment)](https://github.com/texstudio-org/texstudio/issues/325#issuecomment-649918868))
+  ```bash
+  # show
+  tlmgr conf texmf max_print_line
+
+  # set
+  tlmgr conf texmf max_print_line 2000
+
+  # delete
+  tlmgr conf texmf --delete max_print_line
+  ```
+* Get space separated list of installed packages (use GNU `ggrep` for its `-P` option):
+  ```bash
+  $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
+  ```
+
 ## pdfTeX
 
 * TUG page: https://www.tug.org/applications/pdftex/

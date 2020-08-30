@@ -20,38 +20,7 @@
     ```
 
 
-## [tlmgr] Show info about schemes, collections, and packages
-
-* Show full list
-  ```bash
-  # list of schemes
-  $ tlmgr info schemes
-
-  # list of collections
-  $ tlmgr info collections
-
-  # list of all packages
-  $ tlmgr info 
-  ```
-  With option `--only-installed`, only installed items are shown.
-* Show contents of specific item
-  ```bash
-  # list contents of specified package
-  $ tlmgr info --list <pkg-name>
-
-  # list contents of specified scheme
-  # e.g., tlmgr info --list scheme-medium
-  $ tlmgr info --list <scheme-name>
-
-  # list contents of specified collection
-  $ tlmgr info --list <collection-name>
-  ```
-* Get space separated list of installed packages (use GNU `ggrep` for its `-P` option):
-  ```bash
-  $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
-  ```
-
-## Font encodings
+### Font encodings
 
 * Main doc: `texdoc fontenc`
 * EU1 encoding (`eu1enc.def`): provided by package `euenc`
