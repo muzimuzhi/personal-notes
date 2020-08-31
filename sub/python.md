@@ -30,9 +30,9 @@ pip3 install pip-upgrade-outdated
 pip_upgrade_outdated -3
 ```
 
-Sync installed pip packages ([official doc](https://pip.pypa.io/en/stable/reference/pip_freeze/))
+Sync installed pip packages ([doc](https://pip.pypa.io/en/stable/reference/pip_freeze/))
 ```bash
-$ pip3 freeze > requirements.txt
+$ pip3 freeze [--path /usr/local/lib/python3.7/site-packages] > requirements.txt
 $ pip3 install -r requirements.txt
 ```
 
