@@ -44,6 +44,21 @@ $ pip3 install -r requirements.txt
 * Locally set Python version: `cd <path> && pyenv local 3.4.4`
 
 
+## Standard Libraries
+
+ - Full list: https://docs.python.org/3/library/index.html
+
+### `subprocess`
+
+ - Doc: https://docs.python.org/3/library/subprocess.html
+```python
+import subprocess
+
+# run shell command `ls -l` and capture the output
+result = subprocess.run(['ls', '-l'], capture_output=True)
+result.stdout.decode('utf-8')
+```
+
 ## Third-party Packages
 
 * [`colorama`](https://github.com/tartley/colorama) - Print colored terminal text.
