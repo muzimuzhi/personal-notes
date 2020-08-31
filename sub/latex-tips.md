@@ -147,6 +147,32 @@ end
 }
 ```
 
+### [hyperref] Package options
+ - Package option: `hyperindex`
+
+
+### [hyperref] Package internals
+
+ - backend files: `hpdftex.def`, `hxetex.def`, `hluatex.def`
+ - common internals:
+```tex
+\section{title}\label{key}
+
+\ref{key} -> \hyper@link{link}{section.1}{1}
+```
+
+```tex
+\contentsline -> \hyper@linkstart
+biblatex.sty: \hyper@natlinkstart -> \hyper@linkstart
+```
+
+```tex
+% only in hxetex.def, \hyper@link depends \hyper@linkstart
+\def\hyper@link#1#2#3{%
+  \hyper@linkstart{#1}{#2}#3\Hy@xspace@end\hyper@linkend
+}
+```
+
 ### [fontspec] Use with math font packages
 
 Pass `no-math` option to `fontspec`, e.g.,
