@@ -8,7 +8,7 @@
   (note the date **`2018.5.3`** following `preloaded format=xelatex `):
 
    ```
-   This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) 
+   This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018)
    (preloaded format=xelatex 2018.5.3)  2 OCT 2018 11:39
    ```
 * Put `\fmtversion` in your `.tex` file, and it will out put the format version info into the `.pdf` file, in a format of `yyyy/mm/dd` (e.g. `2018/04/01`).
@@ -110,11 +110,11 @@ According to the [discussions (and workaround) under project `luaotfload`](https
 function pgf_lookup_and_require(name)
     local sep = package.config:sub(1,1)
     local function lookup(name)
-        local sub = name:gsub('%.',sep)  
+        local sub = name:gsub('%.',sep)
         if kpse.find_file(sub, 'lua') then
             require(name)
         elseif kpse.find_file(sub, 'clua') then
-            collectgarbage('stop') 
+            collectgarbage('stop')
             require(name)
             collectgarbage('restart')
         else
@@ -126,7 +126,7 @@ function pgf_lookup_and_require(name)
         lookup('pgf.gd.' .. name .. '.library') or
         lookup('pgf.gd.' .. name) or
         lookup(name .. '.library') or
-        lookup(name) 
+        lookup(name)
 end
 \end{luacode*}
 
@@ -194,7 +194,7 @@ class TexLexer(RegexLexer):
         ],
         ...
     }
-    
+
     ... ...
 ```
 
