@@ -29,7 +29,9 @@
 * Archive Extractor<br />
   [extract.me](https://extract.me/)
 
-## Atom (editor)
+## Editor
+
+### Atom
 
 Manually install an Atom package ([ref](https://github.com/atom/apm/issues/355#issuecomment-99210591)):
 ```
@@ -55,6 +57,10 @@ apm link .
       }
     }
     ```
+
+### TeXstudio
+
+ - [`CHANGELOG.txt`](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
 
 ## DrRacket (IDE)
 
