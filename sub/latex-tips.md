@@ -1,6 +1,8 @@
-# Tips About Using LaTeX
+# LaTeX Tips
 
-## Get format version
+## Format
+
+### Get format version
 
 * The format version appears in the first line of every `.log` file <br />
   (note the date **`2018.5.3`** following `preloaded format=xelatex `):
@@ -19,6 +21,7 @@
     macro:->2018-04-01
     ```
 
+## Fonts
 
 ### Font encodings
 
@@ -26,7 +29,7 @@
 * EU1 encoding (`eu1enc.def`): provided by package `euenc`
 * T3 encoding (`t3enc.def`): provided by package `tipa`
 
-## [xetex] Show full path of fonts
+### [xetex] Show full path of fonts
 
 Add `\XeTeXtracingfonts=1` before `\documentclass`, and find full path of fonts in `.log`, like
 ```
@@ -35,7 +38,7 @@ Requested font "[lmroman10-bold]:mapping=tex-text;" at 10.0pt
 bold.otf
 ```
 
-## Using extra fonts with `lualatex`
+### [macOS] Using extra fonts with `lualatex`
 
 `lualatex` can use fonts in directory `/Library/Fonts`, but not those added to new library of `Font Book.app`. Setting TeX Live variable `OSFONTDIR` by
 
@@ -46,7 +49,10 @@ may both solve the problem.
 
 Further reading: [every variable that `texmf.cnf` can contain](https://github.com/TeX-Live/texlive-source/blob/trunk/texk/kpathsea/texmf.cnf).
 
-## Workaround: use `tikzmark` package with `xelatex`
+
+## Packages
+
+### Workaround: use `tikzmark` package with `xelatex`
 
 According to [discussions on TeX-SX](https://tex.stackexchange.com/questions/229500/) and [the bug report to `pgf` project](https://sourceforge.net/p/pgf/bugs/354/), this is a `pgf` driver bug. A workaround, which recovers the definition of `\pgfsys@hboxsynced` from `dvipdfmx` version to the common driver version, is firstly suggested in [an answer on TeX-SX](https://sourceforge.net/p/pgf/bugs/354/#72e2).
 
@@ -90,7 +96,7 @@ Workaround: redefine `\pgfsys@hboxsynced`, see below
 \makeatother
 ```
 
-## Workaround: use `tikz-feynman` package with `lualatex`
+### Workaround: use `tikz-feynman` package with `lualatex`
 
 According to the [discussions (and workaround) under project `luaotfload`](https://github.com/u-fischer/luaotfload/issues/6), an updated version of function `pgf_lookup_and_require` causes this problem. The [bug](https://sourceforge.net/p/pgf/bugs/493/) has been reported to `pgf`.
 
@@ -132,7 +138,7 @@ end
 \end{document}
 ```
 
-## [hyperref] Allow `unicode-math` math symbols in bookmark
+### [hyperref] Allow `unicode-math` math symbols in bookmark
 
 ```latex
 \hypersetup{
@@ -141,7 +147,7 @@ end
 }
 ```
 
-## [fontspec] Use with math font packages
+### [fontspec] Use with math font packages
 
 Pass `no-math` option to `fontspec`, e.g.,
 ```latex
@@ -151,13 +157,13 @@ Pass `no-math` option to `fontspec`, e.g.,
 
 ref: [answer on TeX-SX](https://tex.stackexchange.com/a/69354) by Heiko Oberdiek
 
-## [beamer] Doc of `pgfpicture` environment
+### [beamer] Doc of `pgfpicture` environment
 
-Manual of `pgf` only documents `pgfpicture` environment without any arguments, while source code of `beamer` uses an old version of that environment, 
+Manual of `pgf` only documents `pgfpicture` environment without any arguments, while source code of `beamer` uses an old version of that environment,
 
 The usage of `pgfpicture` environment in `beamer`, with four braced arguments, is defined in `pgfcorescopes.code.tex` and not documented in pgf manual yet.
 
-## [minted] Highlight `@` as command name letter
+### [minted] Highlight `@` as command name letter
 
 Modify python class `TeXLexer` in file [pygments/lexers/markup.py](https://github.com/dagwieers/pygments/blob/master/pygments/lexers/markup.py).
 
@@ -192,7 +198,7 @@ class TexLexer(RegexLexer):
     ... ...
 ```
 
-## [listings] Reset output style for `-` (U+002D)
+### [listings] Reset output style for `-` (U+002D)
 
 By default, `listings` prints character `-` as in text mode if the current font family is `\ttfamily` and as in math mode (`$-$`) otherwise. One can [overwrite this scheme](https://tex.stackexchange.com/a/424193) by
 ```latex
@@ -203,7 +209,7 @@ By default, `listings` prints character `-` as in text mode if the current font 
 \makeatother
 ```
 
-## [listings] `literate`d input absorbs following space in `(full)flexible` mode
+### [listings] `literate`d input absorbs following space in `(full)flexible` mode
 
 Example (with [workaround](https://tex.stackexchange.com/a/445764) included):
 ```latex
@@ -236,7 +242,7 @@ fullflexible:
 \end{document}
 ```
 
-## [equation] Disregard indent of displayed equations inside list env
+### [equation] Disregard indent of displayed equations inside list env
 
 ```latex
 \everydisplay\expandafter{%
@@ -246,25 +252,7 @@ fullflexible:
 }
 ```
 
-## [PDF] Produce uncompressed PDF
-
-```tex
-\ifdefined\directlua
-  % if luatex
-  \edef\pdfcompresslevel{\pdfvariable compresslevel}
-  \edef\pdfobjcompresslevel{\pdfvariable objcompresslevel}
-\fi
-\ifdefined\pdfcompresslevel
-  % if pdftex and luatex
-  \pdfcompresslevel=0
-  \pdfobjcompresslevel=0
-\else
-  % if xetex
-  \special{dvipdfmx:config z 0}
-\fi
-```
-
-## [pstricks] Get Ghostscript permission required by `xdvipdfmx`
+### [pstricks] Get Ghostscript permission required by `xdvipdfmx`
 
 From:
  - https://tex.stackexchange.com/a/554111
@@ -301,3 +289,23 @@ xdvipdfmx:warning: Image format conversion for PSTricks failed.
  - Edit `dvipdfmx.cfg` by inserting `-dNOSAFER` to line starting with `D  "rungs -q`.
  - Flag `-dNOSAFER` or finer `--permit-file-read` can be added to TeX Live's wrapper `rungs`, which is a Lua script.
 
+
+## PDF
+
+### Produce uncompressed PDF
+
+```tex
+\ifdefined\directlua
+  % if luatex
+  \edef\pdfcompresslevel{\pdfvariable compresslevel}
+  \edef\pdfobjcompresslevel{\pdfvariable objcompresslevel}
+\fi
+\ifdefined\pdfcompresslevel
+  % if pdftex and luatex
+  \pdfcompresslevel=0
+  \pdfobjcompresslevel=0
+\else
+  % if xetex
+  \special{dvipdfmx:config z 0}
+\fi
+```
