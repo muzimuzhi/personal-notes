@@ -1,6 +1,9 @@
 # Python
 
-## Decorator
+
+## Language
+
+### Decorator
   * Glossary - [decorator][python-decorator]
 
  | Reference                                          | First joined version                 | Python Enhancement Proposals |
@@ -16,7 +19,10 @@
 [pep-318]: https://www.python.org/dev/peps/pep-0318/
 [pep-3129]: https://www.python.org/dev/peps/pep-3129/
 
-## pip
+
+## Utility
+
+### `pip`
 
 Upgrade all outdated pip packages ([homepage](https://github.com/defjaf/pip_upgrade_outdated))
 ```bash
@@ -30,13 +36,14 @@ $ pip3 freeze > requirements.txt
 $ pip3 install -r requirements.txt
 ```
 
-## Packages
-
-* [`colorama`](https://github.com/tartley/colorama) - Print colored terminal text.
-
-## `pyenv`
+### `pyenv`
 
 * Install `pyenv` itself: `brew info pyenv`
 * Set PATH: `PATH=$(pyenv root)/shims:$PATH` ([ref](https://opensource.com/article/20/4/pyenv))
 * Install another version of Python: `PYTHON_BUILD_HOMEBREW_OPENSSL_FORMULA=openssl@1.0 pyenv install 3.4.4` ([ref](https://github.com/pyenv/pyenv/issues/950#issuecomment-624252667))
 * Locally set Python version: `cd <path> && pyenv local 3.4.4`
+
+
+## Third-party Packages
+
+* [`colorama`](https://github.com/tartley/colorama) - Print colored terminal text.
