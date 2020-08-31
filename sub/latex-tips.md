@@ -195,10 +195,9 @@ Modify python class `TeXLexer` in file [pygments/lexers/markup.py](https://githu
 
 ```python
 class TexLexer(RegexLexer):
-    ... ...
-
+    # [... ...]
     tokens = {
-        ...
+        # [...]
         'root': [
             (r'\\\[', String.Backtick, 'displaymath'),
             (r'\\\(', String, 'inlinemath'),
@@ -218,10 +217,9 @@ class TexLexer(RegexLexer):
             (r'[-=!+*/()\[\]]', Operator),
             (r'[^=!+*/()\[\]\\$%&_^{}0-9-]+', Name.Builtin),
         ],
-        ...
+        # [...]
     }
-
-    ... ...
+    # [... ...]
 ```
 
 ### [listings] Reset output style for `-` (U+002D)
