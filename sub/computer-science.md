@@ -8,76 +8,77 @@ Some notes on computer science, mostly online sources.
 Load racket package, when `#lang sicp` is used
 
 * load a whole package
-```racket
-(#%require <racket package name>)
+    ```racket
+    (#%require <racket package name>)
 
-;; e.g.
-(#%require racket/base)   ; load racket base
-(#%require sicp-pict)     ; load sicp picture package
-```
-
+    ;; e.g.
+    (#%require racket/base)   ; load racket base
+    (#%require sicp-pict)     ; load sicp picture package
+    ```
 * load selected identifiers from package
-```racket
-(#%require (only <racket package name>
-                 <identifiers, space seperated>))
+    ```racket
+    (#%require (only <racket package name>
+                     <identifiers, space seperated>))
 
-;; e.g.
-; load `provide` and `all-defined-out` from racket base,
-; and load these two only
-(#%require (racket/base provide all-defined-out))
-```
+    ;; e.g.
+    ; load `provide` and `all-defined-out` from racket base,
+    ; and load these two only
+    (#%require (racket/base provide all-defined-out))
+    ```
 
 Load sub file, when `#lang sicp` is used
 
-* step 1. export identifiers in the included sub file
-```racket
-;; sub file
-; export selected identifiers
-(provide <identifiers, space seperated>)
+1. export identifiers in the included sub file
+    ```racket
+    ;; sub file
+    ; export selected identifiers
+    (provide <identifiers, space seperated>)
 
-; export all defined identifiers in the current file
-(provide (all-defined-out))
+    ; export all defined identifiers in the current file
+    (provide (all-defined-out))
 
-;; e.g. 1
-(#%require (only racket/base provide))
+    ;; e.g. 1
+    (#%require (only racket/base provide))
 
-(provide square double)
-(define (square x) (* x x))
-(define (double x) (+ x x))
+    (provide square double)
+    (define (square x) (* x x))
+    (define (double x) (+ x x))
 
-;; e.g. 2
-(#%require (only racket/base provide all-defined-out))
-(provide (all-defined-out))
+    ;; e.g. 2
+    (#%require (only racket/base provide all-defined-out))
+    (provide (all-defined-out))
 
-(define (square x) (* x x))
-(define (double x) (+ x x))
-(define (halve x)
-  (if (even? x)
-      (/ x 2)
-      (error "ERROR: invalid input, not even")))
-```
+    (define (square x) (* x x))
+    (define (double x) (+ x x))
+    (define (halve x)
+      (if (even? x)
+          (/ x 2)
+          (error "ERROR: invalid input, not even")))
+    ```
+1. load sub file in the main file
+    ```racket
+    ;; main file
+    (#%require "<path to sub file>")
 
-* step 2. load sub file in the main file
-```racket
-;; main file
-(#%require "<path to sub file>")
-
-;; e.g.
-; load file with relative path
-(#%require "exercise_1.43.rkt")
-(#%require "../chapter02/exercise_2.20.rkt")
-```
+    ;; e.g.
+    ; load file with relative path
+    (#%require "exercise_1.43.rkt")
+    (#%require "../chapter02/exercise_2.20.rkt")
+    ```
 
 Run code only when current file is not required as a module
  - This is similar to `if __name__ == "__main__":` in python.
-`Main` submodule ([doc](https://docs.racket-lang.org/guide/Module_Syntax.html#%28part._main-and-test%29), [answer](https://stackoverflow.com/a/28591678/8590320))
+ - See doc of [`main` submodule][racket-main-submodule]and [answer](https://stackoverflow.com/a/28591678)
+
+[racket-main-submodule]: https://docs.racket-lang.org/guide/Module_Syntax.html#%28part._main-and-test%29
 
 ```racket
 #lang sicp
 
 (#%require (only racket/base module+))
 (module+ main
-  ...)
+  ...)  ; the body accumulates
+        ; and `main` is executed at the end of current module
 ```
 
 ### Scheme
