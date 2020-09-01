@@ -68,6 +68,18 @@ Load sub file, when `#lang sicp` is used
 (#%require "../chapter02/exercise_2.20.rkt")
 ```
 
+Run code only when current file is not required as a module
+ - This is similar to `if __name__ == "__main__":` in python.
+`Main` submodule ([doc](https://docs.racket-lang.org/guide/Module_Syntax.html#%28part._main-and-test%29), [answer](https://stackoverflow.com/a/28591678/8590320))
+
+```racket
+#lang sicp
+
+(#%require (only racket/base module+))
+(module+ main
+  ...)
+```
+
 ### Scheme
 
 * [Code Style](http://community.schemewiki.org/?scheme-style) from Community Scheme Wiki
