@@ -105,6 +105,9 @@ Meta
   * To let XeTeX auto-load variations, `Family` is recommended
 * Show font info: `aat-info.tex` and `opentype-info.tex`, located in `$TEXMFDIST/tex/xetex/xetexfontinfo`
 
+Specials
+ - `\special{x:gsave}` and `\special{x:grestore}`: https://tug.org/pipermail/xetex/2004-May/000220.html
+
 ## dvipdfm-x
 
 * [SVN repo](https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata
