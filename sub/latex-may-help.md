@@ -108,6 +108,7 @@ Meta
 ## dvipdfm-x
 
 * [SVN repo](https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata
+* Mailing list: `dvipdfmx@tug`, [archives](https://tug.org/pipermail/dvipdfmx/)
 * Build and test: _Building TeX Live (2020)_, [Sec. 4.5](https://www.tug.org/texlive/doc/tlbuild.html#Build-one-package).
     * Update binary file. Substitute file `xdvipdfmx` resides in `` `kpsewhich --var-value TEXMFDIST`/../bin/<os-dependent-dir> ``.
 * Config file: `dvipdfmx.cfg`, located in
