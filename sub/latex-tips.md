@@ -203,7 +203,7 @@ class TexLexer(RegexLexer):
             (r'\\\(', String, 'inlinemath'),
             (r'\$\$', String.Backtick, 'displaymath'),
             (r'\$', String, 'inlinemath'),
-            # (r'\\([a-zA-Z]+|.)', Keyword, 'command'), # before
+            # (r'\\([a-zA-Z]+|.)', Keyword, 'command'),  # before
             (r'\\([a-zA-Z@]+|.)', Keyword, 'command'),  # after
             (r'\\$', Keyword),
             include('general'),
@@ -221,6 +221,38 @@ class TexLexer(RegexLexer):
     }
     # [... ...]
 ```
+
+Alternatively, provide a custom lexer.
+```python
+#!/usr/bin/env python3
+
+from pygments.lexers.markup import TexLexer
+from typing import List, Tuple
+
+
+def update_token_regex(token: List[Tuple], idx,
+                       regex_old=r'\\([a-zA-Z]+|.)',
+                       regex_new=r'\\([a-zA-Z@]+|.)'):
+    node = token[idx]
+    idx2 = 0  # index of regex str
+    if node[idx2] == regex_old:
+        node = list(node)
+        node[idx2] = regex_new
+        token[idx] = tuple(node)
+
+
+class TexLexer2(TexLexer):
+    """
+    Improved lexer for the TeX and LaTeX typesetting languages.
+    Character "@" is treated part of command names.
+    """
+
+    tokens = TexLexer.tokens
+    update_token_regex(tokens['root'], 4)
+    update_token_regex(tokens['math'], 0)
+```
+
+Then modify `minted` (see [minted/176](https://github.com/gpoore/minted/issues/176)) to execute `pygmentize` with custom lexer and/or formatter.
 
 ### [listings] Reset output style for `-` (U+002D)
 
