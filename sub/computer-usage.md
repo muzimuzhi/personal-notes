@@ -155,7 +155,7 @@ Format of an outline
 
 ## PDF Utilities
 
-### Use `QPDF` to check and fix `PDF` file
+### Use `QPDF` to check and fix PDF file
 ```bash
 # program info
 brew info qpdf
@@ -163,6 +163,17 @@ brew info qpdf
 qpdf --check file.pdf
 qpdf --qdf input.pdf - | fix-qdf > output.pdf
 ```
+
+### Use `mutool` to generate human readable and editable PDF
+```bash
+# aquire program
+brew info mupdf
+# usage
+mutool clean -ad input.pdf output.pdf
+```
+
+doc: https://mupdf.com/docs/manual-mutool-clean.html
+
 
 ### `poppler` utilities
 ```bash
