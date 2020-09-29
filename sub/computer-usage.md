@@ -22,6 +22,9 @@
   * [known languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml) to GitHub
   * [grammars used by GitHub](https://github.com/github/linguist/blob/master/vendor/README.md) to do syntax highlighting
   * [test page](https://github-lightshow.herokuapp.com/?utf8=✓&scope=from-url&grammar_format=auto&grammar_url=https%3A%2F%2Fraw.githubusercontent.com%2FAlhadis%2Flanguage-grammars%2Fmaster%2Fgrammars%2Fabnf.cson&grammar_text=&code_source=from-url&code_url=https%3A%2F%2Fraw.githubusercontent.com%2FTadiT7%2Fxiaomi_violet_dump%2F5edc11ebb2c4b5d9a4bfd5ebc335ee7e47f69f56%2Fsystem%2Fsystem%2Fusr%2Fsrec%2Fen-US%2Fcontacts.abnf&code=)
+* [cloc](https://github.com/AlDanial/cloc) - count lines of code, in Perl
+  * Readme contains full manual
+  * Count lines of tex code: `cloc --force-lang=TeX,def --vcs=git`
 
 
 ## Utility Websites
