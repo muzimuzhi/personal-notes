@@ -1,6 +1,6 @@
 # Computer Usage
 
-## Tiny Useful Softwares
+## Tiny GUI Softwares
 
 * Show live battery information of Mac and iOS device<br />
   [coconut Battery](https://www.coconut-flavour.com/coconutbattery/)<br />
@@ -214,3 +214,15 @@ Doc: https://pymupdf.readthedocs.io/en/latest/document.html
 # use program ImageMagick
 convert input.png -background white -alpha remove output.png
 ```
+
+
+## Gradle
+
+Persist `--console` setting in system-wide `gradle.properties` file
+
+ - system-wide `gradle.properties` file is located in the path stored in `GRADLE_USER_HOME`, which by default is `~/.gradle`
+ - add line `org.gradle.console=verbose` to `$GRADLE_USER_HOME/gradle.properties`, after that running `gradle test` is equivalent to `gradle --console=verbose test`
+
+ docs:
+  - [Build Environment](https://docs.gradle.org/current/userguide/build_environment.html)
+  - [Command-Line Interface / Logging options / Customizing log format](https://docs.gradle.org/current/userguide/command_line_interface.html#sec:command_line_customizing_log_format)
