@@ -126,7 +126,7 @@ Discussion
 
 ### HTML
 
-  * Default link colors ([ref](https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-3), [answer](https://stackoverflow.com/a/4774037))
+  * Default link colors ([ref to HTML Spec](https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-3), [answer](https://stackoverflow.com/a/4774037))
     ```css
     :link { color: #0000EE; }
     :visited { color: #551A8B; }
