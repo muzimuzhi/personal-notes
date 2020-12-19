@@ -261,6 +261,9 @@ Clone and fetch
     git fetch --unshallow
     ```
 
+Commit changes
+ * Update commit author (and email): `git commit --amend --author="Author <author@example.com>"` ([official doc](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---authorltauthorgt))
+
 Branch tracking
 
  * Create a local branch that tracks a remote one
