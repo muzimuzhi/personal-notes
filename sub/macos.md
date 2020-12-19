@@ -43,3 +43,10 @@ $ open x-man-page://<name>
 1. `/etc/paths` + file lines under `/etc/paths.d`
 1. shell profiles (e.g., [zsh startup files](http://zsh.sourceforge.net/Doc/Release/Files.html#Startup_002fShutdown-Files))
 see [ref](https://scriptingosx.com/2017/05/where-paths-come-from/)
+
+## Zsh
+
+Remove duplicates in zsh history ([ref](https://qr.ae/pNk9yZ))
+```bash
+cat -n $HISTFILE | sort -t ';' -uk2 | sort -nk1 | cut -f2- > .zsh_short_history
+```
