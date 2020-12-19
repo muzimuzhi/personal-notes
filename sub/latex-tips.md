@@ -52,6 +52,12 @@ Further reading: [every variable that `texmf.cnf` can contain](https://github.co
 
 ## Packages
 
+### `latex3`
+
+CHANGELOG
+ * [`l3kernal`](https://github.com/latex3/latex3/blob/master/l3kernel/CHANGELOG.md)
+ * [`l3packages`](https://github.com/latex3/latex3/blob/master/l3packages/CHANGELOG.md)
+
 ### Workaround: use `tikzmark` package with `xelatex`
 
 According to [discussions on TeX-SX](https://tex.stackexchange.com/questions/229500/) and [the bug report to `pgf` project](https://sourceforge.net/p/pgf/bugs/354/), this is a `pgf` driver bug. A workaround, which recovers the definition of `\pgfsys@hboxsynced` from `dvipdfmx` version to the common driver version, is firstly suggested in [an answer on TeX-SX](https://sourceforge.net/p/pgf/bugs/354/#72e2).
