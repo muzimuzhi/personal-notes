@@ -12,10 +12,8 @@
 ## Libraries
 
 * [pyl](https://github.com/dabeaz/ply) - Python Lex-Yacc
-* [pygments](https://bitbucket.org/birkenfeld/pygments-main/src/default/) - Pythonic syntax highlighter for 300+ languages and text formats
+* [pygments](https://github.com/pygments/pygments) - Pythonic syntax highlighter for 300+ languages and text formats
   * used by LaTeX package `minted`
-  * notable issue:
-    * [#1529 unicode not working for python](https://bitbucket.org/birkenfeld/pygments-main/issues/1529/unicode-not-working-for-python)
   * structure
     * List of default token types and their short names: https://github.com/pygments/pygments/blob/master/pygments/token.py
 * [linguist](https://github.com/github/linguist) - blob languages detection used by GitHub
