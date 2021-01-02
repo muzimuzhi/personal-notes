@@ -240,7 +240,7 @@ Configuration
  * Pretty one-line `git log` ([ref](https://ma.ttias.be/pretty-git-log-in-one-line/))
     ```bash
     # set git alias
-    $ git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    $ git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit"
 
     # use git alias
     $ git logline
