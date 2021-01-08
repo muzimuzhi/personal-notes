@@ -29,6 +29,7 @@ $ open x-man-page://<name>
   * Example: [Homebrew/homebrew-cask-fonts#2082](https://github.com/Homebrew/homebrew-cask-fonts/issues/2082)
 
 ## GNU, instead of BSD CLI Tools
+* Show dependencies as a tree: `brew deps --tree <formula>`
 
 | Name    | Homebrew formula    |
 | ------- | ------------------- |
