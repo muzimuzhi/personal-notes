@@ -37,7 +37,7 @@ $ open x-man-page://<name>
 | `gsed`  | `brew info gnu-sed` |
 | `gsort` | `brew info coreutils` |
 
-## Where PATHs come from
+## Where do PATHs come from
 
 1. `/etc/profiles`
 1. `/usr/libexec/path_helper -s`
