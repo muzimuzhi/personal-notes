@@ -4,10 +4,10 @@
 
 * Show live battery information of Mac and iOS device<br />
   [coconut Battery](https://www.coconut-flavour.com/coconutbattery/)<br />
-  `brew cask info coconutbattery`
+  `brew info coconutbattery`
 * Control volume slider each app<br />
   [Background Music](https://github.com/kyleneideck/BackgroundMusic)<br />
-  `brew cask info background-music`
+  `brew info background-music`
 
 ## Libraries
 
