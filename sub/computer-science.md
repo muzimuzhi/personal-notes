@@ -237,6 +237,10 @@ Configuration
     $ cat .gitattributes
     *.tex diff=gbk
     ```
+ * Show whitespace changes in `git diff` ([doc](https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwsErrorHighlight))
+    ```bash
+    $ git config [--global] diff.wsErrorHighlight all
+    ```
  * Pretty one-line `git log` ([ref](https://ma.ttias.be/pretty-git-log-in-one-line/))
     ```bash
     # set git alias
