@@ -351,6 +351,17 @@ xdvipdfmx:warning: Image format conversion for PSTricks failed.
  - Edit `dvipdfmx.cfg` by inserting `-dNOSAFER` to line starting with `D  "rungs -q`.
  - Flag `-dNOSAFER` or finer `--permit-file-read` can be added to TeX Live's wrapper `rungs`, which is a Lua script.
 
+### [pythontex]
+
+```bash
+xelatex main.tex
+# Ideally, "pythontex main" is enough.  But since pythontex.py starts with
+#     #!/usr/bin/env python
+# pythontex will call python2, which has no pygments to use.
+python3 `which pythontex` main
+xelatex main.tex
+```
+
 
 ## PDF
 
