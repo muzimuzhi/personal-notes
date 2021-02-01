@@ -144,14 +144,13 @@ Format of an outline
 
 ```lisp
 (bookmarks
-  ("1 first chapter" "#10"
-    ("1.1 first section" "#11"
-      ("1.1.1 first subsection" "#12" ))
-    ("1.2 second section" "#13" ))
-  ("2 second chapter" "#14"
-    ("2.1 first section" "#16" )
-    ("2.2 second section" "#13" ))
-)
+  ("1 First chapter" "#10"
+    ("1.1 First section" "#11"
+      ("1.1.1 First subsection" "#12"))
+    ("1.2 Second section" "#13"))
+  ("2 Second chapter" "#14"
+    ("2.1 First section" "#16")
+    ("2.2 Second section" "#13")))
 ```
 
 ## PDF Utilities
