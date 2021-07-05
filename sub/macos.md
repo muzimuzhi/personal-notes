@@ -23,6 +23,18 @@ Open man page in new terminal window ([ref](https://scriptingosx.com/2017/04/on-
 $ open x-man-page://<name>
 ```
 
+- `zip` and `unzip`
+    ```bash
+    # dry run, list files
+    unzip -l file.zip
+
+    # unzip specific file
+    unzip file.zip path/to/file.txt     # this will create "./path/to/file.txt"
+
+    # unzip specific file and drop directory structures in archive
+    unzip -j file.zip path/to/file.txt  # this will create "./file.txt"
+    ```
+
 ## Homebrew and Homebrew-cask
 
 * [`version` Stanza Details](https://github.com/Homebrew/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/version.md)
