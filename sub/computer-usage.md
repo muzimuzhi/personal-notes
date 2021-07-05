@@ -214,6 +214,23 @@ Doc: https://pymupdf.readthedocs.io/en/latest/document.html
 convert input.png -background white -alpha remove output.png
 ```
 
+## Font Selection
+
+### Source Code Pro (before v2.032) can't be styled/colored in Chrome
+
+Solution: Install the latest version by running `brew install iandol/adobe-fonts/font-source-code-pro`
+
+The `homebrew-cask-fonts` switched the source of Source Code Pro from adobe-fonts to google-fonts, while the latter decided to stop pulling from the former since newer versions don't have hinting. But adobe-fonts just removed SVG table from that font to support its use in browser since v2.032 ...
+
+Longer story
+ - https://github.com/adobe-fonts/source-code-pro/issues/250
+ - https://bugs.chromium.org/p/chromium/issues/detail?id=1100502
+ - https://bugzilla.mozilla.org/show_bug.cgi?id=1520157
+ - https://github.com/Homebrew/homebrew-cask-fonts/issues/3973
+
+Links
+ - https://github.com/adobe-fonts/source-code-pro/releases
+ - https://github.com/iandol/homebrew-adobe-fonts
 
 ## Gradle
 
