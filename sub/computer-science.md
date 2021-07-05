@@ -295,6 +295,30 @@ Branch tracking
     ```
     wait for test: `git fetch --update-shallow <remote> <branch>`
 
+Add tags
+    ```bash
+    # add a lightweight tag
+    git tag -a <tag>
+    # add an annotated tag
+    git tag -a <tag> -m "annot"
+
+    # list only lightweight tags
+    # ref: https://stackoverflow.com/a/67687543
+    git for-each-ref refs/tags | grep commit
+
+    # list only annotated tags
+    git for-each-ref refs/tags | grep -v commit
+    ```
+
+Push to remote
+
+ * Push single tag ([Q&A](https://stackoverflow.com/a/23212493))
+    ```bash
+    # to solve tag/branch name clashes, use "refs/tags/<tag>"
+    git push <remote> <tag>
+    ```
+    Differences between annotated (`-m <message>`) and unannotated tags: [this Q&A](https://stackoverflow.com/q/11514075)
+
 Change remote
  * Delete remote branch or tag
     ```bash
