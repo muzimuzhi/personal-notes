@@ -32,8 +32,10 @@ pip_upgrade_outdated -3
 
 Sync installed pip packages ([doc](https://pip.pypa.io/en/stable/reference/pip_freeze/))
 ```bash
-$ pip3 freeze [--path /usr/local/lib/python3.7/site-packages] > requirements.txt
-$ pip3 install -r requirements.txt
+# optional, in case "pip3" is still linked to the old version
+brew unlink python@3.9 && brew link python@3.9
+pip3 freeze [--path /usr/local/lib/python3.8/site-packages] > requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ### `pyenv`
