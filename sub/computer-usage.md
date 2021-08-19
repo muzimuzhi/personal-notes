@@ -214,6 +214,17 @@ Doc: https://pymupdf.readthedocs.io/en/latest/document.html
 convert input.png -background white -alpha remove output.png
 ```
 
+### Set transparency color for a PNG image
+```bash
+# make white transparent, allowing a 4% fuzz
+# source: https://tex.stackexchange.com/a/611207
+convert input.png -fuzz 4% -transparent "#ffffff" output.png
+```
+Doc for options [`-transparent color`][imagemagick-opt-transparent] and [`-fuzz distance{%}`][imagemagick-opt-fuzz].
+
+[imagemagick-opt-transparent]: https://imagemagick.org/script/command-line-options.php#transparent
+[imagemagick-opt-fuzz]: https://imagemagick.org/script/command-line-options.php#transparent
+
 ## Font Selection
 
 ### Source Code Pro (before v2.032) can't be styled/colored in Chrome
