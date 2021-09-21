@@ -134,7 +134,7 @@ Hashtag
 
 | Item          | Content                                              |
 | ------------- | ---------------------------------------------------- |
-| Read Outline  | `djvused input.djvu -e 'print-outline'`              |
+| Read Outline  | `djvused input.djvu -e 'print-outline' -u > outline.txt` |
 | Write Outline | `djvused -e 'set-outline outline.txt' -s input.djvu` |
 | Doc           | [`djvused`'s man page][djvused doc]                  |
 
