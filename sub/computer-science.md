@@ -277,8 +277,6 @@ Branch tracking
  * Delete a remote-tracking branch (the corresponding local branch is unchanged, [ref](https://stackoverflow.com/a/3046478))
     ```bash
     git branch --delete --remotes <remote>/<branch>
-    # or
-    git branch --unset-upstream <branch>
     ```
  * Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574))
     ```bash
@@ -337,8 +335,15 @@ Show log
 
 Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044)):
 ```bash
-$ git reflog expire --expire=now --all
-$ git gc --prune=now
+git reflog expire --expire=now --all
+git gc --prune=now
+```
+
+Shorten local clone, just to save disk space ([ref](https://stackoverflow.com/a/37105443))
+```bash
+git fetch --depth=1
+git reflog expire --expire-unreachable=now --all
+git gc --aggressive --prune=all
 ```
 
 Diff between arbitrary files:
