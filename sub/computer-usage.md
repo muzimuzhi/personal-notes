@@ -196,7 +196,7 @@ pip3 install PyMuPDF
 import fitz
 
 doc = fitz.open('test.pdf')
-toc = doc.getToc()  # read outlines
+toc = doc.getToC()  # read outlines
 
 # modify toc: List[List]
 
