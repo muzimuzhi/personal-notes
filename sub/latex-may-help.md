@@ -135,6 +135,7 @@ Specials
 
 * Recommended ConTeXt Docs, [Q&A on TeX-SX](https://tex.stackexchange.com/questions/2839/where-can-i-find-good-context-documentation)
 * Auto-generated [list](http://www.pragma-ade.com/general/qrcs/setup-en.pdf) of all commands, without descriptions
+* Redefined primitives `\normal<primitive csname>` (done in source files `norm-*.mkii`)
 
 ## TeX in Other Programming Languages
 
