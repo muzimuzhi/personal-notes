@@ -225,11 +225,11 @@ Configuration
 
  * Print pathnames in Unicode, other than octal UTF-8 ([ref](https://stackoverflow.com/a/22828826))
     ```bash
-    git config core.quotepath off
+    git config [--global] core.quotepath off
     ```
  * Diff non-UTF8 files:
     ```bash
-    # Suppose the .tex files are GBK encoding
+    # Suppose the .tex files are in GBK encoding
     $ cat .git/config
     [diff "gbk"]
             textconv = "iconv -f gbk -t utf-8"
