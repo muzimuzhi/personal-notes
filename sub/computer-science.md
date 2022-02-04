@@ -312,7 +312,7 @@ Push to remote
 
  * Push single tag ([Q&A](https://stackoverflow.com/a/23212493))
     ```bash
-    # to solve tag/branch name clashes, use "refs/tags/<tag>"
+    # to resolve tag/branch name clashes, use "refs/tags/<tag>"
     git push <remote> <tag>
     ```
     Differences between annotated (`-m <message>`) and unannotated tags: [this Q&A](https://stackoverflow.com/q/11514075)
@@ -333,7 +333,7 @@ Show log
     git log --reverse
     ```
 
-Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044)):
+Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044))
 ```bash
 git reflog expire --expire=now --all
 git gc --prune=now
