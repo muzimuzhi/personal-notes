@@ -268,6 +268,19 @@ Clone and fetch
 Commit changes
  * Update commit author (and email): `git commit --amend --author="Author <author@example.com>"` ([official doc](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---authorltauthorgt))
 
+Workflow
+ * Keep your branch clean with [`--fixup`][git-commit-fixup] and [`--autosquash`][git-rebase-autosquash] ([article](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html))
+    ```bash
+    # `--fix` automatically marks your commit as a fix of a previous commit
+    # The resulted commit message will be "fixup! <msg of referred commit>"
+    git commit --fixup <commit>
+    # `--autosquash` automatically organize merging of these fixup commits and associated normal commits
+    git rebase -i --autosquash
+    ```
+
+[git-commit-fixup]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt
+[git-rebase-autosquash]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---autosquash
+
 Branch tracking
 
  * Create a local branch that tracks a remote one
