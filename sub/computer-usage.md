@@ -239,7 +239,7 @@ convert input.png -fuzz 4% -transparent "#ffffff" output.png
 Doc for options [`-transparent color`][imagemagick-opt-transparent] and [`-fuzz distance{%}`][imagemagick-opt-fuzz].
 
 [imagemagick-opt-transparent]: https://imagemagick.org/script/command-line-options.php#transparent
-[imagemagick-opt-fuzz]: https://imagemagick.org/script/command-line-options.php#transparent
+[imagemagick-opt-fuzz]: https://imagemagick.org/script/command-line-options.php#fuzz
 
 ## Font Selection
 
