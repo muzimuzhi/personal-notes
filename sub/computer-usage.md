@@ -208,6 +208,22 @@ Doc: https://pymupdf.readthedocs.io/en/latest/document.html
 
 ## Image Processing
 
+### Tools
+ - ImageMagick
+   - `brew info imagemagick`
+   - [CLI options](https://imagemagick.org/script/command-line-options.php)
+   - [`-format <expr>`](https://imagemagick.org/script/escape.php)
+
+### Change DPI (density)
+```bash
+# show dpi
+#  - long form `-format '%[units] %[resolution.x],%[resolution.y]\n'`
+$ identify -units PixelsPerInch -format '%U %x,%y\n' input.png
+
+# change dpi
+$ convert -density 300 -units PixelsPerInch input.png output.png
+```
+
 ### Remove transparency from a PNG image ([ref](http://www.imagemagick.org/Usage/masking/#alpha_remove), also see [this Q&A](https://stackoverflow.com/q/2322750))
 ```bash
 # use program ImageMagick
