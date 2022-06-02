@@ -2,7 +2,17 @@
 
 ## Format
 
-### Get format version
+### LaTeX
+
+#### Split docs
+
+Only `texdoc` names listed. For each name, both `<name>-doc` and `<name>-code` exist.
+
+ - Hook management: `lthooks`, `ltcmdhooks`, `ltfilehook`, `ltshipout`, `ltpara`
+ - New modules: `ltmarks`
+ - LaTeX lab: `documentmetadata-support`
+
+#### Get format version
 
 * The format version appears in the first line of every `.log` file <br />
   (note the date **`2018.5.3`** following `preloaded format=xelatex `):
@@ -382,3 +392,39 @@ xelatex main.tex
   \special{dvipdfmx:config z 0}
 \fi
 ```
+
+
+## General
+
+* Category code<br />
+  TeX doesn't change category codes of once tokenized text (unless you use `\scantokens`).
+  ([question comment](https://tex.stackexchange.com/q/498864/#comment1259946_498864) on TeX-SX)
+* Behavior of `\uppercase` and `\lowercase`<br />
+  The uppercase/lowercase table in tex (unfortunately) is fixed based on the T1 font encoding.
+  ([issue comment](https://github.com/latex3/latex2e/issues/103#issuecomment-450581689) on GitHub)
+* Special tokens
+  * frozen `\relax` ([`texdoc interface3`, sec XVI.7](https://github.com/latex3/latex3/blob/c297e780ff706dab7b30f9ad5153f2f58f542de9/l3kernel/l3token.dtx#L1162-L1164) and [TeX-SX Q&A](https://tex.stackexchange.com/a/57417)) 
+* Significance of MWE<br />
+  Writing up a good issue report including a clear MWE (Minimal Working Example) takes some effort, but it is also essential to help us identifying and fixing issues. ([LaTeX news article](https://www.latex-project.org/news/2018/12/10/issue29-of-latex2e-news-released/) on latex-project.org)
+* How to report bug to LaTeX2e core<br />
+  Details on how to report bugs can be found in the article ["New rules for reporting bugs in the LaTeX core software"](https://www.latex-project.org/publications/2018-FMi-TUB-tb121mitt-bug-reporting.pdf). ([news article](https://www.latex-project.org/news/2018/12/10/issue29-of-latex2e-news-released/) on latex-project.org)
+* Purposes of initializing `.aux` file with a `\relax`<br />
+  1) catch impossible-to-write error as soon as possible  2) ensure `.aux` file is never empty ([answer](https://tex.stackexchange.com/a/398751) on TeX-SX)
+* PGF-TikZ
+  * TikZ pictures can't be nested. Sometimes it works but that is a pure coincidence. [by hmenke](https://github.com/pgf-tikz/pgf/issues/743#issuecomment-530999926), one of maintainers of tikz
+  * `tkz-euclide` and `tkz-base` are just 4k+ lines. They uses deprecated `arrows` tikz library, and `fp` package instead of `fpu` tikz library.
+* l3kernel
+  * Either fully-expandable or `\protected`
+    > The LaTeX3 approach is that everything should be fully-expandable or `\protected`
+    >
+    > [by Joseph Wright](https://github.com/latex3/latex3/issues/375#issuecomment-310894595)
+* l3packages/xtemplate
+    > It's pretty clear that xtemplate is a set of good ideas but won't go forward: I'm not sure what's best here.
+    >
+    > [by Joseph Wright](https://github.com/latex3/latex3/issues/656#issuecomment-571098206)
+
+    > meaning that most of us (all? I?) think that `xtemplate` was a good prototype with good ideas but not necessarily the best or the most appropriate ones in the end and that by the end of the days the final interface will look different even though it will probably incoprporate several of the ideas in xtemplate in one way or the other. And that's what Joseph referred to.
+  >
+  > by Frank Mittelbach
+* DocStrip
+  * `\endinput` has a dual purpose: if used at the start of the line it is interpret as "please end the file here"; in any other position it is considered part of code and will be handled like any other code that is docstripped. So if you need `\endinput` as part of your code make sure it is not at the beginning of a line. ---[by Frank Mittelbach](https://github.com/latex3/latex2e/issues/244#issuecomment-571224849)
