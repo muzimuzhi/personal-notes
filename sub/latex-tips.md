@@ -408,6 +408,14 @@ python3 `which pythontex` main
 xelatex main.tex
 ```
 
+## Topics: table
+
+Variable Rule width
+ - vertical rule: `!{\vrule width 2pt}`
+ - horizontal rule: `\specialrule{2pt}{0em}{0em}` from `booktabs`, compatible with `longtable`\
+   Full syntax: `\specialrule{<width>}{<above skip>}{<below skip>}`
+ - see example [tex-sx/646876](https://tex.stackexchange.com/a/646876/)
+
 
 ## PDF
 
