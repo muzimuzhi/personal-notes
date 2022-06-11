@@ -193,6 +193,38 @@ biblatex.sty: \hyper@natlinkstart -> \hyper@linkstart
 }
 ```
 
+### [hyperref] Page hyperlinks in index
+
+Auto page hyperlinks added to index entries may affect order of row pages and encaped pages. A special `.ist` can be used to overcome this, see [gh/latex3/hyperref#243].
+
+```tex
+% special .ist file
+\begin{filecontents}[noheader, force]{hyperpage.ist}
+delim_0 ", \\hyperpageIdx{"
+delim_1 ", \\hyperpageIdx{"
+delim_2 ", \\hyperpageIdx{"
+delim_n "}\\nil, \\hyperpageIdx{"
+delim_t "}\\nil"
+encap_prefix "\\"
+encap_infix "}{{"
+encap_suffix "}"
+\end{filecontents}
+
+% preamble settings
+\usepackage{etoolbox} % for \ifstrempty
+\usepackage{makeidx}
+\makeindex
+\usepackage[hyperindex=false]{hyperref}
+
+% no encap,   e.g., \hyperpageIdx{1}\relax
+% with encap, e.g., \hyperpageIdx{\seealso{bar}}{{2}}\relax
+\def\hyperpageIdx#1#2\nil{%
+  \ifstrempty{#2}
+    {\hyperpage{#1}}
+    {\ignorespaces#1{\hyperpage#2}}%
+}
+```
+
 ### [fontspec] Use with math font packages
 
 Pass `no-math` option to `fontspec`, e.g.,
