@@ -12,7 +12,7 @@ These are some notes in the result of my daily web searching and time wasting.
   * [Usage](sub/computer-usage.md)
   * [Website Usage](sub/website-usage.md)
   * [macOS Only](sub/macos.md)
-* LaTeX
+* (La)TeX
   * Guideline to docs and other resources
     * recommended LaTeX packages (TODO)
     * valuable documents on CTAN (TODO)
@@ -23,7 +23,6 @@ These are some notes in the result of my daily web searching and time wasting.
     * [`ctex`](sub/latex-ctex.md), under construction
   * [Default settings](sub/latex-default.md) of packages/classes
   * [Tips](sub/latex-tips.md)
-  * [Something may help](sub/latex-may-help.md) in the future
 * Font
   * Font list
     * [Win 10](https://docs.microsoft.com/en-us/typography/fonts/windows_10_font_list)
