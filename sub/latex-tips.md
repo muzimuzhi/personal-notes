@@ -4,13 +4,17 @@
 
 ### LaTeX
 
-#### Split docs
+#### Docs
 
-Only `texdoc` names listed. For each name, both `<name>-doc` and `<name>-code` exist.
+Only `texdoc` names listed.
 
- - Hook management: `lthooks`, `ltcmdhooks`, `ltfilehook`, `ltshipout`, `ltpara`
- - New modules: `ltmarks`
- - LaTeX lab: `documentmetadata-support`
+ - Basic: `source2e`, `classes`, `usrguide`, `fntguide`, `encguide`
+ - LaTeX3: `interface3`, `source3`, `expl3`
+ - Hook management\*: `lthooks`, `ltcmdhooks`, `ltfilehook`, `ltshipout`, `ltpara` 
+ - New modules\*: `ltmarks`, `usrguide3`
+ - LaTeX-lab: `documentmetadata-support`\*, `latex-lab-footnotes`, `latex-lab-new-or`, `latex-lab-prototype`, `latex-lab-testphase`
+
+\* with variants `-doc` and `-code`
 
 #### Get format version
 
