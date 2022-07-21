@@ -37,6 +37,18 @@ $ open x-man-page://<name>
 
 ## Homebrew and Homebrew-cask
 
+* Desplay local path/location of either brew's repo or a tap ([doc][brew-__repo])
+    ```bash
+    # desplay path of brew's repo
+    brew --repo
+
+    # desplay path of spcified brew tap
+    brew --repo homebrew/casks
+    brew --repo dart-lang/dart
+    ```
+
+[brew-__repo]: https://docs.brew.sh/Manpage#--repository---repo-tap-
+
 * [`version` Stanza Details](https://github.com/Homebrew/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/version.md)
   * Example: [Homebrew/homebrew-cask-fonts#2082](https://github.com/Homebrew/homebrew-cask-fonts/issues/2082)
 
