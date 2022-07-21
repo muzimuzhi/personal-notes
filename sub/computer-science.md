@@ -281,7 +281,7 @@ Workflow
 [git-commit-fixup]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt
 [git-rebase-autosquash]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---autosquash
 
-Branch tracking
+Branching and Merging
 
  * Create a local branch that tracks a remote one
     ```bash
@@ -305,6 +305,11 @@ Branch tracking
     $ git fetch <remote> <new_branch>
     ```
     wait for test: `git fetch --update-shallow <remote> <branch>`
+
+ * Include a commit summary in merge commit
+   ```bash
+   $ git merge --no-ff --log <branch>
+   ```
 
 Add tags
     ```bash
