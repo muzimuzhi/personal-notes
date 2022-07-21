@@ -41,7 +41,7 @@
 | `pgfgantt`        | graphics/pgf        | Draws Gantt charts                                           |
 | `tikzlings`       | graphics/pgf        | Predefined small animals                                     |
 |                   |                     |                                                              |
-| `lstaddons`       | code listing        | add-on for `listings`: autogobble and line background        |
+| `lstaddons`       | code listing        | `listings` add-ons: autogobble and line background           |
 |                   |                     |                                                              |
 | `changes`         | editorial           | Markup change in text manually                               |
 |                   |                     |                                                              |
