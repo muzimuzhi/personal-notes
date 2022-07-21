@@ -97,6 +97,12 @@ Specials
 * Set single letter command line options from inside tex file: `\special{dvipdfmx:config <opt> <val>}`.
     * Example: Use `\special{dvipdfmx:config C 0x0010}` to not optimize PDF destinations. (option `-C` is documented in `texdoc dvipdfmx`, sec. 6.1)
 
+* Undocumented `\special{<cmd>}` commands
+  - `pdf:xann` and `dvipdfmx:catch_phantom`\
+    https://tug.org/pipermail/dvipdfmx/2020-June/000077.html
+  - `pdfcolorstackinit` and `pdfcolorstack`\
+    https://tug.org/pipermail/dvipdfmx/2020-September/000105.html
+
 
 [dvipdfm-x-svn]: https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/
 [dvipdfm-x-github]: https://github.com/TeX-Live/texlive-source/tree/trunk/texk/dvipdfm-x
