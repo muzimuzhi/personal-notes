@@ -274,8 +274,8 @@ Workflow
     # `--fix` automatically marks your commit as a fix of a previous commit
     # The resulted commit message will be "fixup! <msg of referred commit>"
     git commit --fixup <commit>
-    # `--autosquash` automatically organize merging of these fixup commits and associated normal commits
-    git rebase -i --autosquash
+    # `--autosquash` automatically organizes merging of  fixup commits and associated normal commits
+    git rebase [-i] --autosquash <upstream>
     ```
 
 [git-commit-fixup]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt
