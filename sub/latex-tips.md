@@ -85,7 +85,8 @@ Specials
 
 ### dvipdfm-x
 
-* [SVN repo](https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) (as part of TeX Live) and [GitHub repo](https://github.com/shirat74/dvipdfm-x/) of Shunsaku Hirata
+* Source directory in TeX Live's [SVN repo][dvipdfm-x-svn] and [GitHub mirror][dvipdfm-x-github]
+   * Shunsaku Hirata's fork https://github.com/shirat74/dvipdfm-x/
 * Mailing list: `dvipdfmx@tug`, [archives](https://tug.org/pipermail/dvipdfmx/)
 * Build and test: _Building TeX Live (2020)_, [Sec. 4.5](https://www.tug.org/texlive/doc/tlbuild.html#Build-one-package).
     * Update binary file. Substitute file `xdvipdfmx` resides in `` `kpsewhich --var-value TEXMFDIST`/../bin/<os-dependent-dir> ``.
@@ -96,6 +97,9 @@ Specials
 * Set single letter command line options from inside tex file: `\special{dvipdfmx:config <opt> <val>}`.
     * Example: Use `\special{dvipdfmx:config C 0x0010}` to not optimize PDF destinations. (option `-C` is documented in `texdoc dvipdfmx`, sec. 6.1)
 
+
+[dvipdfm-x-svn]: https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/
+[dvipdfm-x-github]: https://github.com/TeX-Live/texlive-source/tree/trunk/texk/dvipdfm-x
 
 ## Format
 
