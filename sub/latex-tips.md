@@ -83,6 +83,24 @@
 Specials
  - `\special{x:gsave}` and `\special{x:grestore}`: https://tug.org/pipermail/xetex/2004-May/000220.html
 
+### LuaTeX
+
+* `\immediateassignment` and `\immediateassigned`, `texdoc luatex` sec. 2.8.8
+   ```tex
+   \newcount\mycount
+
+   \edef\TestMe{\advance\mycount 1 foo:\the\mycount}
+   \show\TestMe % ->\advance \mycount 1 foo:0.
+
+   \mycount=0
+   \edef\TestMe{\immediateassignment\advance\mycount 1 foo:\the\mycount}
+   \show\TestMe % ->foo:1.
+
+   \mycount=0
+   \edef\TestMe{\immediateassigned{\advance\mycount 1 }foo:\the\mycount}
+   \show\TestMe % ->foo:1.
+   ```
+
 ### dvipdfm-x
 
 * Source directory in TeX Live's [SVN repo][dvipdfm-x-svn] and [GitHub mirror][dvipdfm-x-github]
