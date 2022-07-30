@@ -160,6 +160,10 @@ Only `texdoc` names listed.
     macro:->2018-04-01
     ```
 
+#### Commands for class and package writers
+
+* `\@disable@packageload{<pkg>}{<replacement code>}`, requires LaTeX2e 2020/10/01
+
 ### ConTeXt
 
 * Recommended ConTeXt Docs, [Q&A on TeX-SX](https://tex.stackexchange.com/questions/2839/where-can-i-find-good-context-documentation)
