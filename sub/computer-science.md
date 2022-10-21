@@ -267,6 +267,7 @@ Clone and fetch
 
 Commit changes
  * Update commit author (and email): `git commit --amend --author="Author <author@example.com>"` ([official doc](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---authorltauthorgt))
+ * Batch sign-off: `git rebase --signoff <commit>` ([--signoff][git-rebase-signoff], no short form)
 
 Workflow
  * Keep your branch clean with [`--fixup`][git-commit-fixup] and [`--autosquash`][git-rebase-autosquash] ([article](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html))
@@ -278,6 +279,7 @@ Workflow
     git rebase [-i] --autosquash <upstream>
     ```
 
+[git-rebase-signoff]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---signoff
 [git-commit-fixup]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt
 [git-rebase-autosquash]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---autosquash
 
