@@ -282,10 +282,11 @@ Workflow
 [git-rebase-signoff]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---signoff
 [git-commit-fixup]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt
 [git-rebase-autosquash]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---autosquash
+[git-fetch-refspec]: https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt-ltrefspecgt
 
 Branching and Merging
 
- * Create a local branch that tracks a remote one
+ * Create a local branch that tracks a remote one ([doc][git-fetch-refspec])
     ```bash
     git fetch <remote> <branch>:<local branch>
     ```
