@@ -377,6 +377,32 @@ Count the commits for current branch ([ref](https://stackoverflow.com/a/11657647
 git rev-list --count HEAD
 ```
 
+Large File Storage (LFS)
+- homepage: https://git-lfs.github.com/
+- docs: https://github.com/git-lfs/git-lfs/tree/main/docs/man
+- NOTE: GitHub Pages doesn't support Git LFS. ([source](https://github.com/git-lfs/git-lfs/issues/1342#issuecomment-229965973))
+
+```bash
+# install and init
+brew install git-lfs
+git lfs install
+
+# track/untrack files by extension
+git lfs track "*.gif"
+git lfs untrack "*.gif"
+# Equivalent to add/remove line
+#   *.gif filter=lfs diff=lfs merge=lfs -text
+# to `.gitattributes`
+
+# fetch and checkout lfs files
+git lfs fetch
+git lfs checkout
+
+# retrack files (after untrack them from lfs)
+# QA: https://stackoverflow.com/q/35011366/
+git add --renormalize .
+```
+
 ### SSH
 
 * [GitHub SSH Docs](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
