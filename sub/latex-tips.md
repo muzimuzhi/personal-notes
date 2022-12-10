@@ -164,6 +164,18 @@ Only `texdoc` names listed.
 
 * `\@disable@packageload{<pkg>}{<replacement code>}`, requires LaTeX2e 2020/10/01
 
+#### Notable LaTeX NEWS
+
+* ltnews28, 2018-04-01, A general rollback concept for packages and classes
+  ```tex
+  % in "doc.pkg"
+  \DeclareRelease{v2}{2021-06-01}{doc-2021-06-01.sty}
+
+  % in "main.tex"
+  \usepackage{doc}[=v2]
+  ```
+  * Full description: Frank Mittelbach, [A rollback concept for packages and classes](https://www.latex-project.org/publications/2018-FMi-TUB-tb122mitt-version-rollback.pdf)
+
 ### ConTeXt
 
 * Recommended ConTeXt Docs, [Q&A on TeX-SX](https://tex.stackexchange.com/questions/2839/where-can-i-find-good-context-documentation)
