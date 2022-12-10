@@ -151,7 +151,7 @@ Only `texdoc` names listed.
    (preloaded format=xelatex 2018.5.3)  2 OCT 2018 11:39
    ```
 * Put `\fmtversion` in your `.tex` file, and it will out put the format version info into the `.pdf` file, in a format of `yyyy/mm/dd` (e.g. `2018/04/01`).
-* Since the format version is restored in command `\fmtversion`, you can get the value of it from the terminal, with the help of [`texdef`](https://ctan.org/pkg/texdef?lang=en):
+* Since the format version is restored in command `\fmtversion`, you can get the value of it from the terminal, with the help of [`texdef`](https://ctan.org/pkg/texdef):
 
     ```bash
     $ latexdef fmtversion
@@ -667,7 +667,7 @@ Meta
 
 #### JavaTeX Project, by Timothy Murphy
 
-An introduction to this Project is published on [1999 TUGboat](https://www.tug.org/TUG99-web/pdf/murphy.pdf). This project is also uploaded to CTAN as a package [named `javatex`](https://ctan.org/pkg/javatex?lang=en). The performance is so poor that the author "considers it unusable in practice", by its readme on CTAN.
+An introduction to this Project is published on [1999 TUGboat](https://www.tug.org/TUG99-web/pdf/murphy.pdf). This project is also uploaded to CTAN as a package [named `javatex`](https://ctan.org/pkg/javatex). The performance is so poor that the author "considers it unusable in practice", by its readme on CTAN.
 
 ## Journal
 
