@@ -133,10 +133,10 @@ Specials
 
 Only `texdoc` names listed.
 
- - Basic: `source2e`, `classes`, `usrguide`, `fntguide`, `encguide`
+ - Basic: `source2e`, `classes`, `usrguide-historic` (previously called `usrguide`), `fntguide`, `encguide`
  - LaTeX3: `interface3`, `source3`, `expl3`
  - Hook management\*: `lthooks`, `ltcmdhooks`, `ltfilehook`, `ltshipout`, `ltpara` 
- - New modules\*: `ltmarks`, `usrguide3`
+ - New modules: `ltmarks`\*, `usrguide` (previously called `usrguide3`)
  - LaTeX-lab: `documentmetadata-support`\*, `latex-lab-footnotes`, `latex-lab-new-or`, `latex-lab-prototype`, `latex-lab-testphase`
 
 \* with variants `-doc` and `-code`
