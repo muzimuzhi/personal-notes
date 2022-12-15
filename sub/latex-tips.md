@@ -12,7 +12,7 @@
 
 #### `tlmgr`
 
-- Homepage https://www.tug.org/texlive/tlmgr.html
+- TUG page https://www.tug.org/texlive/tlmgr.html
 - Online doc https://www.tug.org/texlive/doc/tlmgr.html
 - Configuration file, local (`kpsewhich -a texmf.cnf`) and [in texlive repo][tlmgr-texmf.cnf]
 
@@ -41,6 +41,26 @@
 [tlmgr-texmf.cnf]: https://github.com/TeX-Live/texlive-source/blob/trunk/texk/kpathsea/texmf.cnf
 [tlmgr-info]: https://www.tug.org/texlive/doc/tlmgr.html#info
 [tlmgr-conf]: https://www.tug.org/texlive/doc/tlmgr.html#conf
+
+#### `texdoc`
+
+- TUG page https://tug.org/texdoc/
+- Repo https://github.com/TeX-Live/texdoc
+- Doc `texdoc texdoc`
+- Remark: command `texdoc` installed by MiKTeX is just a shortcut for an independent program [`mthelp`][miktex-mthelp].
+
+* Show results with corresponding scores
+  ```bash
+  # long option: texdoc --list --machine amsmath
+  $ texdoc -lM amsmath | head -5
+  amsmath	11.5	/path/to/texmf-dist/doc/latex/amsmath/amsldoc.pdf	en	User guide (English)
+  amsmath	5.5	/path/to/texmf-dist/doc/latex/amsmath/amsmath.pdf
+  amsmath	5.0	/path/to/texmf-dist/doc/latex/amsmath/subeqn.pdf	en	Sub-equation usage
+  amsmath	5.0	/path/to/texmf-dist/doc/latex/amsmath/technote.pdf	en	Technical details
+  amsmath	5.0	/path/to/texmf-dist/doc/latex/amsmath/testmath.pdf	en	Examples paper
+  ```
+
+[miktex-mthelp]: https://docs.miktex.org/manual/mthelp.html
 
 ### MiKTeX
 
