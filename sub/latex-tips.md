@@ -10,47 +10,37 @@
 * [Historic images](ftp://tug.org/historic/systems/texlive/)
 * Latest package files (compressed) [distributed by CTAN mirrors](https://ctan.org/tex-archive/systems/texlive/tlnet/archive)
 
-#### `tlmgr` Usages
+#### `tlmgr`
 
-* Show list of request type
+- Homepage https://www.tug.org/texlive/tlmgr.html
+- Online doc https://www.tug.org/texlive/doc/tlmgr.html
+- Configuration file, local (`kpsewhich -a texmf.cnf`) and [in texlive repo][tlmgr-texmf.cnf]
+
+* Show info of a package or request type ([doc][tlmgr-info])
   ```bash
-  # list of schemes
-  $ tlmgr info schemes
-
-  # list of collections
-  $ tlmgr info collections
-
-  # list of all packages
-  $ tlmgr info
+  $ tlmgr info (<pkg> | collections | collections)
   ```
-   - With option `--only-installed`, only installed items are shown.
-* Show contents of specific item
+  - `--only-installed`
+  - `--list`, list contents
+  - Get space separated list of installed packages (GNU `ggrep` used for its `-P` option):
+    ```bash
+    $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
+    ```
+
+* Show or modify user configurations ([doc][tlmgr-conf])
   ```bash
-  # list contents of specified package
-  $ tlmgr info --list <pkg-name>
+  # show all config settings
+  $ tlmgr conf [texmf | tlmgr | updmap]
 
-  # list contents of specified scheme
-  # e.g., tlmgr info --list scheme-medium
-  $ tlmgr info --list <scheme-name>
-
-  # list contents of specified collection
-  $ tlmgr info --list <collection-name>
+  # show, set, and delete one `texmf` (TeX and Metafont) config
+  $ tlmgr conf texmf max_print_line
+  $ tlmgr conf texmf max_print_line 2000
+  $ tlmgr conf texmf --delete max_print_line
   ```
-* Set `max_print_line` (see explanations in [texstudio-org/texstudio#325 (comment)](https://github.com/texstudio-org/texstudio/issues/325#issuecomment-649918868))
-  ```bash
-  # show
-  tlmgr conf texmf max_print_line
 
-  # set
-  tlmgr conf texmf max_print_line 2000
-
-  # delete
-  tlmgr conf texmf --delete max_print_line
-  ```
-* Get space separated list of installed packages (use GNU `ggrep` for its `-P` option):
-  ```bash
-  $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
-  ```
+[tlmgr-texmf.cnf]: https://github.com/TeX-Live/texlive-source/blob/trunk/texk/kpathsea/texmf.cnf
+[tlmgr-info]: https://www.tug.org/texlive/doc/tlmgr.html#info
+[tlmgr-conf]: https://www.tug.org/texlive/doc/tlmgr.html#conf
 
 ### MiKTeX
 
@@ -202,15 +192,10 @@ bold.otf
 
 ### [macOS] Using extra fonts with `lualatex`
 
-`lualatex` can use fonts in directory `/Library/Fonts`, but not those added to new library of `Font Book.app`. Setting TeX Live variable `OSFONTDIR` by
-
- - adding line `OSFONTDIR = <path>` to file `TEXMFROOT/texmf.cnf`, or
- - using command `tlmgr conf texmf OSFONTDIR <path>`
-
-may both solve the problem.
-
-Further reading: [every variable that `texmf.cnf` can contain](https://github.com/TeX-Live/texlive-source/blob/trunk/texk/kpathsea/texmf.cnf).
-
+`lualatex` can use fonts in directory `/Library/Fonts`, but not those added to new library of `Font Book.app`.
+```bash
+$ tlmgr conf texmf OSFONTDIR <path>
+```
 
 ## Packages
 
