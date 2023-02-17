@@ -30,7 +30,7 @@ pip3 install pip-upgrade-outdated
 pip_upgrade_outdated -3
 ```
 
-Sync installed pip packages ([doc](https://pip.pypa.io/en/stable/reference/pip_freeze/))
+Sync installed pip packages ([doc](https://pip.pypa.io/en/stable/cli/pip_freeze/))
 ```bash
 # optional, in case "pip3" is still linked to the old version
 brew unlink python@3.9 && brew link python@3.9
