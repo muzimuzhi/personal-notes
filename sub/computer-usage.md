@@ -172,7 +172,7 @@ brew info mupdf
 mutool clean -ad input.pdf output.pdf
 ```
 
-doc: https://mupdf.com/docs/manual-mutool-clean.html
+doc: https://mupdf.readthedocs.io/en/latest/mutool-clean.html
 
 
 ### `poppler` utilities
