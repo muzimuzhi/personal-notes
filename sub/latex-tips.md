@@ -222,8 +222,20 @@ $ tlmgr conf texmf OSFONTDIR <path>
 ### `latex3`
 
 CHANGELOG
- * [`l3kernal`](https://github.com/latex3/latex3/blob/master/l3kernel/CHANGELOG.md)
- * [`l3packages`](https://github.com/latex3/latex3/blob/master/l3packages/CHANGELOG.md)
+  - [`l3kernal`](https://github.com/latex3/latex3/blob/master/l3kernel/CHANGELOG.md)
+  - [`l3packages`](https://github.com/latex3/latex3/blob/master/l3packages/CHANGELOG.md)
+
+Docs not widely known
+  - `l3backend`
+  - `l3kernel` (directory `$(kpsewhich --var-value TEXMFDIST)/doc/latex/l3kernel`)
+    - `expl3.pdf`, `interface3.pdf`
+    - `l3term-glossary.pdf`, `l3styleguide.pdf`
+    - `l3news.pdf`, `l3syntax-changes.pdf`, `l3obsolete.pdf`
+    - `l3prefixes.pdf`
+    - `l3doc.pdf` (for `l3doc.cls`), `l3docstrip.pdf` (stub file, see `docstrip.pdf`)
+  - `l3experimental`
+  - `l3packages`
+  - `l3trial`
 
 ### Workaround: use `tikzmark` package with `xelatex`
 
