@@ -238,8 +238,21 @@ Docs
   - `l3trial`
 
 Modules
-  - `l3debug.dtx` (no `l3debug.pdf` generated as of 2023-05)
-    generates `l3debug.def`, loaded by `\sys_load_debug:`
+  - `l3debug.dtx`, generates `l3debug.def` which will be loaded by `\sys_load_debug:`
+    - no `l3debug.pdf` generated nor part of `interface3.pdf` as of 2023-05
+    - in `l3debug.def`, `\debug_on:n` is redefined to do the real setting.
+    - starting from `l3kernel` 2023-05-23 (commit [1ec8adb6](https://github.com/latex3/latex3/commit/1ec8adb66edbdf480d0a8fcfed25de146d94f271)), `\sys_load_debug:` is integrated into `\debug_on:n`.
+    - enable debugging without explicitly loading `expl3` package
+      ```tex
+      %% before
+      \sys_load_debug:
+      \debug_on:n { ... }
+      %% from `l3kernel` 2023-05-23 on
+      \debug_on:n { check-declarations , check-expressions , deprecation , log-functions }
+      % or equivalently
+      \debug_on:n { all }
+      ```
+
 
 ### Workaround: use `tikzmark` package with `xelatex`
 
