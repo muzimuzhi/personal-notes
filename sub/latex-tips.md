@@ -225,7 +225,7 @@ CHANGELOG
   - [`l3kernal`](https://github.com/latex3/latex3/blob/master/l3kernel/CHANGELOG.md)
   - [`l3packages`](https://github.com/latex3/latex3/blob/master/l3packages/CHANGELOG.md)
 
-Docs not widely known
+Docs
   - `l3backend`
   - `l3kernel` (directory `$(kpsewhich --var-value TEXMFDIST)/doc/latex/l3kernel`)
     - `expl3.pdf`, `interface3.pdf`
@@ -236,6 +236,10 @@ Docs not widely known
   - `l3experimental`
   - `l3packages`
   - `l3trial`
+
+Modules
+  - `l3debug.dtx` (no `l3debug.pdf` generated as of 2023-05)
+    generates `l3debug.def`, loaded by `\sys_load_debug:`
 
 ### Workaround: use `tikzmark` package with `xelatex`
 
