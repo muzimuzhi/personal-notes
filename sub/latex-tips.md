@@ -65,11 +65,11 @@
 ### MiKTeX
 
 * MiKTeX now [supports Win/Mac/Linux](https://miktex.org/download), and provides Docker image.
-* Unique TeX features, see [doc](https://docs.miktex.org/2.9/manual/texfeatures.html) for full description
-  * automatic package installation
-  * list of package usage
-  * additional input directories
-  * specific directory for auxiliary files
+* [Unique TeX features](https://docs.miktex.org/manual/texfeatures.html)
+  * automatic package installation: `--disable-installer` and `--enable-installer`
+  * list of package usage: `--record-package-usages=<file>`
+  * additional input directories: `--include-directory=<dir>`
+  * specific directory for auxiliary files: `--aux-directory=<dir>`
 * [List of packages](https://miktex.org/packages) contained in MiKTeX, and the current (compressed) packages files [distributed by CTAN mirrors](https://ctan.org/tex-archive/systems/win32/miktex/tm/packages)
 
 
