@@ -704,6 +704,13 @@ Meta
 
 An introduction to this Project is published on [1999 TUGboat](https://www.tug.org/TUG99-web/pdf/murphy.pdf). This project is also uploaded to CTAN as a package [named `javatex`](https://ctan.org/pkg/javatex). The performance is so poor that the author "considers it unusable in practice", by its readme on CTAN.
 
-## Journal
+## Journals
 
 [The PracTeX Journal](http://tug.org/pracjourn/2012-1/toc.html), the online journal of the TeX Users Group, has published [20 issues](http://tug.org/pracjourn/archive.html) from 2005 to 2012.
+
+## Books
+
+### The LaTeX Companion, 3rd Edition (tlc3)
+
+- Examples https://github.com/FrankMittelbach/tlc3-examples
+- Errata https://github.com/latex3/latex2e/blob/develop/base/doc/tlc3.err
