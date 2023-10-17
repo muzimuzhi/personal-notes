@@ -11,7 +11,7 @@ mentions:USERNAME  # note the third person singular "s"
 commenter:USERNAME
 ```
 
-[github search issues]: https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
+[github search issues]: https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests
 
 All my subscriptions
 - https://github.com/notifications/subscriptions
