@@ -11,6 +11,24 @@ commenter:USERNAME
 
 [github search issues]: https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
 
+### GitHub Pull Requests
+
+Check out a PR locally
+- with local branch created
+  `git fetch origin pull/<pr-id>/head:<branch-name> && git checkout <branch-name>`
+- without local branch created
+  `git fetch origin pull/<pr-id>/head && git checkout FETCH_HEAD`
+  https://stackoverflow.com/a/45967995
+- using the GitHub CLI
+  `gh pr checkout <pr-id>`
+  This may fail in a shallow clone, see https://github.com/cli/cli/issues/4287
+- docs (not very helpful)
+  - "[Checking out pull requests locally][checkout-pr-branch]"
+  - "[Committing changes to a pull request branch created from a fork][commit-to-pr-branch]".
+
+[checkout-pr-branch]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
+[commit-to-pr-branch]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/committing-changes-to-a-pull-request-branch-created-from-a-fork
+
 ### GitHub Pages
 
 Build site locally
