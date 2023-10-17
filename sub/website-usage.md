@@ -2,7 +2,9 @@
 
 ## GitHub
 
-Searching issues and pull requests ([full doc][github search issues])
+### GitHub Searching
+
+Filter issues and pull requests ([full doc][github search issues])
 
 ```bash
 mentions:USERNAME  # note the third person singular "s"
