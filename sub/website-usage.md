@@ -11,6 +11,9 @@ commenter:USERNAME
 
 [github search issues]: https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
 
+All my subscriptions
+- https://github.com/notifications/subscriptions
+
 ### GitHub Pull Requests
 
 Check out a PR locally
