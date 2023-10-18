@@ -2,6 +2,12 @@
 
 ## GitHub
 
+### GitHub Flavored Markdown
+
+- general [Markdown](./computer-science#markdown) notes
+- spec https://github.github.com/gfm/
+- related Github docs https://docs.github.com/en/get-started/writing-on-github
+
 ### GitHub Searching
 
 Filter issues and pull requests ([full doc][github search issues])
