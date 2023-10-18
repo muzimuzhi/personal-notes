@@ -125,6 +125,8 @@ Discussion
     * in Oct 2023, the latest CommonMark version is v0.30 (2021-06-19)
     * will GFM spec sync with that of CommonMark?
       https://github.com/github/cmark-gfm/issues/259 (closed by issue author on 2023-10-03 with disappointment)
+  * GitLab Flavored Markdown (GLFM)
+    https://docs.gitlab.com/ee/development/gitlab_flavored_markdown/
 * Special Usages
   * Use `<span></span>` to disable auto-linking ([ref](https://gist.github.com/alexpeattie/4729247))
   * Use `<summary>` element to hide long contents ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary), [usage example on GitHub](https://github.com/T-F-S/tcolorbox/issues/93#issuecomment-574827784)):
