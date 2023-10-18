@@ -140,7 +140,7 @@ Discussion
         loooooooong contents
     </details>
     ```
-* Application
+* Adoption
   * As of June 20, 2020, all Stack Overflow sites are on CommonMark.
     * [We're switching to CommonMark](https://meta.stackexchange.com/q/348746)
     * [Allowed HTML tags and attributes](https://meta.stackexchange.com/a/135909)
