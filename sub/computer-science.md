@@ -107,9 +107,17 @@ Discussion
 
 ### Markdown
 
-* Specification and Implementation (parsing and rendering library)
-  * [CommonMark](https://spec.commonmark.org/) and library [`commonmark/cmark`](https://github.com/commonmark/cmark)
-  * [GitHub Flavored Markdown](https://github.github.com/gfm/) (GFM) and library [`github/cmark-gfm`](https://github.com/github/cmark-gfm), both based on CommonMark's
+* Specifications and Implementations
+  * CommonMark
+    * spec https://spec.commonmark.org/
+    * spec repo https://github.com/commonmark/commonmark-spec/
+    * online demo https://spec.commonmark.org/dingus/
+    * library https://github.com/commonmark/cmark
+  * GitHub Flavored Markdown (GFM)
+    * spec https://github.github.com/gfm/
+    * spec source https://github.com/github/cmark-gfm/blob/master/test/spec.txt
+      (got from https://talk.commonmark.org/t/location-of-gfm-spec/4250 and https://github.com/github/cmark-gfm/issues/93)
+    * library https://github.com/github/cmark-gfm
 * Special Usages
   * Use `<span></span>` to disable auto-linking ([ref](https://gist.github.com/alexpeattie/4729247))
   * Use `<summary>` element to hide long contents ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary), [usage example on GitHub](https://github.com/T-F-S/tcolorbox/issues/93#issuecomment-574827784)):
