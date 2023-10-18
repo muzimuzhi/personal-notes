@@ -118,6 +118,9 @@ Discussion
     * spec source https://github.com/github/cmark-gfm/blob/master/test/spec.txt
       (got from https://talk.commonmark.org/t/location-of-gfm-spec/4250 and https://github.com/github/cmark-gfm/issues/93)
     * library https://github.com/github/cmark-gfm
+    * some extra (DOM-based?) GitHub extensions are not included
+      * autolink extension skips `ftp://` uris https://github.com/github/cmark-gfm/issues/177
+      * [alerts][gfm-alert] not included https://github.com/github/cmark-gfm/issues/350
   * Relation between CommonMark and GFM
     * GFM spec and library are both based on CommonMark's
       https://github.blog/2017-03-14-a-formal-spec-for-github-markdown/
@@ -144,6 +147,8 @@ Discussion
   * As of June 20, 2020, all Stack Overflow sites are on CommonMark.
     * [We're switching to CommonMark](https://meta.stackexchange.com/q/348746)
     * [Allowed HTML tags and attributes](https://meta.stackexchange.com/a/135909)
+
+[gfm-alert]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts
 
 ### HTML
 
