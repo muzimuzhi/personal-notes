@@ -118,6 +118,13 @@ Discussion
     * spec source https://github.com/github/cmark-gfm/blob/master/test/spec.txt
       (got from https://talk.commonmark.org/t/location-of-gfm-spec/4250 and https://github.com/github/cmark-gfm/issues/93)
     * library https://github.com/github/cmark-gfm
+  * Relation between CommonMark and GFM
+    * GFM spec and library are both based on CommonMark's
+      https://github.blog/2017-03-14-a-formal-spec-for-github-markdown/
+    * 0.29-gfm (2019-04-06) is based on CommonMark v0.29 (2019-04-06)
+    * in Oct 2023, the latest CommonMark version is v0.30 (2021-06-19)
+    * will GFM spec sync with that of CommonMark?
+      https://github.com/github/cmark-gfm/issues/259 (closed by issue author on 2023-10-03 with disappointment)
 * Special Usages
   * Use `<span></span>` to disable auto-linking ([ref](https://gist.github.com/alexpeattie/4729247))
   * Use `<summary>` element to hide long contents ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary), [usage example on GitHub](https://github.com/T-F-S/tcolorbox/issues/93#issuecomment-574827784)):
