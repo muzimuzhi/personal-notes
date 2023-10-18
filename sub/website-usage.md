@@ -49,6 +49,18 @@ Links
           `[link-label]`, equivalent to collapsed-reference-link `[link-label][]`
           https://github.github.com/gfm/#shortcut-reference-link
 
+Confusing description in 0.29-gfm
+
+- phrase "first link label" in definitions of concepts "collapsed reference link" and "shortcut reference link"
+  - > A collapsed reference link consists of a link label that matches a link reference definition elsewhere in the document, followed by the string `[]`. The contents of the **first link label** are parsed as inlines, which are used as the link’s text.
+    https://github.github.com/gfm/#collapsed-reference-link
+  - > A shortcut reference link consists of a link label that matches a link reference definition elsewhere in the document and is not followed by `[]` or a link label. The contents of the **first link label** are parsed as inlines, which are used as the link’s text.
+    https://github.github.com/gfm/#shortcut-reference-link
+  - Q: What does "first link label" here mean?
+  - Can be traced back to commonmark spec. 
+    https://github.com/commonmark/commonmark-spec/issues/746
+  - On 2023-10-18, CommonMark has removed the two occurrences of word "first". Waiting for GFM to catch up.
+
 ### GitHub Searching
 
 Filter issues and pull requests ([full doc][github search issues])
