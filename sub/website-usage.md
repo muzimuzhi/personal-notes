@@ -8,6 +8,47 @@
 - spec https://github.github.com/gfm/
 - related Github docs https://docs.github.com/en/get-started/writing-on-github
 
+Links
+```md
+<!-- full-reference-link -->
+[my text][my-label] <!-- link-text == "my text", link-label == "my-label" -->
+<!-- shortcut-reference-link -->
+[my-label]          <!-- link-text == link-label == "my-label" -->
+
+<!-- link reference definition -->
+[my-label]: /my-url
+```
+
+- GFM Spec
+  - link-reference-definition
+    `[link-label]: link-destination "link-title"`
+    https://github.github.com/gfm/#link-reference-definitions
+      - the concept `link-text`, `link-label`, and `link-title` defined in GFM Spec contain the corresponding delimiters like `[...]` or `"..."`
+  - link
+    https://github.github.com/gfm/#links
+    - components: link-text, link-destination, and link-title
+      https://github.github.com/gfm/#link-text
+      https://github.github.com/gfm/#link-destination
+      https://github.github.com/gfm/#link-title
+      - link-title is optional
+    - classification
+      tip: link-text is always taken from the first `[...]`
+      - inline-link
+        `[link-text](link-destination "link-title")`
+        - link-title can alternatively be delimited by `'...'` and `(...)`
+        https://github.github.com/gfm/#inline-link
+      - reference-link
+        https://github.github.com/gfm/#reference-link
+        - full-reference-link
+          `[link-text][link-label]`
+          https://github.github.com/gfm/#full-reference-link
+        - collapsed-reference-link
+          `[link-label][]`, equivalent to full-reference-link `[link-label][link-label]`
+          https://github.github.com/gfm/#collapsed-reference-link
+        - shortcut-reference-link
+          `[link-label]`, equivalent to collapsed-reference-link `[link-label][]`
+          https://github.github.com/gfm/#shortcut-reference-link
+
 ### GitHub Searching
 
 Filter issues and pull requests ([full doc][github search issues])
