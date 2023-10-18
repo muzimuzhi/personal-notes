@@ -130,9 +130,9 @@ Discussion
       https://github.com/github/cmark-gfm/issues/259 (closed by issue author on 2023-10-03 with disappointment)
   * GitLab Flavored Markdown (GLFM)
     https://docs.gitlab.com/ee/development/gitlab_flavored_markdown/
-* Online comparison among Markdown implementations
-  * BabelMark 3, https://babelmark.github.io/
-    (last updated Oct 2018, main author remains active on GitHub)
+* babelmark3, online comparison among Markdown implementations
+  https://babelmark.github.io/
+  * last updated Oct 2018, main author remains active on GitHub
   * saw in https://talk.commonmark.org/t/is-first-underdefined-in-the-commonmark-spec/1276/3
 * Special Usages
   * Use `<span></span>` to disable auto-linking ([ref](https://gist.github.com/alexpeattie/4729247))
