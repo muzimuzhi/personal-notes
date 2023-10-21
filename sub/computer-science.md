@@ -141,14 +141,8 @@ Discussion
   * last updated Oct 2018, main author remains active on GitHub
   * saw in https://talk.commonmark.org/t/is-first-underdefined-in-the-commonmark-spec/1276/3
 * Special Usages
-  * Use `<span></span>` to disable auto-linking ([ref](https://gist.github.com/alexpeattie/4729247))
-  * Use `<summary>` element to hide long contents ([MDN doc](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary), [usage example on GitHub](https://github.com/T-F-S/tcolorbox/issues/93#issuecomment-574827784)):
-    ```html
-    <details>
-        <summary>short summary</summary>
-        loooooooong contents
-    </details>
-    ```
+  * Using `<span>` tag to disable auto-linking
+    https://gist.github.com/alexpeattie/4729247
 * Adoption
   * As of June 20, 2020, all Stack Overflow sites are on CommonMark.
     * [We're switching to CommonMark](https://meta.stackexchange.com/q/348746)
