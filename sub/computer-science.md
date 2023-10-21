@@ -136,10 +136,12 @@ Discussion
       https://www.rfc-editor.org/rfc/rfc7763
       https://datatracker.ietf.org/doc/html/rfc7763
     * saw in https://sspai.com/prime/story/free-markdown-editor-2023
+
 * babelmark3, online comparison among Markdown implementations
   https://babelmark.github.io/
   * last updated Oct 2018, main author remains active on GitHub
   * saw in https://talk.commonmark.org/t/is-first-underdefined-in-the-commonmark-spec/1276/3
+
 * Adoption
   * As of June 20, 2020, all Stack Overflow sites are on CommonMark.
     * [We're switching to CommonMark](https://meta.stackexchange.com/q/348746)
