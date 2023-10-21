@@ -9,6 +9,7 @@
 - related Github docs https://docs.github.com/en/get-started/writing-on-github
 
 Links
+
 ```md
 <!-- full-reference-link -->
 [my text][my-label] <!-- link-text == "my text", link-label == "my-label" -->
@@ -49,55 +50,55 @@ Links
           `[link-label]`, equivalent to collapsed-reference-link `[link-label][]`
           https://github.github.com/gfm/#shortcut-reference-link
 
-Confusing description in 0.29-gfm
+- Confusing description in 0.29-gfm
+  - phrase "first link label" in definitions of concepts "collapsed reference link" and "shortcut reference link"
+    - > A collapsed reference link consists of a link label that matches a link reference definition elsewhere in the document, followed by the string `[]`. The contents of the **first link label** are parsed as inlines, which are used as the link’s text.
+      https://github.github.com/gfm/#collapsed-reference-link
+    - > A shortcut reference link consists of a link label that matches a link reference definition elsewhere in the document and is not followed by `[]` or a link label. The contents of the **first link label** are parsed as inlines, which are used as the link’s text.
+      https://github.github.com/gfm/#shortcut-reference-link
+    - Q: What does "first link label" here mean?
+    - Can be traced back to commonmark spec. 
+      https://github.com/commonmark/commonmark-spec/issues/746
+    - On 2023-10-18, CommonMark has removed the two occurrences of word "first". Waiting for GFM to catch up.
 
-- phrase "first link label" in definitions of concepts "collapsed reference link" and "shortcut reference link"
-  - > A collapsed reference link consists of a link label that matches a link reference definition elsewhere in the document, followed by the string `[]`. The contents of the **first link label** are parsed as inlines, which are used as the link’s text.
-    https://github.github.com/gfm/#collapsed-reference-link
-  - > A shortcut reference link consists of a link label that matches a link reference definition elsewhere in the document and is not followed by `[]` or a link label. The contents of the **first link label** are parsed as inlines, which are used as the link’s text.
-    https://github.github.com/gfm/#shortcut-reference-link
-  - Q: What does "first link label" here mean?
-  - Can be traced back to commonmark spec. 
-    https://github.com/commonmark/commonmark-spec/issues/746
-  - On 2023-10-18, CommonMark has removed the two occurrences of word "first". Waiting for GFM to catch up.
+Special Usages
 
-- Special Usages
-  - Using `<span>` tag to disable auto-linking
-    https://gist.github.com/alexpeattie/4729247
-  - Using `<details>` and `<summary>` tags to create collapsed sections
-    - shortcut: typing `/details`, a GitHub slash command
-      ```html
-      <details><summary>Details</summary>
-      <p>
+- Using `<span>` tag to disable auto-linking
+  https://gist.github.com/alexpeattie/4729247
+- Using `<details>` and `<summary>` tags to create collapsed sections
+  - shortcut: typing `/details`, a GitHub slash command
+    ```html
+    <details><summary>Details</summary>
+    <p>
 
-      |cursor position
+    |cursor position
 
-      </p>
-      </details> 
-      ```
-      https://github.blog/changelog/2023-03-15-introducing-the-github-markdown-helpers-public-beta/
-      https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands
-    - example
-      ```html
-      <details>
-        <summary>Details about <code>\x</code></summary>
+    </p>
+    </details> 
+    ```
+    https://github.blog/changelog/2023-03-15-introducing-the-github-markdown-helpers-public-beta/
+    https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands
+  - example
+    ```html
+    <details>
+      <summary>Details about <code>\x</code></summary>
 
-        markdown content normally parsed
+      markdown content normally parsed
 
-      </details>
-      ```
-      https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections
-    - notes
-      - `<details>` starts a three-line html block which is treated as raw html, and can only be ended by a blank line. Thus the content of `<summary>` element is not parsed as markdown.
-        https://github.github.com/gfm/#html-blocks
-      - To enable parsing, `<summary>` open tag must be followed by a blank line. But this will make the `<summary>` content a block element (surrounded by `<p>`). It will look like `▸<newline>Details about ...`.
-        https://github.github.com/gfm/#paragraphs
-      - A CSS solution is to set `details summary > * { display: inline; }`, but it seems GitHub blocks user-specified re-styling. Not only `<style>` element, but `style` attribute like `<summary style="color: red;">` are blocked.
-        https://css-tricks.com/two-issues-styling-the-details-element-and-how-to-solve-them/#aa-inline-all-the-things
-        https://github.github.com/gfm/#disallowed-raw-html-extension-
-    - MDN docs
-      https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
-      https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
+    </details>
+    ```
+    https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections
+  - notes
+    - `<details>` starts a three-line html block which is treated as raw html, and can only be ended by a blank line. Thus the content of `<summary>` element is not parsed as markdown.
+      https://github.github.com/gfm/#html-blocks
+    - To enable parsing, `<summary>` open tag must be followed by a blank line. But this will make the `<summary>` content a block element (surrounded by `<p>`). It will look like `▸<newline>Details about ...`.
+      https://github.github.com/gfm/#paragraphs
+    - A CSS solution is to set `details summary > * { display: inline; }`, but it seems GitHub blocks user-specified re-styling. Not only `<style>` element, but `style` attribute like `<summary style="color: red;">` are blocked.
+      https://css-tricks.com/two-issues-styling-the-details-element-and-how-to-solve-them/#aa-inline-all-the-things
+      https://github.github.com/gfm/#disallowed-raw-html-extension-
+  - MDN docs
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
 
 ### GitHub Searching
 
