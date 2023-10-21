@@ -130,6 +130,12 @@ Discussion
       https://github.com/github/cmark-gfm/issues/259 (closed by issue author on 2023-10-03 with disappointment)
   * GitLab Flavored Markdown (GLFM)
     https://docs.gitlab.com/ee/development/gitlab_flavored_markdown/
+  * "Markdown Variants" registry established by IANA (Internet Assigned Numbers Authority)
+    https://www.iana.org/assignments/markdown-variants/markdown-variants.xhtml
+    * mentioned in RFC7763 (informational), The text/markdown Media Type
+      https://www.rfc-editor.org/rfc/rfc7763
+      https://datatracker.ietf.org/doc/html/rfc7763
+    * saw in https://sspai.com/prime/story/free-markdown-editor-2023
 * babelmark3, online comparison among Markdown implementations
   https://babelmark.github.io/
   * last updated Oct 2018, main author remains active on GitHub
