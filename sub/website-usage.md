@@ -160,3 +160,11 @@ About the `webrick` workaround
  - `jekyll` depends on `webrick`, but the latter one is [no longer a bundled gem in Ruby 3.0](https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/).
  - Once `jekyll` releases a new version (most likely [v4.3](https://github.com/jekyll/jekyll/milestone/72?closed=1)) including the [PR resolving this](https://github.com/jekyll/jekyll/pull/8524), and gem `gihub-pages` uses that newer `jekyll`, then the workaround is not needed.
 
+### GitHub Actions
+
+- workflow syntax
+  https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+  - glob pattern `*` doesn't match `/`, use `**` instead
+    https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+    - one misuse: using `on.push.branches: ["*"]` to accept all branches, but actually branches containing `/` are filtered out
+      https://github.com/latex3/latex3/pull/1293
