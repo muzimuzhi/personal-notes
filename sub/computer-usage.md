@@ -32,6 +32,14 @@
 
 ## Editor
 
+### Visual Studio Code (vscode)
+
+- latex grammar
+  https://github.com/jlelong/vscode-latex-basics
+  imported by both vscode and its `latex-workshop` extension
+  https://github.com/microsoft/vscode/tree/main/extensions/latex
+  https://github.com/James-Yu/LaTeX-Workshop/tree/master/syntax
+
 ### TeXstudio
 
  - [`CHANGELOG.txt`](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
