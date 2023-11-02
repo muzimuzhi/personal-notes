@@ -32,6 +32,11 @@
 
 ## Editor
 
+### TeXstudio
+
+ - [`CHANGELOG.txt`](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
+
+
 ### Atom
 
 Manually install an Atom package ([ref](https://github.com/atom/apm/issues/355#issuecomment-99210591)):
@@ -44,24 +49,20 @@ apm link .
 
 [Script Package] Change font size of output window ([ref](https://github.com/rgbkrk/atom-script/issues/1191))
 
- - Open config file `~/.atom/packages/script/styles/script.less`
- - Add property `font-size: 14px;`.
-    ```less
-    .script-view {
-      // [...]
+- Open config file `~/.atom/packages/script/styles/script.less`
+- Add property `font-size: 14px;`.
+  ```less
+  .script-view {
+    // [...]
 
-      .line {
-        border-radius: 0px;
-        margin: 0px;
-        padding: 0px;
-        font-size: 14px;  // added here
-      }
+    .line {
+      border-radius: 0px;
+      margin: 0px;
+      padding: 0px;
+      font-size: 14px;  // added here
     }
-    ```
-
-### TeXstudio
-
- - [`CHANGELOG.txt`](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
+  }
+  ```
 
 ## DrRacket (IDE)
 
