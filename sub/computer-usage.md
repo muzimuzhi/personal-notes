@@ -41,6 +41,11 @@
   https://github.com/microsoft/vscode/tree/main/extensions/latex
   https://github.com/James-Yu/LaTeX-Workshop/tree/master/syntax
 
+- features
+  - Floating editor windows
+    since v1.84, insiders only
+    https://code.visualstudio.com/updates/v1_84#_floating-editor-windows
+
 ### TeXstudio
 
  - [`CHANGELOG.txt`](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
