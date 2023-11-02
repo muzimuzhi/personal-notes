@@ -32,6 +32,7 @@
 
 ## Editor
 
+<!-- ### vscode -->
 ### Visual Studio Code (vscode)
 
 - latex grammar
