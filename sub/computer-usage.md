@@ -41,6 +41,13 @@
   https://github.com/microsoft/vscode/tree/main/extensions/latex
   https://github.com/James-Yu/LaTeX-Workshop/tree/master/syntax
 
+- workspace cache
+  stored in `~/Library/Application Support/Code/User/workspaceStorage/<32-length ID>`
+  - cleanup cache per workspace
+    run command "Workspaces: Cleanup Storage" from extension "Workspace Storage Cleanup"
+    https://marketplace.visualstudio.com/items?itemName=mehyaa.workspace-storage-cleanup
+    - saw in https://stackoverflow.com/a/75666552
+
 - features
   - Floating editor windows
     since v1.84, insiders only
