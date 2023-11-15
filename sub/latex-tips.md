@@ -14,9 +14,11 @@
 
 - TUG page https://www.tug.org/texlive/tlmgr.html
 - Online doc https://www.tug.org/texlive/doc/tlmgr.html
-- Configuration file, local (`kpsewhich -a texmf.cnf`) and [in texlive repo][tlmgr-texmf.cnf]
+- Configuration file `kpsewhich -a texmf.cnf`
+  in texlive repo https://github.com/TeX-Live/texlive-source/blob/trunk/texk/kpathsea/texmf.cnf
 
-* Show info of one or more of scheme/collection/package ([doc][tlmgr-info])
+* Show info of one or more of scheme/collection/package
+  https://www.tug.org/texlive/doc/tlmgr.html#info
   ```
   $ tlmgr info [option...] [name...]
   ```
@@ -47,7 +49,8 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
     $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
     ```
 
-* Show or modify user configurations ([doc][tlmgr-conf])
+* Show or modify user configurations
+  https://www.tug.org/texlive/doc/tlmgr.html#conf
   ```bash
   # show all config settings
   $ tlmgr conf [texmf | tlmgr | updmap]
@@ -57,10 +60,6 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
   $ tlmgr conf texmf max_print_line 2000
   $ tlmgr conf texmf --delete max_print_line
   ```
-
-[tlmgr-texmf.cnf]: https://github.com/TeX-Live/texlive-source/blob/trunk/texk/kpathsea/texmf.cnf
-[tlmgr-info]: https://www.tug.org/texlive/doc/tlmgr.html#info
-[tlmgr-conf]: https://www.tug.org/texlive/doc/tlmgr.html#conf
 
 #### `texdoc`
 
