@@ -16,12 +16,32 @@
 - Online doc https://www.tug.org/texlive/doc/tlmgr.html
 - Configuration file, local (`kpsewhich -a texmf.cnf`) and [in texlive repo][tlmgr-texmf.cnf]
 
-* Show info of a package or request type ([doc][tlmgr-info])
-  ```bash
-  $ tlmgr info (<pkg> | collections | collections)
+* Show info of one or more of scheme/collection/package ([doc][tlmgr-info])
+  ```
+  $ tlmgr info [option...] [name...]
   ```
   - `--only-installed`
   - `--list`, list contents
+```bash
+# FIXME: need no indent to enable highlighting
+# list all schemes (installed are prefixed with "!")
+tlmgr info schemes
+
+# list all collections
+tlmgr info collections
+
+# list all installed packages
+tlmgr info --only-installed
+
+# show package info
+tlmgr info amsmath
+
+# show content of a scheme/collection/package under "depends" or "run files" key
+tlmgr info --list scheme-basic
+
+tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5]'
+# ["amsfonts","bibtex","cm","colorprofiles","dvipdfmx"]
+```
   - Get space separated list of installed packages (GNU `ggrep` used for its `-P` option):
     ```bash
     $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
