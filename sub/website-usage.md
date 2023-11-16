@@ -132,6 +132,13 @@ Check out a PR locally
 [checkout-pr-branch]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
 [commit-to-pr-branch]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/committing-changes-to-a-pull-request-branch-created-from-a-fork
 
+### Labels
+
+- labels in a repo
+  https://github.com/OWNER/REPO/labels
+  or `gh label list --repo OWNER/REPO`
+  https://cli.github.com/manual/gh_label_list
+
 ### GitHub Pages
 
 Build site locally
