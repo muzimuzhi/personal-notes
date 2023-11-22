@@ -141,6 +141,20 @@ Check out a PR locally
 
 ### GitHub Pages
 
+Abstractions
+- workflow run "pages build and deployment"
+  demo in https://github.com/actions/jekyll-build-pages
+  - job "build"
+    - uses action image `ghcr.io/actions/jekyll-build-pages:vx.y.z` packed by https://github.com/actions/jekyll-build-pages
+      depends on `gem "github-pages", "= VERSION"`
+      https://github.com/actions/jekyll-build-pages/blob/main/Gemfile
+      - gem package`github-pages`
+        https://github.com/github/pages-gem
+        depends on `"jekyll" => "x.y.z",`
+        https://github.com/github/pages-gem/blob/master/lib/github-pages/dependencies.rb
+  - job "report-build-status" which needs "build"
+  - job "deploy" which need "build"
+
 Dependency versions
   - https://pages.github.com/versions/
   - Till 2023-11-23, Jekyll 3.9.3, rather than 4.x is used.
