@@ -141,6 +141,12 @@ Check out a PR locally
 
 ### GitHub Pages
 
+Dependency versions
+  - https://pages.github.com/versions/
+  - Till 2023-11-23, Jekyll 3.9.3, rather than 4.x is used.
+    > `"jekyll" => "3.9.3",`
+    https://github.com/github/pages-gem/blob/v228/lib/github-pages/dependencies.rb
+
 Build site locally
 ```bash
 # install prerequisitions
