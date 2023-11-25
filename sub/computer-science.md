@@ -301,7 +301,7 @@ Workflow
     # The resulted commit message will be "fixup! <msg of referred commit>"
     git commit --fixup <commit>
     # `--autosquash` automatically organizes merging of  fixup commits and associated normal commits
-    git rebase [-i] --autosquash <upstream>
+    git rebase [-i] --autosquash <commit>
     ```
 
 [git-rebase-signoff]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---signoff
