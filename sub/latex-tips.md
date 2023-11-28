@@ -7,6 +7,7 @@
 * [SVN repo](https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/), [GitHub mirror](https://github.com/TeX-Live/texlive-source)
   * Revision webview, for example [revision 61285](https://tug.org/svn/texlive?view=revision&revision=61285)
   * Package dependencies, for example [ctex.tlpsrc](https://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlpsrc/ctex.tlpsrc)
+    Can be updated by [`DEPENDS.txt`](https://www.tug.org/texlive/pkgcontrib.html#deps).
 * [Historic images](ftp://tug.org/historic/systems/texlive/)
 * Latest package files (compressed) [distributed by CTAN mirrors](https://ctan.org/tex-archive/systems/texlive/tlnet/archive)
 
