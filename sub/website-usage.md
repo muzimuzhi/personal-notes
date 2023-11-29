@@ -2,6 +2,7 @@
 
 ## GitHub
 
+<!-- ### GFM -->
 ### GitHub Flavored Markdown
 
 - general [Markdown](./computer-science#markdown) notes
@@ -100,7 +101,7 @@ Special Usages
     https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
     https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
 
-### GitHub Searching
+### Searching on GitHub
 
 Filter issues and pull requests ([full doc][github search issues])
 
@@ -114,7 +115,7 @@ commenter:USERNAME
 All my subscriptions
 - https://github.com/notifications/subscriptions
 
-### GitHub Pull Requests
+### Pull Requests
 
 Check out a PR locally
 - with local branch created
