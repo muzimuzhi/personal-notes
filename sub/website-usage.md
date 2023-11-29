@@ -2,6 +2,22 @@
 
 ## GitHub
 
+### URL Patterns
+
+Main site
+- https://github.com/dashboard-feed old feed
+
+In repository
+- https://github.com/OWNER/REPO/tree/BRANCH/path/to/dir
+  https://github.com/OWNER/REPO/blob/BRANCH/path/to/file
+  https://github.com/OWNER/REPO/commit/SHA (shortened SHA works too)
+- https://github.com/OWNER/REPO/compare/SHA_BASE..SHA_HEAD
+  https://github.com/OWNER/REPO/compare/BRANCH_BASE...REPO_B:BRANCH_HEAD
+  https://docs.github.com/en/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits
+- download a file in specific branch
+  https://github.com/OWNER/REPO/raw/BRANCH/path/to/file
+  saw in https://github.com/CTeX-org/ctex-kit/issues/686#issuecomment-1827190097
+
 <!-- ### GFM -->
 ### GitHub Flavored Markdown
 
