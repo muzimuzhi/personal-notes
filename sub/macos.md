@@ -49,6 +49,15 @@ $ open x-man-page://<name>
   brew --repo dart-lang/dart
   ```
 
+- Show (installed) dependents of a formula
+  https://docs.brew.sh/Manpage#uses-options-formula-
+  `brew uses --recursive --installed <formula>`
+  seen in https://stackoverflow.com/a/66142860
+
+- Show dependencies of a formula
+  https://docs.brew.sh/Manpage#deps-options-formulacask-
+  `brew deps <formula>`
+
 - [`version` Stanza Details](https://github.com/Homebrew/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/version.md)
   - Example: [Homebrew/homebrew-cask-fonts#2082](https://github.com/Homebrew/homebrew-cask-fonts/issues/2082)
 
