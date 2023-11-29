@@ -64,9 +64,10 @@ https://docs.brew.sh/Manpage
 
 ### Writing formulae and casks
 
+- Adding formula or cask to Homebrew
+  https://docs.brew.sh/Adding-Software-to-Homebrew
 - Formula Cookbook
   https://docs.brew.sh/Formula-Cookbook
-
 - Cask Cookbook
   https://docs.brew.sh/Cask-Cookbook
 
