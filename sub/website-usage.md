@@ -106,6 +106,7 @@ Special Usages
 Filter issues and pull requests ([full doc][github search issues])
 
 ```bash
+author:@me
 mentions:USERNAME  # note the third person singular "s"
 commenter:USERNAME
 ```
