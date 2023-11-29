@@ -35,22 +35,21 @@ $ open x-man-page://<name>
     unzip -j file.zip path/to/file.txt  # this will create "./file.txt"
     ```
 
-## Homebrew and Homebrew-cask
+## Homebrew
+ 
+- Display local path/location of either brew's repo or a tap
+  https://docs.brew.sh/Manpage#--repository---repo-tap-
+  ```bash
+  # desplay path of brew's repo
+  brew --repo
 
-* Desplay local path/location of either brew's repo or a tap ([doc][brew-__repo])
-    ```bash
-    # desplay path of brew's repo
-    brew --repo
+  # desplay path of spcified brew tap
+  brew --repo homebrew/casks
+  brew --repo dart-lang/dart
+  ```
 
-    # desplay path of spcified brew tap
-    brew --repo homebrew/casks
-    brew --repo dart-lang/dart
-    ```
-
-[brew-__repo]: https://docs.brew.sh/Manpage#--repository---repo-tap-
-
-* [`version` Stanza Details](https://github.com/Homebrew/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/version.md)
-  * Example: [Homebrew/homebrew-cask-fonts#2082](https://github.com/Homebrew/homebrew-cask-fonts/issues/2082)
+- [`version` Stanza Details](https://github.com/Homebrew/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/version.md)
+  - Example: [Homebrew/homebrew-cask-fonts#2082](https://github.com/Homebrew/homebrew-cask-fonts/issues/2082)
 
 ## GNU, instead of BSD CLI Tools
 * Show dependencies as a tree: `brew deps --tree <formula>`
