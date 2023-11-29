@@ -24,9 +24,13 @@ These are some notes in the result of my daily web searching and time wasting.
   * [Default settings](sub/latex-default.md) of packages/classes
   * [Tips](sub/latex-tips.md)
 * Font
-  * Font list
-    * [Win 10](https://docs.microsoft.com/en-us/typography/fonts/windows_10_font_list)
-    * [macOS Mojave](https://support.apple.com/en-us/HT208968), [more versions](https://github.com/CTeX-org/ctex-kit/wiki/macOS%7COS-X%7CMac-OS-X-各版本预装字体列表)
+  * Fonts included with OS
+    - [Windows 11](https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list)
+      [Windows 10](https://learn.microsoft.com/en-us/typography/fonts/windows_10_font_list)
+    - [macOS 14 (Sonoma)](https://support.apple.com/en-us/HT213773)
+      [macOS 13 (Ventura)](https://support.apple.com/en-us/103197)
+      [macOS 12 (Monterey)](https://support.apple.com/en-us/103203)
+      [more historic versions](https://github.com/CTeX-org/ctex-kit/wiki/macOS%7COS-X%7CMac-OS-X-各版本预装字体列表)
   * [Modern Fonts](sub/fonts-modern.md)
   * Font Stories
     * Shanghai Type Project, Digital Archive: Xuecheng Xu （[上海活字项目数字档案：徐学成](https://shanghaitype.org/%E5%BE%90%E5%AD%A6%E6%88%90%E6%A1%A3%E6%A1%88/start)）
