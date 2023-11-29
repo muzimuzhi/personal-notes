@@ -36,14 +36,15 @@ $ open x-man-page://<name>
     ```
 
 ## Homebrew
- 
-- Display local path/location of either brew's repo or a tap
-  https://docs.brew.sh/Manpage#--repository---repo-tap-
-  ```bash
-  # desplay path of brew's repo
-  brew --repo
 
-  # desplay path of spcified brew tap
+- Display local location of homebrew itself or one of cloned tap
+  https://docs.brew.sh/Manpage#--repository---repo-tap-
+  `brew --repository [OWNER/REPO]`
+  ```bash
+  # /usr/local/Homebrew
+  cd $(brew --repository)
+
+  # tap OWNER/REPO is located in $(brew --reposot)/Library/Taps/OWNER/homebrew-REPO
   brew --repo homebrew/casks
   brew --repo dart-lang/dart
   ```
