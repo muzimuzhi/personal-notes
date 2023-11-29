@@ -37,6 +37,10 @@ $ open x-man-page://<name>
 
 ## Homebrew
 
+### `brew` CLI program
+
+https://docs.brew.sh/Manpage
+
 - Display local location of homebrew itself or one of cloned tap
   https://docs.brew.sh/Manpage#--repository---repo-tap-
   `brew --repository [OWNER/REPO]`
@@ -57,6 +61,14 @@ $ open x-man-page://<name>
 - Show dependencies of a formula
   https://docs.brew.sh/Manpage#deps-options-formulacask-
   `brew deps <formula>`
+
+### Writing formulae and casks
+
+- Formula Cookbook
+  https://docs.brew.sh/Formula-Cookbook
+
+- Cask Cookbook
+  https://docs.brew.sh/Cask-Cookbook
 
 - [`version` Stanza Details](https://github.com/Homebrew/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/version.md)
   - Example: [Homebrew/homebrew-cask-fonts#2082](https://github.com/Homebrew/homebrew-cask-fonts/issues/2082)
