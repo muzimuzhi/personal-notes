@@ -1,5 +1,16 @@
 # Modern Fonts
 
+Noto Serif/Sans CJK & Source Han Serif/Sans
+- https://github.com/notofonts/noto-cjk
+  https://github.com/adobe-fonts/source-han-serif
+  https://github.com/adobe-fonts/source-han-sans
+- Download guide by Adobe
+  https://github.com/adobe-fonts/source-han-serif/raw/release/download-guide-source-han.pdf
+- Differences between Google-branded and Adobe-branded versions
+  https://github.com/adobe-fonts/source-han-serif/blob/release/SourceHanSerifReadMe.pdf
+  https://github.com/adobe-fonts/source-han-sans/blob/release/SourceHanSansReadMe.pdf
+  told in https://github.com/CTeX-org/ctex-kit/issues/686#issuecomment-1827190097
+
 Alegreya Family
 - Design: Intended for literature
 - Family: Serif, Sans, Small Caps, Sans Small Caps
