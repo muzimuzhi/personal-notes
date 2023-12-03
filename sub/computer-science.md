@@ -386,30 +386,8 @@ Show log
     git log --reverse
     ```
 
-Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044))
-```bash
-git reflog expire --expire=now --all
-git gc --prune=now
-```
-
-Shorten local clone, just to save disk space ([ref](https://stackoverflow.com/a/37105443))
-```bash
-git fetch --depth=1
-git reflog expire --expire-unreachable=now --all
-git gc --aggressive --prune=all
-```
-
-Diff between arbitrary files:
-```bash
-git diff --no-index <file a> <file b>
-```
-
-Count the commits for current branch ([ref](https://stackoverflow.com/a/11657647))
-```bash
-git rev-list --count HEAD
-```
-
 Large File Storage (LFS)
+
 - homepage: https://git-lfs.github.com/
 - docs: https://github.com/git-lfs/git-lfs/tree/main/docs/man
 - NOTE: GitHub Pages doesn't support Git LFS. ([source](https://github.com/git-lfs/git-lfs/issues/1342#issuecomment-229965973))
@@ -424,7 +402,7 @@ git lfs track "*.gif"
 git lfs untrack "*.gif"
 # Equivalent to add/remove line
 #   *.gif filter=lfs diff=lfs merge=lfs -text
-# to `.gitattributes`
+# to/from `.gitattributes`
 
 # fetch and checkout lfs files
 git lfs fetch
@@ -434,6 +412,28 @@ git lfs checkout
 # QA: https://stackoverflow.com/q/35011366/
 git add --renormalize .
 ```
+
+Misc
+
+- Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044))
+  ```bash
+  git reflog expire --expire=now --all
+  git gc --prune=now
+  ```
+- Shorten local clone, just to save disk space ([ref](https://stackoverflow.com/a/37105443))
+  ```bash
+  git fetch --depth=1
+  git reflog expire --expire-unreachable=now --all
+  git gc --aggressive --prune=all
+  ```
+- Diff between arbitrary files:
+  ```bash
+  git diff --no-index <file a> <file b>
+  ```
+- Count the commits on current branch ([ref](https://stackoverflow.com/a/11657647))
+  ```bash
+  git rev-list --count HEAD
+  ```
 
 ### SSH
 
