@@ -30,10 +30,12 @@ Configuration
     ```bash
     $ git config [--global] diff.wsErrorHighlight all
     ```
- * Pretty one-line `git log` ([ref](https://ma.ttias.be/pretty-git-log-in-one-line/))
+ * Pretty one-line `git log`
+   based on https://ma.ttias.be/pretty-git-log-in-one-line/
     ```bash
-    # set git alias
-    $ git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit"
+    # set pretty format and alias
+    git config --global pretty.logline "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset"
+    git config --global alias.logline "log --graph --pretty=format:logline --abbrev-commit"
 
     # use git alias
     $ git logline
