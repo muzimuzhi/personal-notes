@@ -200,6 +200,14 @@ Misc
   ```bash
   git diff --no-index <file a> <file b>
   ```
+- List all (local) references (heads, remotes, stash, and tags)
+  https://git-scm.com/docs/git-for-each-ref
+  https://git-scm.com/docs/git-show-ref
+  ```bash
+  git [--paginate] for-each-ref [--format="%(refname)"]
+  # or
+  git [--paginate] show-ref --head --dereference
+  ```
 - Count the commits on current branch ([ref](https://stackoverflow.com/a/11657647))
   ```bash
   git rev-list --count HEAD
