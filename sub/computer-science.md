@@ -285,6 +285,7 @@ Show status
     ```
 
 Clone and fetch
+
  * Shallow clone: `git clone --depth=<num>`
  * Convert a shallow clone to full clone ([ref](https://stackoverflow.com/a/17937889))
     ```bash
@@ -292,10 +293,12 @@ Clone and fetch
     ```
 
 Commit changes
+
  * Update commit author (and email): `git commit --amend --author="Author <author@example.com>"` ([official doc](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---authorltauthorgt))
- * Batch sign-off: `git rebase --signoff <commit>` ([--signoff][git-rebase-signoff], no short form)
+ * Batch sign-off: `git rebase --signoff <commit>` ([`--signoff`][git-rebase-signoff], no short form)
 
 Workflow
+
  * Keep your branch clean with [`--fixup`][git-commit-fixup] and [`--autosquash`][git-rebase-autosquash] ([article](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html))
     ```bash
     # `--fix` automatically marks your commit as a fix of a previous commit
@@ -340,7 +343,8 @@ Branching and Merging
    $ git merge --no-ff --log <branch>
    ```
 
-Add tags
+Tags
+
     ```bash
     # add a lightweight tag
     git tag -a <tag>
@@ -365,12 +369,14 @@ Push to remote
     Differences between annotated (`-m <message>`) and unannotated tags: [this Q&A](https://stackoverflow.com/q/11514075)
 
 Change remote
+
  * Delete remote branch or tag
     ```bash
     git push --delete <remote> <branch/tag>
     ```
 
 Show log
+
  * List commits that changed a specific file ([ref](https://stackoverflow.com/a/8808453))
     ```bash
     git log --follow -- filename
