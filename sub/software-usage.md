@@ -8,6 +8,9 @@ General info
   - all commands, divided into high level and low level ones
     https://git-scm.com/docs/git#_git_commands
 - `git <command>` documentation: `https://git-scm.com/docs/git-<command>`
+- Pro Git book (living)
+  https://git-scm.com/book/en/v2
+  https://github.com/progit/progit2
 - [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes)
 
 Configuration
