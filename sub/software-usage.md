@@ -4,74 +4,80 @@
 
 General info
 
-  - `git` documentation https://git-scm.com/docs/git
-    - all commands, divided into high level and low level ones
-      https://git-scm.com/docs/git#_git_commands
-  - `git <command>` documentation: `https://git-scm.com/docs/git-<command>`
-  - [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes)
+- `git` documentation https://git-scm.com/docs/git
+  - all commands, divided into high level and low level ones
+    https://git-scm.com/docs/git#_git_commands
+- `git <command>` documentation: `https://git-scm.com/docs/git-<command>`
+- [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes)
 
 Configuration
 
- * Print pathnames in Unicode, other than octal UTF-8 ([ref](https://stackoverflow.com/a/22828826))
-    ```bash
-    git config [--global] core.quotepath off
-    ```
- * Diff non-UTF8 files:
-    ```bash
-    # Suppose the .tex files are in GBK encoding
-    $ cat .git/config
-    [diff "gbk"]
-            textconv = "iconv -f gbk -t utf-8"
+- Print pathnames in Unicode, other than octal UTF-8 ([ref](https://stackoverflow.com/a/22828826))
+  ```bash
+  git config [--global] core.quotepath off
+  ```
+- Diff non-UTF8 files:
+  ```bash
+  # Suppose the .tex files are in GBK encoding
+  $ cat .git/config
+  [diff "gbk"]
+          textconv = "iconv -f gbk -t utf-8"
 
-    $ cat .gitattributes
-    *.tex diff=gbk
-    ```
- * Show whitespace changes in `git diff` ([doc](https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwsErrorHighlight))
-    ```bash
-    $ git config [--global] diff.wsErrorHighlight all
-    ```
- * Pretty one-line `git log`
-   based on https://ma.ttias.be/pretty-git-log-in-one-line/
-    ```bash
-    # set pretty format and alias
-    git config --global pretty.logline "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset"
-    git config --global alias.logline "log --graph --pretty=format:logline --abbrev-commit"
+  $ cat .gitattributes
+  *.tex diff=gbk
+  ```
+- Show whitespace changes in `git diff` ([doc](https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwsErrorHighlight))
+  ```bash
+  $ git config [--global] diff.wsErrorHighlight all
+  ```
+- Pretty one-line `git log`
+  based on https://ma.ttias.be/pretty-git-log-in-one-line/
+  ```bash
+  # set pretty format and alias
+  git config --global pretty.logline "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset"
+  git config --global alias.logline "log --graph --pretty=format:logline --abbrev-commit"
 
-    # use git alias
-    $ git logline
-    ```
+  # use git alias
+  $ git logline
+  ```
 
 Show status
 
-  * Show individual files in untracked directories ([ref](https://git-scm.com/docs/git-status#Documentation/git-status.txt--ultmodegt))
-    ```bash
-    # short option: -u
-    git status --untracked-files
-    ```
+- Show individual files in untracked directories ([ref](https://git-scm.com/docs/git-status#Documentation/git-status.txt--ultmodegt))
+  ```bash
+  # short option: -u
+  git status --untracked-files
+  ```
 
 Clone and fetch
 
- * Shallow clone: `git clone --depth=<num>`
- * Convert a shallow clone to full clone ([ref](https://stackoverflow.com/a/17937889))
-    ```bash
-    git fetch --unshallow
-    ```
+- Shallow clone: `git clone --depth=<num>`
+- Convert a shallow clone to full clone ([ref](https://stackoverflow.com/a/17937889))
+  ```bash
+  git fetch --unshallow
+  ```
 
 Commit changes
 
- * Update commit author (and email): `git commit --amend --author="Author <author@example.com>"` ([official doc](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---authorltauthorgt))
- * Batch sign-off: `git rebase --signoff <commit>` ([`--signoff`][git-rebase-signoff], no short form)
+- Update commit author (and email)
+  https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---authorltauthorgt
+  ```bash
+  git commit --amend --author="Author <author@example.com>"
+  ```
+- Batch sign-off
+  [`--signoff`][git-rebase-signoff], no short form
+  `git rebase --signoff <commit>`
 
 Workflow
 
- * Keep your branch clean with [`--fixup`][git-commit-fixup] and [`--autosquash`][git-rebase-autosquash] ([article](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html))
-    ```bash
-    # `--fix` automatically marks your commit as a fix of a previous commit
-    # The resulted commit message will be "fixup! <msg of referred commit>"
-    git commit --fixup <commit>
-    # `--autosquash` automatically organizes merging of  fixup commits and associated normal commits
-    git rebase [-i] --autosquash <commit>
-    ```
+- Keep branch clean with [`--fixup`][git-commit-fixup] and [`--autosquash`][git-rebase-autosquash] ([article](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html))
+  ```bash
+  # `--fix` automatically marks your commit as a fix of a previous commit
+  # The resulted commit message will be "fixup! <msg of referred commit>"
+  git commit --fixup <commit>
+  # `--autosquash` automatically organizes merging of  fixup commits and associated normal commits
+  git rebase [-i] --autosquash <commit>
+  ```
 
 [git-rebase-signoff]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---signoff
 [git-commit-fixup]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt
@@ -80,76 +86,75 @@ Workflow
 
 Branching and Merging
 
- * Create a local branch that tracks a remote one ([doc][git-fetch-refspec])
-    ```bash
-    git fetch <remote> <branch>:<local branch>
-    ```
- * Delete a remote-tracking branch (the corresponding local branch is unchanged, [ref](https://stackoverflow.com/a/3046478))
-    ```bash
-    git branch --delete --remotes <remote>/<branch>
-    ```
- * Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574))
-    ```bash
-    # shallow clone
-    $ git clone --depth=<num> <repository> [<directory>]
+- Create a local branch that tracks a remote one ([doc][git-fetch-refspec])
+  ```bash
+  git fetch <remote> <branch>:<local branch>
+  ```
+- Delete a remote-tracking branch (the corresponding local branch is unchanged, [ref](https://stackoverflow.com/a/3046478))
+  ```bash
+  git branch --delete --remotes <remote>/<branch>
+  ```
+- Track new remote branch after a shallow clone ([ref](https://stackoverflow.com/a/27393574))
+  ```bash
+  # shallow clone
+  git clone --depth=<num> <repository> [<directory>]
 
-    # change the list of branches tracked
-    $ git remote set-branches <remote> '*'
-    # or
-    $ git remote set-branches --add <remote> <new_branch>
+  # change the list of branches tracked
+  git remote set-branches <remote> '*'
+  # or
+  git remote set-branches --add <remote> <new_branch>
 
-    # add track to new remote branch
-    $ git fetch <remote> <new_branch>
-    ```
-    wait for test: `git fetch --update-shallow <remote> <branch>`
-
- * Include a commit summary in merge commit
-   ```bash
-   $ git merge --no-ff --log <branch>
-   ```
+  # add track to new remote branch
+  git fetch <remote> <new_branch>
+  ```
+  wait for test: `git fetch --update-shallow <remote> <branch>`
+- Include a commit summary in merge commit
+  ```bash
+  git merge --no-ff --log <branch>
+  ```
 
 Tags
 
-    ```bash
-    # add a lightweight tag
-    git tag -a <tag>
-    # add an annotated tag
-    git tag -a <tag> -m "annot"
+```bash
+# add a lightweight tag
+git tag -a <tag>
+# add an annotated tag
+git tag -a <tag> -m "annot"
 
-    # list only lightweight tags
-    # ref: https://stackoverflow.com/a/67687543
-    git for-each-ref refs/tags | grep commit
+# list only lightweight tags
+# ref: https://stackoverflow.com/a/67687543
+git for-each-ref refs/tags | grep commit
 
-    # list only annotated tags
-    git for-each-ref refs/tags | grep -v commit
-    ```
+# list only annotated tags
+git for-each-ref refs/tags | grep -v commit
+```
 
 Push to remote
 
- * Push single tag ([Q&A](https://stackoverflow.com/a/23212493))
-    ```bash
-    # to resolve tag/branch name clashes, use "refs/tags/<tag>"
-    git push <remote> <tag>
-    ```
-    Differences between annotated (`-m <message>`) and unannotated tags: [this Q&A](https://stackoverflow.com/q/11514075)
+- Push single tag ([Q&A](https://stackoverflow.com/a/23212493))
+  ```bash
+  # to resolve tag/branch name clashes, use "refs/tags/<tag>"
+  git push <remote> <tag>
+  ```
+  Differences between annotated (`-m <message>`) and unannotated tags: [this Q&A](https://stackoverflow.com/q/11514075)
 
 Change remote
 
- * Delete remote branch or tag
-    ```bash
-    git push --delete <remote> <branch/tag>
-    ```
+- Delete remote branch or tag
+  ```bash
+  git push --delete <remote> <branch/tag>
+  ```
 
 Show log
 
- * List commits that changed a specific file ([ref](https://stackoverflow.com/a/8808453))
-    ```bash
-    git log --follow -- filename
-    ```
- * Show first commit ([ref](https://stackoverflow.com/a/5188990))
-    ```bash
-    git log --reverse
-    ```
+- List commits that changed a specific file ([ref](https://stackoverflow.com/a/8808453))
+  ```bash
+  git log --follow -- filename
+  ```
+- Show first commit ([ref](https://stackoverflow.com/a/5188990))
+  ```bash
+  git log --reverse
+  ```
 
 Large File Storage (LFS)
 
