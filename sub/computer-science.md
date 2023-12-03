@@ -415,6 +415,13 @@ git add --renormalize .
 
 Misc
 
+- Force or cancel pager
+  https://git-scm.com/docs/git#Documentation/git.txt--p
+  https://git-scm.com/docs/git#Documentation/git.txt--P
+  ```bash
+  git [-p | --paginate] <command>
+  git [-P | --no-pager] <command>
+  ```
 - Clean up unlinked commits ([ref](https://stackoverflow.com/a/11759044))
   ```bash
   git reflog expire --expire=now --all
