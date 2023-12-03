@@ -239,12 +239,13 @@ http://www.apuebook.com/
 
 ## Tools
 
-### git
+### Git
 
 General info
 
- * Per command documentation: `https://git-scm.com/docs/git-<command>`
- * [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes)
+  - `git` documentation https://git-scm.com/docs/git
+  - `git <command>` documentation: `https://git-scm.com/docs/git-<command>`
+  - [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes)
 
 Configuration
 
