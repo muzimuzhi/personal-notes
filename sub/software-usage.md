@@ -208,6 +208,11 @@ Misc
   # or
   git [--paginate] show-ref --head --dereference
   ```
+- List all commits, including unreachable ones
+  https://git-scm.com/docs/git-rev-list
+  ```bash
+  git --paginate rev-list --all --no-commit-header --pretty=oneline
+  ```
 - Count the commits on current branch ([ref](https://stackoverflow.com/a/11657647))
   ```bash
   git rev-list --count HEAD
