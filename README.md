@@ -9,7 +9,8 @@ These are some notes in the result of my daily web searching and time wasting.
   * [Math Notes](sub/math-notes.md)
 * Computer
   * [Computer Science](sub/computer-science.md)
-  * [Usage](sub/computer-usage.md)
+  * [Computer Usage](sub/computer-usage.md)
+  * [Software Usage](sub/software-usage.md)
   * [Website Usage](sub/website-usage.md)
   * [macOS Only](sub/macos.md)
 * (La)TeX
