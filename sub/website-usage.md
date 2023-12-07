@@ -10,10 +10,10 @@ Main site
 Repository specific
 ```
 # "tree"
-https://github.com/OWNER/REPO/tree/BRANCH/path/to/dir
+https://github.com/OWNER/REPO/tree/REF_OR_COMMIT/path/to/dir
 
 # "blob", "blame", and "edit"
-https://github.com/OWNER/REPO/blob/BRANCH/path/to/file
+https://github.com/OWNER/REPO/blob/REF_OR_COMMIT/path/to/file
 
 # "commit"
 https://github.com/OWNER/REPO/commit/SHA (shortened SHA works too)
@@ -27,7 +27,12 @@ https://github.com/OWNER/REPO/compare/BRANCH_BASE...REPO_B:BRANCH_HEAD
 
 # "raw", download a file
 # saw in https://github.com/CTeX-org/ctex-kit/issues/686#issuecomment-1827190097
-https://github.com/OWNER/REPO/raw/BRANCH/path/to/file
+https://github.com/OWNER/REPO/raw/REF_OR_COMMIT/path/to/file
+```
+where
+```
+REF_OR_COMMIT ::= REFERENCE | COMMIT
+REFERENCE     ::= BRANCH | TAG
 ```
 
 <!-- ### GFM -->
