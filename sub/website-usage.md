@@ -12,7 +12,7 @@ Repository specific
 # "tree"
 https://github.com/OWNER/REPO/tree/BRANCH/path/to/dir
 
-# "blob"
+# "blob", "blame", and "edit"
 https://github.com/OWNER/REPO/blob/BRANCH/path/to/file
 
 # "commit"
