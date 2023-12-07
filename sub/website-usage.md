@@ -7,16 +7,28 @@
 Main site
 - https://github.com/dashboard-feed old feed
 
-In repository
-- https://github.com/OWNER/REPO/tree/BRANCH/path/to/dir
-  https://github.com/OWNER/REPO/blob/BRANCH/path/to/file
-  https://github.com/OWNER/REPO/commit/SHA (shortened SHA works too)
-- https://github.com/OWNER/REPO/compare/SHA_BASE..SHA_HEAD
-  https://github.com/OWNER/REPO/compare/BRANCH_BASE...REPO_B:BRANCH_HEAD
-  https://docs.github.com/en/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits
-- download a file in specific branch
-  https://github.com/OWNER/REPO/raw/BRANCH/path/to/file
-  saw in https://github.com/CTeX-org/ctex-kit/issues/686#issuecomment-1827190097
+Repository specific
+```
+# "tree"
+https://github.com/OWNER/REPO/tree/BRANCH/path/to/dir
+
+# "blob"
+https://github.com/OWNER/REPO/blob/BRANCH/path/to/file
+
+# "commit"
+https://github.com/OWNER/REPO/commit/SHA (shortened SHA works too)
+https://github.com/OWNER/REPO/commit/SHA.diff
+https://github.com/OWNER/REPO/commit/SHA.patch
+
+# "compare"
+# see https://docs.github.com/en/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits
+https://github.com/OWNER/REPO/compare/SHA_BASE..SHA_HEAD
+https://github.com/OWNER/REPO/compare/BRANCH_BASE...REPO_B:BRANCH_HEAD
+
+# "raw", download a file
+# saw in https://github.com/CTeX-org/ctex-kit/issues/686#issuecomment-1827190097
+https://github.com/OWNER/REPO/raw/BRANCH/path/to/file
+```
 
 <!-- ### GFM -->
 ### GitHub Flavored Markdown
