@@ -50,8 +50,9 @@
 
 - features
   - Floating editor windows
-    since v1.84, insiders only
+    insiders only since v1.84 and generally available since v1.84
     https://code.visualstudio.com/updates/v1_84#_floating-editor-windows
+    https://code.visualstudio.com/updates/v1_85#_floating-editor-windows
 
 ### TeXstudio
 
