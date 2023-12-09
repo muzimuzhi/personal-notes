@@ -9,10 +9,10 @@ Main site
 
 Repository specific
 ```
-# PAT ::= "tree"
+# PAT ::= "commits" | "tree"
 https://github.com/OWNER/REPO/PAT/REF_OR_COMMIT/path/to/dir
 
-# PAT ::= "blob" | "blame" | "edit" | "raw"
+# PAT ::= "blob" | "blame" | "commits" | "edit" | "raw"
 https://github.com/OWNER/REPO/PAT/REF_OR_COMMIT/path/to/file
 
 # "commit"
