@@ -9,11 +9,11 @@ Main site
 
 Repository specific
 ```
-# "tree"
-https://github.com/OWNER/REPO/tree/REF_OR_COMMIT/path/to/dir
+# PAT ::= "tree"
+https://github.com/OWNER/REPO/PAT/REF_OR_COMMIT/path/to/dir
 
-# "blob", "blame", and "edit"
-https://github.com/OWNER/REPO/blob/REF_OR_COMMIT/path/to/file
+# PAT ::= "blob" | "blame" | "edit" | "raw"
+https://github.com/OWNER/REPO/PAT/REF_OR_COMMIT/path/to/file
 
 # "commit"
 https://github.com/OWNER/REPO/commit/SHA (shortened SHA works too)
@@ -24,10 +24,6 @@ https://github.com/OWNER/REPO/commit/SHA.patch
 # see https://docs.github.com/en/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits
 https://github.com/OWNER/REPO/compare/SHA_BASE..SHA_HEAD
 https://github.com/OWNER/REPO/compare/BRANCH_BASE...REPO_B:BRANCH_HEAD
-
-# "raw", download a file
-# saw in https://github.com/CTeX-org/ctex-kit/issues/686#issuecomment-1827190097
-https://github.com/OWNER/REPO/raw/REF_OR_COMMIT/path/to/file
 ```
 where
 ```
