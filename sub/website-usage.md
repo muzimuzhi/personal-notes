@@ -30,6 +30,8 @@ where
 REF_OR_COMMIT ::= REFERENCE | COMMIT
 REFERENCE     ::= BRANCH | TAG
 ```
+- `raw` pattern first saw in 
+  https://github.com/CTeX-org/ctex-kit/issues/686#issuecomment-1827190097
 
 <!-- ### GFM -->
 ### GitHub Flavored Markdown
