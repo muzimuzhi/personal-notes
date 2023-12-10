@@ -151,7 +151,7 @@ All my subscriptions
 
 Check out a PR locally
 - with local branch created
-  `git fetch origin pull/<pr-id>/head:<branch-name> && git checkout <branch-name>`
+  `git fetch origin pull/<pr-id>/head:<branch-name> && git switch <branch-name>`
 - without local branch created
   `git fetch origin pull/<pr-id>/head && git checkout FETCH_HEAD`
   https://stackoverflow.com/a/45967995
