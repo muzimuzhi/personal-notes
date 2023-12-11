@@ -141,6 +141,7 @@ https://docs.github.com/en/search-github/searching-on-github/searching-issues-an
 author:@me
 mentions:USERNAME  # note the third person singular "s"
 commenter:USERNAME
+head:HEAD_BRANCH
 ```
 
 All my subscriptions
