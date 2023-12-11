@@ -134,15 +134,14 @@ Special Usages
 
 ### Searching on GitHub
 
-Filter issues and pull requests ([full doc][github search issues])
+Filter issues and pull requests
+https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests
 
 ```bash
 author:@me
 mentions:USERNAME  # note the third person singular "s"
 commenter:USERNAME
 ```
-
-[github search issues]: https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests
 
 All my subscriptions
 - https://github.com/notifications/subscriptions
