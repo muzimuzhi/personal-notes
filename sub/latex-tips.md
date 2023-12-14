@@ -155,7 +155,7 @@ Specials
 [dvipdfm-x-svn]: https://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/
 [dvipdfm-x-github]: https://github.com/TeX-Live/texlive-source/tree/trunk/texk/dvipdfm-x
 
-## Format
+## Formats
 
 ### LaTeX
 
