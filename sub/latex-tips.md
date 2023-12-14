@@ -82,6 +82,16 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
 
 [miktex-mthelp]: https://docs.miktex.org/manual/mthelp.html
 
+#### `kpsewhich`
+
+- `texdoc kpathsea`, sec. 5.6.1 "Path searching options"
+
+<!-- to please markdown parser -->
+  ```bash
+  # --format
+  kpsewhich --format=texmfscripts arara.sh
+  ```
+
 ### MiKTeX
 
 * MiKTeX now [supports Win/Mac/Linux](https://miktex.org/download), and provides Docker image.
