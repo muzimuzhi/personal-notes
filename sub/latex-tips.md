@@ -18,7 +18,7 @@
 - Configuration file `kpsewhich -a texmf.cnf`
   in texlive repo https://github.com/TeX-Live/texlive-source/blob/trunk/texk/kpathsea/texmf.cnf
 
-* Show info of one or more of scheme/collection/package
+- Show info of one or more of scheme/collection/package
   https://www.tug.org/texlive/doc/tlmgr.html#info
   ```
   $ tlmgr info [option...] [name...]
@@ -50,7 +50,7 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
     $ tlmgr list --only-installed | ggrep -oP '(?<=i )\w+(?=:)' | tr '\n' ' '
     ```
 
-* Show or modify user configurations
+- Show or modify user configurations
   https://www.tug.org/texlive/doc/tlmgr.html#conf
   ```bash
   # show all config settings
@@ -69,7 +69,7 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
 - Doc `texdoc texdoc`
 - Remark: command `texdoc` installed by MiKTeX is just a shortcut for an independent program [`mthelp`][miktex-mthelp].
 
-* Show results with corresponding scores
+- Show results with corresponding scores
   ```bash
   # long option: texdoc --list --machine amsmath
   $ texdoc -lM amsmath | head -5
