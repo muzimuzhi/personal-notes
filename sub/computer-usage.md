@@ -35,6 +35,12 @@
 <!-- ### vscode -->
 ### Visual Studio Code (vscode)
 
+- repositories
+  https://github.com/microsoft/vscode
+  https://github.com/microsoft/vscode-docs
+  - sources of release notes
+    https://github.com/microsoft/vscode-docs/tree/main/release-notes/v1_86.md for v1.86
+
 - latex grammar
   https://github.com/jlelong/vscode-latex-basics
   imported by both vscode and its `latex-workshop` extension
