@@ -20,10 +20,30 @@ https://github.com/OWNER/REPO/commit/SHA (shortened SHA works too)
 https://github.com/OWNER/REPO/commit/SHA.diff
 https://github.com/OWNER/REPO/commit/SHA.patch
 
+# "labels"
+https://github.com/OWNER/REPO/labels
+https::/github.com/OWNER/REPO/labels/LABEL_NAME
+
+# "issues"
+https://github.com/OWNER/REPO/issues
+https://github.com/OWNER/REPO/issues/AUTHOR     # aka "is:open is:issue author:AUTHOR"
+                                                # special author "@me" supported
+https://github.com/OWNER/REPO/issues/ISSUE_NUMBER
+
+https://github.com/OWNER/REPO/issues/new        # blank issue
+https://github.com/OWNER/REPO/issues/new/choose # choose an issue template
+https://github.com/pgf-tikz/pgf/issues/new?assignees=&labels=&projects=&template=ISSUE_TEMPLATE.{md,yml}
+
+# "pulls" and "pull"
+https://github.com/OWNER/REPO/pulls
+https://github.com/OWNER/REPO/pulls/AUTHOR    # aka "is:open is:pr author:AUTHOR"
+https://github.com/OWNER/REPO/pull/PR_NUMBER
+
 # "compare"
 # see https://docs.github.com/en/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits
 https://github.com/OWNER/REPO/compare/SHA_BASE..SHA_HEAD
-https://github.com/OWNER/REPO/compare/BRANCH_BASE...REPO_B:BRANCH_HEAD
+https://github.com/OWNER/REPO/compare/BASE_BRANCH...REPO_B:HEAD_BRANCH
+https://github.com/OWNER/REPO/compare/BASE_BRANCH...REPO_B:HEAD_BRANCH?expand=1 # open a pr
 ```
 where
 ```
