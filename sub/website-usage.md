@@ -28,6 +28,7 @@ https::/github.com/OWNER/REPO/labels/LABEL_NAME
 https://github.com/OWNER/REPO/issues
 https://github.com/OWNER/REPO/issues/AUTHOR     # aka "is:open is:issue author:AUTHOR"
                                                 # special author "@me" supported
+https://github.com/OWNER/REPO/issues/created_by/AUTHOR
 https://github.com/OWNER/REPO/issues/ISSUE_NUMBER
 
 https://github.com/OWNER/REPO/issues/new        # blank issue
