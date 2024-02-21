@@ -23,6 +23,7 @@
 | `floatrow`        | layout/float        | Float layouts                                                |
 | `marginfix`       | layout/marginal     | A `\marginpar` patch to avoid overfull margins               |
 | `extramarks`      | marks               | More marks other than `\markleft` and `\markboth`            |
+| `updatemarks`     | marks               | Extract and update marks from boxes |
 | `tocdata`         | table of contents   | Add a small amount of data to an entry in `toc`              |
 | `fncychap`        | section style       | Seven predefined chapter heading styles                      |
 | `centeredline`    | paragraph alignment | Extends latex2e macro`\centerline`                           |
@@ -41,6 +42,7 @@
 | `pgfgantt`        | graphics/pgf        | Draws Gantt charts                                           |
 | `tikzlings`       | graphics/pgf        | Predefined small animals                                     |
 |                   |                     |                                                              |
+| `beamertheme-tcolorbox` | beamer        | Beamer inner theme reproducing standard beamer blocks in `tcolorbox` |
 | `lstaddons`       | code listing        | `listings` add-ons: autogobble and line background           |
 |                   |                     |                                                              |
 | `changes`         | editorial           | Markup change in text manually                               |
@@ -51,6 +53,7 @@
 | `unravel`         | programming         | Watches TeX digest tokens                                    |
 | `lisp-on-tex`     | programming         | Implements static scoping, dynamic typing, and eager evaluation LISP interpreter written in TeX macros |
 | `texapi`          | programming         | Format-independent `etoolbox`                                |
+| `lt3luabridge`    | programming         | Execute Lua code in any TeX engine that exposes the shell |
 | `ltxcmds`         | programming         | Utility macros from LaTeX kernel                             |
 | `letltxmacro`     | programming         | `\LetLtxMacro` takes care of robust or opt-arg macros        |
 | `parselines`      | programming         | A simple input line parser                                   |
@@ -93,3 +96,7 @@
     # create dvi
     dviasm file.dviasm -o file.[dvi|xdv]
     ```
+- Log filters
+  - `texlogsieve`
+  - `texlogfilter`
+  - `texloganalyser`
