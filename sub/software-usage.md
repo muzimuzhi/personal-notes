@@ -7,7 +7,10 @@ General info
 - `git` documentation https://git-scm.com/docs/git
   - all commands, divided into high level and low level ones
     https://git-scm.com/docs/git#_git_commands
-  - https://git-scm.com/docs/gitglossary
+  - `git reset`, `git restore` and `git revert`
+    https://git-scm.com/docs/git#_reset_restore_and_revert
+    https://stackoverflow.com/a/58003889
+- https://git-scm.com/docs/gitglossary
 - `git <command>` documentation: `https://git-scm.com/docs/git-<command>`
 - Pro Git book (living)
   https://git-scm.com/book/en/v2
