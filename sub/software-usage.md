@@ -135,6 +135,19 @@ git stash show [--stat] [--patch] [-u | --include-untracked] [stash@{0}]
 git stash drop [stash@{0}]
 ```
 
+Restore files from index or some commit
+
+```bash
+# restore from HEAD
+git restore <pathspec>...
+# restore from index
+git restore --staged <pathspec>...
+# restore from <tree>
+git restore --source=<tree> [--] <pathspec>...
+
+# -p/--patch: select hunks interactively
+```
+
 Tags
 
 ```bash
