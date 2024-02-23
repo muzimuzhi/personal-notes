@@ -51,9 +51,8 @@ Configuration
 Show status
 
 - Show individual files in untracked directories ([ref](https://git-scm.com/docs/git-status#Documentation/git-status.txt--ultmodegt))
-  ```bash
-  # short option: -u
-  git status --untracked-files
+  ```
+  git status [-u | --untracked-files]
   ```
 
 Clone and fetch
