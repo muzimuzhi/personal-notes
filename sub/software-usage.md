@@ -63,6 +63,10 @@ Clone and fetch
   ```bash
   git fetch --unshallow
   ```
+- Fetch a specific commit
+  ```
+  git fetch --depth=1 origin <commit>
+  ```
 
 Commit changes
 
