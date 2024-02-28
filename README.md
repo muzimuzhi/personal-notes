@@ -55,3 +55,5 @@ These are some notes in the result of my daily web searching and time wasting.
   * http://www.fileformat.info/index.htm
   * https://www.compart.com/en/unicode
   * Converter: https://r12a.github.io/app-conversion/
+  * Unicode names https://w3c.github.io/xml-entities/unicode-names.html
+    first seen in https://github.com/latex3/latex3/issues/1477#issuecomment-1968529792
