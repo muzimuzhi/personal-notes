@@ -203,7 +203,7 @@ Only `texdoc` names listed.
 
 #### Commands for class and package writers
 
-* `\@disable@packageload{<pkg>}{<replacement code>}`, requires LaTeX2e 2020/10/01
+* `\disable@package@load{<pkg>}{<alternate-code>}`, requires LaTeX2e 2020/10/01
 
 #### Notable LaTeX NEWS
 
