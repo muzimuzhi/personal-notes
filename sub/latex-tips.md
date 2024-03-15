@@ -102,6 +102,42 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
   * specific directory for auxiliary files: `--aux-directory=<dir>`
 * [List of packages](https://miktex.org/packages) contained in MiKTeX, and the current (compressed) packages files [distributed by CTAN mirrors](https://ctan.org/tex-archive/systems/win32/miktex/tm/packages)
 
+### BasicTeX
+
+- https://tug.org/mactex/morepackages.html
+  `brew info basictex`
+
+- upgrade basictex
+
+  ```bash
+  # backup package list
+  tlmgr list --only-installed | sed -e 's/^i \([^:]*\): .*$/\1/' > tl_packages
+
+  brew upgrade basictex
+
+  # set ctan repository
+  sudo tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+
+  # install docs
+  sudo tlmgr option docfiles 1
+  sudo tlmgr install --reinstall $(tlmgr list --only-installed | sed -e 's/^i \([^:]*\): .*$/\1/')
+
+  sudo tlmgr install "$(cat tl_packages)"
+
+  # rename versioned directory used by TEXMFVAR and TEXMFCONFIG
+  #     TEXMFCONFIG=~/Library/texlive/2023basic/texmf-config
+  #     TEXMFVAR=~/Library/texlive/2023basic/texmf-var
+  mv ~/Library/texlive/{2023,2024}basic
+
+  # recreate hard links for fonts
+  rm -f ~/Library/Fonts/texlive-opentype/*
+  rm -f ~/Library/Fonts/texlive-truetype/*
+  find `kpsewhich -var-value TEXMFDIST`/fonts/opentype -name '*.otc' -type f \
+    -exec ln \{\} ~/Library/Fonts/texlive-opentype \;
+  find `kpsewhich -var-value TEXMFDIST`/fonts/truetype -name '*.ttf' -type f \
+    -exec ln \{\} ~/Library/Fonts/texlive-truetype \;
+  ```
+
 
 ## Engines and Backends
 
