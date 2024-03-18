@@ -129,13 +129,16 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
   #     TEXMFVAR=~/Library/texlive/2023basic/texmf-var
   mv ~/Library/texlive/{2023,2024}basic
 
-  # recreate hard links for fonts
+  # for xetex: (re)create hard links for fonts so they can be found by xetex with family name
   rm -f ~/Library/Fonts/texlive-opentype/*
   rm -f ~/Library/Fonts/texlive-truetype/*
   find `kpsewhich -var-value TEXMFDIST`/fonts/opentype -name '*.otc' -type f \
     -exec ln \{\} ~/Library/Fonts/texlive-opentype \;
   find `kpsewhich -var-value TEXMFDIST`/fonts/truetype -name '*.ttf' -type f \
     -exec ln \{\} ~/Library/Fonts/texlive-truetype \;
+  
+  # for luatex
+  sudo tlmgr conf texmf OSFONTDIR /System/Library/AssetsV2/com_apple_MobileAsset_Font7
   ```
 
 
