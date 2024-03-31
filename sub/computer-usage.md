@@ -270,6 +270,12 @@ Doc for options [`-transparent color`][imagemagick-opt-transparent] and [`-fuzz 
 [imagemagick-opt-transparent]: https://imagemagick.org/script/command-line-options.php#transparent
 [imagemagick-opt-fuzz]: https://imagemagick.org/script/command-line-options.php#fuzz
 
+### Compare images
+https://imagemagick.org/script/compare.php
+```bash
+magick compare old.png new.png -highlight-color blue diff.png
+```
+
 ## Font Selection
 
 ### Source Code Pro (before v2.032) can't be styled/colored in Chrome
