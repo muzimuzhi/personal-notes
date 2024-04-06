@@ -243,6 +243,17 @@ About the `webrick` workaround
 
 ### GitHub Actions
 
+- variables
+  - default environment variables
+    https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables
+    > Because default environment variables are set by GitHub and not defined in a workflow, they are not accessible through the `env` context.
+    ```yaml
+    - run |
+        echo 'github.workspace === ${{ github.workspace }}' # ok
+        echo "GITHUB_WORKSPACE === $GITHUB_WORKSPACE" # ok
+        echo 'env.GITHUB_WORKSPACE === ${{ env.GITHUB_WORKSPACE }}' # wrong
+    ```
+
 - workflow syntax
   https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
   - glob pattern `*` doesn't match `/`, use `**` instead
