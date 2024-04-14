@@ -16,6 +16,9 @@ General info
   https://git-scm.com/book/en/v2
   https://github.com/progit/progit2
 - [Release notes](https://github.com/git/git/tree/master/Documentation/RelNotes)
+- Highlights from Git releases
+  - https://github.blog/2019-08-16-highlights-from-git-2-23
+    - new commands `git switch` and `git restore`
 
 Configuration
 
@@ -122,14 +125,6 @@ Branching and Merging
   ```bash
   git merge --no-ff --log <branch>
   ```
-
-Switch branch
-
-```bash
-git switch <branch>
-git switch -c/--create <new-branch> [<start-point>]
-git switch ---detach <start-point>
-```
 
 Back to clean working directory
 
