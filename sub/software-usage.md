@@ -123,6 +123,14 @@ Branching and Merging
   git merge --no-ff --log <branch>
   ```
 
+Switch branch
+
+```bash
+git switch <branch>
+git switch -c/--create <new-branch> [<start-point>]
+git switch ---detach <start-point>
+```
+
 Back to clean working directory
 
 ```bash
