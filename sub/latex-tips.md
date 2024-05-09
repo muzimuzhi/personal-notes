@@ -289,6 +289,12 @@ $ tlmgr conf texmf OSFONTDIR <path>
 
 ## Packages
 
+### HTML docs
+
+- tikz https://tikz.dev/
+- pgfplots https://tikz.dev/pgfplots
+- beamer https://www.beamer.plus/home.html
+
 ### `latex3`
 
 CHANGELOG
