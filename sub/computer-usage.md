@@ -64,6 +64,10 @@
 
  - [`CHANGELOG.txt`](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
 
+- Configure LaTeX related commands
+  - Make "External PDF Viewer" respect additional PDF directories
+    `open ?p{pdf}:ame" > /dev/null`
+    https://texstudio-org.github.io/configuration.html#command-syntax-in-detail
 
 ### Atom
 
