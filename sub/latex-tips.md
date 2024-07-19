@@ -666,6 +666,14 @@ python3 `which pythontex` main
 xelatex main.tex
 ```
 
+### Replacements
+
+- [moloch] Revival (fork) of Metropolis beamer theme
+  - intro https://jolars.co/blog/2024-05-30-moloch/
+  - repo https://github.com/jolars/moloch
+  - CTAN https://ctan.org/pkg/moloch
+  - seen from https://github.com/samcarter#2024
+
 ## Topics: table
 
 Variable Rule width
