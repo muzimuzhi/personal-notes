@@ -62,6 +62,13 @@ https://docs.brew.sh/Manpage
   https://docs.brew.sh/Manpage#deps-options-formulacask-
   `brew deps FORMULA`
 
+- List formulae and casks in a tap
+  https://docs.brew.sh/Manpage#tap-info---installed---json-tap-
+  ```bash
+  brew tap-info --json TAP | jq -r '.[] | (.formula_names[], .cask_tokens[])'
+  ```
+  saw in https://apple.stackexchange.com/a/392993
+
 ### Writing formulae and casks
 
 - Adding formula or cask to Homebrew
