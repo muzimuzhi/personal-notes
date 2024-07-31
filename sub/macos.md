@@ -69,6 +69,17 @@ https://docs.brew.sh/Manpage
   ```
   saw in https://apple.stackexchange.com/a/392993
 
+- Bump a formula or cask
+  https://docs.brew.sh/Manpage#bump-formula-pr-options-formula
+  https://docs.brew.sh/Manpage#bump-cask-pr-options-cask
+  ```bash
+  brew bump-formula-pr --version=VERSION [--write-only] FORMULA
+  brew bump-cask-pr --version=VERSION [--write-only] cask
+  ```
+  Application: my `workflow_dispatch`-triggerable GitHub Action workflow [`brew-bump-pr.yml`][brew-bump-pr.yml].
+
+  [brew-bump-pr.yml]: https://github.com/muzimuzhi/hello-github-actions/blob/main/.github/workflows/brew-bump-pr.yml
+
 ### Writing formulae and casks
 
 - Adding formula or cask to Homebrew
