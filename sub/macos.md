@@ -55,12 +55,12 @@ https://docs.brew.sh/Manpage
 
 - Show (installed) dependents of a formula
   https://docs.brew.sh/Manpage#uses-options-formula-
-  `brew uses --recursive --installed <formula>`
-  seen in https://stackoverflow.com/a/66142860
+  `brew uses --recursive --installed FORMULA`
+  saw in https://stackoverflow.com/a/66142860
 
 - Show dependencies of a formula
   https://docs.brew.sh/Manpage#deps-options-formulacask-
-  `brew deps <formula>`
+  `brew deps FORMULA`
 
 ### Writing formulae and casks
 
