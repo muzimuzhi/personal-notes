@@ -62,9 +62,10 @@
 
 - commands
   - JSON: Sort Document
-    provided by built-in extension JSON Language Features
-    (source directory https://github.com/microsoft/vscode/tree/main/extensions/json-language-features)
-    new in v1.76.0 https://code.visualstudio.com/updates/v1_76#_jsonc-document-sorting
+    - provided by built-in extension JSON Language Features
+      (source directory https://github.com/microsoft/vscode/tree/main/extensions/json-language-features)
+    - new in v1.76.0 https://code.visualstudio.com/updates/v1_76#_jsonc-document-sorting,
+      added by https://github.com/microsoft/vscode/pull/174352
 
 ### TeXstudio
 
