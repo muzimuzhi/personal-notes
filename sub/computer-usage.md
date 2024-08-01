@@ -60,6 +60,12 @@
     https://code.visualstudio.com/updates/v1_84#_floating-editor-windows
     https://code.visualstudio.com/updates/v1_85#_floating-editor-windows
 
+- commands
+  - JSON: Sort Document
+    provided by built-in extension JSON Language Features
+    (source directory https://github.com/microsoft/vscode/tree/main/extensions/json-language-features)
+    new in v1.76.0 https://code.visualstudio.com/updates/v1_76#_jsonc-document-sorting
+
 ### TeXstudio
 
  - [`CHANGELOG.txt`](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
