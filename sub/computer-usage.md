@@ -95,6 +95,9 @@
   %% would got Error "tput: No value for $TERM and no -T specified" without "TERM=xterm" setting
   % !TeX TXS-program:compile = sh -c "TERM=xterm lualatex -synctex=1 -interaction=nonstopmode -shell-escape %.tex"
   ```
+  - about shell
+    > All commands specified in the configuration (i.e. Commands and User Commands) are executed directly. There is no shell involved. So most shell functionality does not work.
+    https://texstudio-org.github.io/configuration.html#shell-functionality
 
 ### Atom
 
