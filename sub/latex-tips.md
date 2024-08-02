@@ -231,6 +231,14 @@ Only `texdoc` names listed.
   % L3 programming layer <2024-05-27>
   ```
 
+#### Hooks
+
+- Execution order
+  code chunks (all other labels), `top-level` label, next invocation
+  - reversed hooks (`\NewReversedHook(WithArguments)`, `\NewMirroredHookPair(WithArguments)`) uses reversed execution order: next, `top-level`, chunks
+  - ordering rules (`\DeclareHookRule`) only affect execution _inside_ code chunks
+  - next invocation code (`\AddToHookNext`) is not orderable
+
 #### Commands for class and package writers
 
 * `\disable@package@load{<pkg>}{<alternate-code>}`, requires LaTeX2e 2020/10/01
