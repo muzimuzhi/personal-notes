@@ -69,11 +69,14 @@
 
 ### TeXstudio
 
- - [`CHANGELOG.txt`](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
+- CHANGELOG.txt
+  https://texstudio-org.github.io/CHANGELOG.html
+  https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt
 
-- Configure LaTeX related commands
-  - Make "External PDF Viewer" respect additional PDF directories
+- Configure -> Commands
+  - Make "External PDF Viewer" respect additional PDF search paths (Configure -> Build)
     `open ?p{pdf}:ame" > /dev/null`
+    also applies to "DVI Viewer" and "PS Viewer" 
     https://texstudio-org.github.io/configuration.html#command-syntax-in-detail
 
 ### Atom
