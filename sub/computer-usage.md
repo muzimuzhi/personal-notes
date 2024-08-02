@@ -79,6 +79,23 @@
     also applies to "DVI Viewer" and "PS Viewer" 
     https://texstudio-org.github.io/configuration.html#command-syntax-in-detail
 
+- Magic comments
+  https://texstudio-org.github.io/advanced.html#advanced-header-usage
+  ```tex
+  %% switch engine
+  % !TeX program = xelatex
+
+  %% enable shell escape
+  % !TeX TXS-program:compile = txs:///pdflatex/{%.tex} -shell-escape "%.tex"
+
+  %% use -dev format
+  % !TeX TXS-program:compile = pdflatex-dev -synctex=1 -interaction=nonstopmode %.tex
+
+  %% use lualatex and enable shell escape
+  %% would got Error "tput: No value for $TERM and no -T specified" without "TERM=xterm" setting
+  % !TeX TXS-program:compile = sh -c "TERM=xterm lualatex -synctex=1 -interaction=nonstopmode -shell-escape %.tex"
+  ```
+
 ### Atom
 
 Manually install an Atom package ([ref](https://github.com/atom/apm/issues/355#issuecomment-99210591)):
