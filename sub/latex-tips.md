@@ -233,6 +233,12 @@ Only `texdoc` names listed.
 
 #### Hooks
 
+- Default labels
+  - `texdoc lthooks`, sec. 2.1.5 Hook names and default labels
+  - `\AddToHook{<hook>}{<code>}` _executed_ in the main document uses label `top-level`; only thoses executed in loading other files use "current" filename as label
+    - unless current default label is altered by `\PushDefaultHookLabel` or `\SetDefaultHookLabel`
+  - `\AddToHook{<hook>}{<code>}` has arg-spec `mo+m` hence is equivalent to `\hook_gput_code:non {<hook>} {\c_novalue_tl} {<code>}`, which is further equivalent to `\hook_gput_code:non {<hook>} {.} {<code>}` using the dot-syntax
+
 - Execution order
   code chunks (all other labels), `top-level` label, next invocation
   - reversed hooks (`\NewReversedHook(WithArguments)`, `\NewMirroredHookPair(WithArguments)`) uses reversed execution order: next, `top-level`, chunks
