@@ -10,6 +10,9 @@ General info
   - `git reset`, `git restore` and `git revert`
     https://git-scm.com/docs/git#_reset_restore_and_revert
     https://stackoverflow.com/a/58003889
+  - Identifier terminology, `<object>`, `<tree-ish>`, `<commit-ish>`, etc.
+    https://git-scm.com/docs/git#_identifier_terminology
+    `<commit-ish>` vs `<tree-ish>`: https://stackoverflow.com/q/23303549/
 - https://git-scm.com/docs/gitglossary
 - `git <command>` documentation: `https://git-scm.com/docs/git-<command>`
 - Pro Git book (living)
