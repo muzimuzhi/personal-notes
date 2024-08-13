@@ -235,8 +235,9 @@ Only `texdoc` names listed.
 
 - Default labels
   - `texdoc lthooks`, sec. 2.1.5 Hook names and default labels
-  - `\AddToHook{<hook>}{<code>}` _executed_ in the main document uses label `top-level`; only thoses executed in loading other files use "current" filename as label
-    - unless current default label is altered by `\PushDefaultHookLabel` or `\SetDefaultHookLabel`
+  - `\AddToHook{<hook>}{<code>}` _executed_ in the main document uses label `top-level`; otherwise uses current filename as label
+    - More precisely, in files loaded with `\@onefilewithoptions` (thus `\@pushfilename` is invoked), default label is the current filename. In the main document, files loaded with `\input`, `\include`, and `\InputIfFileExists`, default label is `top-level`.
+  - current default label can be altered (to non-`top-level`) by `\PushDefaultHookLabel` or `\SetDefaultHookLabel`
   - `\AddToHook{<hook>}{<code>}` has arg-spec `mo+m` hence is equivalent to `\hook_gput_code:non {<hook>} {\c_novalue_tl} {<code>}`, which is further equivalent to `\hook_gput_code:non {<hook>} {.} {<code>}` using the dot-syntax
 
 - Execution order
