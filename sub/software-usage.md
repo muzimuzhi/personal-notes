@@ -126,6 +126,14 @@ Branching and Merging
   git merge --no-ff --log <branch>
   ```
 
+Switch to a branch or commit-ish
+
+```bash
+git switch BRANCH
+git switch -c/--create NEW_BRANCH [START_POINT]
+git switch ---detach START_POINT
+```
+
 Back to clean working directory
 
 ```bash
