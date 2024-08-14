@@ -25,6 +25,8 @@ General info
 
 Configuration
 
+- Syntax of config files (`.git/config`, `$HOME/.gitconfig`)
+  https://git-scm.com/docs/git-config#_syntax
 - Print pathnames in Unicode, other than octal UTF-8 ([ref](https://stackoverflow.com/a/22828826))
   ```bash
   git config [--global] core.quotepath off
