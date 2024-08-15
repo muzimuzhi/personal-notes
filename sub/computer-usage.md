@@ -35,6 +35,11 @@
 <!-- ### vscode -->
 ### Visual Studio Code (vscode)
 
+- general
+  - UI components and layout
+    https://code.visualstudio.com/docs/getstarted/userinterface
+    https://code.visualstudio.com/docs/editor/custom-layout
+
 - repositories
   https://github.com/microsoft/vscode
   https://github.com/microsoft/vscode-docs
