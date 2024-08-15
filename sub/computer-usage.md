@@ -38,12 +38,14 @@
 - repositories
   https://github.com/microsoft/vscode
   https://github.com/microsoft/vscode-docs
-  - sources of release notes
+  - built-in extensions, including language grammars
+    https://github.com/microsoft/vscode/tree/main/extensions
+  - release notes
     https://github.com/microsoft/vscode-docs/tree/main/release-notes/v1_86.md for v1.86
 
 - latex grammar
   https://github.com/jlelong/vscode-latex-basics
-  imported by both vscode and its `latex-workshop` extension
+  imported by both vscode and `latex-workshop` extension
   https://github.com/microsoft/vscode/tree/main/extensions/latex
   https://github.com/James-Yu/LaTeX-Workshop/tree/master/syntax
 
