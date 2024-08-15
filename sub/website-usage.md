@@ -243,6 +243,19 @@ About the `webrick` workaround
 
 ### GitHub Actions
 
+- workflow
+  a `.github/workflows/filename.(yml|yaml)` file
+  - each workflow contains one or more jobs; each job contains one or more steps
+  - use an action in a step
+    - `uses: actions/checkout@main`
+    - such actions are one of "Docker container action", "JavaScript action", and "composite action"
+  - use a workflow in a job
+    - `jobs.<job_id>.uses: {owner}/{repo}/.github/workflows/{filename}@{ref}`
+    - such workflows are called reusable workflows which must include `on.workflow_call`
+      https://docs.github.com/en/actions/sharing-automations/reusing-workflows
+  - composite actions vs reusable workflows
+    https://docs.github.com/en/actions/sharing-automations/avoiding-duplication#comparison-of-reusable-workflows-and-composite-actions
+
 - variables
   - default environment variables
     https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables
