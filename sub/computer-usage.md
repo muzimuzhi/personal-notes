@@ -61,18 +61,18 @@
     https://marketplace.visualstudio.com/items?itemName=mehyaa.workspace-storage-cleanup
     - saw in https://stackoverflow.com/a/75666552
 
-- features
-  - Floating editor windows
-    insiders only since v1.84 and generally available since v1.84
-    https://code.visualstudio.com/updates/v1_84#_floating-editor-windows
-    https://code.visualstudio.com/updates/v1_85#_floating-editor-windows
-
-- commands
+- commands (`Cmd + Shift + P` or `Cmd + P` then type in `>`)
   - JSON: Sort Document
     - provided by built-in extension JSON Language Features
       (source directory https://github.com/microsoft/vscode/tree/main/extensions/json-language-features)
     - new in v1.76.0 https://code.visualstudio.com/updates/v1_76#_jsonc-document-sorting,
       added by https://github.com/microsoft/vscode/pull/174352
+
+- features
+  - Floating editor windows
+    insiders only since v1.84 and generally available since v1.84
+    https://code.visualstudio.com/updates/v1_84#_floating-editor-windows
+    https://code.visualstudio.com/updates/v1_85#_floating-editor-windows
 
 ### TeXstudio
 
