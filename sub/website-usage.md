@@ -282,7 +282,8 @@ About the `webrick` workaround
     https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
     - one misuse: using `on.push.branches: ["*"]` to accept all branches, but actually branches containing `/` are filtered out
       https://github.com/latex3/latex3/pull/1293
-  - if-then-else in expressions
+  - `on.(push|pull_request).(paths|paths_ignore)` should match a (relative) path to file, so `paths: dir/**` works but `paths: dir` doesn't
+    https://github.com/muzimuzhi/hello-github-actions/commit/c84ebdc31cc0af60d02ed74ceffb3a069ee772e1
     `${{ x && 'ifTrue' || 'ifFalse' }}`
     - first saw in https://github.com/latex3/latex2e/blob/f7ccd3168fd1fee22d6bf574bd96876124b9ef6b/.github/workflows/main.yaml#L122C39-L122C99
       common reference https://github.com/actions/runner/issues/409#issuecomment-752775072
