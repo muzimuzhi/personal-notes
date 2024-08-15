@@ -266,6 +266,15 @@ About the `webrick` workaround
         echo "GITHUB_WORKSPACE === $GITHUB_WORKSPACE" # ok
         echo 'env.GITHUB_WORKSPACE === ${{ env.GITHUB_WORKSPACE }}' # wrong
     ```
+  - use env var as boolean
+    ```yaml
+    if: fromJSON(env.MY_VAR) # all truthy values are accepted
+    if: env.MY_VAR == 'true' # suppose MY_VAR is either 'true' or 'false'
+    ```
+    - Background: using env var used in conditionals along
+      - if non-existent or empty -> falsy value `""` (string) -> `false` (boolean)
+      - otherwise -> truthy value (string) -> `true` (boolean)
+      - So with `env.MY_ENV_VAR: false`, `if: $MY_ENV_VAR` evaluates to true
 
 - workflow syntax
   https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
