@@ -25,9 +25,10 @@ General info
 
 Configuration
 
-- deprecated syntaxes and options
+- new syntaxes and options since v2.46.0
+  for example, `git config KEY VALUE` => `git config set KEY VALUE`
   https://git-scm.com/docs/git-config#_deprecated_modes
-  for example, replace `git config KEY VALUE` with `git config set KEY VALUE`
+  https://github.blog/open-source/git/highlights-from-git-2-46/
 - Syntax of config files (`.git/config`, `$HOME/.gitconfig`)
   https://git-scm.com/docs/git-config#_syntax
 - Print pathnames in Unicode, other than octal UTF-8 ([ref](https://stackoverflow.com/a/22828826))
