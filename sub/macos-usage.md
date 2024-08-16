@@ -12,16 +12,19 @@ Shortcut List
 
 ## BSD Bash/Zsh
 
-Display disk usage statistics sorted by human readable numbers ([ref](https://serverfault.com/a/156648))
-```bash
-# use GNU sort which supports the missing option "-h"
-$ du -hd 1 | gsort -h
-```
+- Display disk usage statistics sorted by human readable numbers
+  ```bash
+  # see "brew info dust"
+  dust -d1
 
-Open man page in new terminal window ([ref](https://scriptingosx.com/2017/04/on-viewing-man-pages/))
-```bash
-$ open x-man-page://<name>
-```
+  # use GNU sort which supports "-h" option, "brew info coreutils"
+  $ du -hd 1 | gsort -h
+  ```
+  https://serverfault.com/a/156648
+
+- Open man page in new terminal window
+  `open x-man-page://<name>`
+  https://scriptingosx.com/2017/04/on-viewing-man-pages/
 
 - `zip` and `unzip`
     ```bash
