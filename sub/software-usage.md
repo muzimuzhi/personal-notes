@@ -25,11 +25,14 @@ General info
 
 Configuration
 
+- deprecated syntaxes and options
+  https://git-scm.com/docs/git-config#_deprecated_modes
+  for example, replace `git config KEY VALUE` with `git config set KEY VALUE`
 - Syntax of config files (`.git/config`, `$HOME/.gitconfig`)
   https://git-scm.com/docs/git-config#_syntax
 - Print pathnames in Unicode, other than octal UTF-8 ([ref](https://stackoverflow.com/a/22828826))
   ```bash
-  git config [--global] core.quotepath off
+  git config set [--global] core.quotepath off
   ```
 - Diff non-UTF8 files:
   ```bash
@@ -43,14 +46,14 @@ Configuration
   ```
 - Show whitespace changes in `git diff` ([doc](https://git-scm.com/docs/git-config#Documentation/git-config.txt-diffwsErrorHighlight))
   ```bash
-  $ git config [--global] diff.wsErrorHighlight all
+  $ git config set [--global] diff.wsErrorHighlight all
   ```
 - Pretty one-line `git log`
   based on https://ma.ttias.be/pretty-git-log-in-one-line/
   ```bash
   # set pretty format and alias
-  git config --global pretty.logline "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset"
-  git config --global alias.logline "log --graph --pretty=format:logline --abbrev-commit"
+  git config set --global pretty.logline "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset"
+  git config set --global alias.logline "log --graph --pretty=format:logline --abbrev-commit"
 
   # use git alias
   $ git logline
