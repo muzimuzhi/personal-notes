@@ -1,16 +1,16 @@
-# Notes relating macOS
+# macOS Usage
 
 ## macOS Shortcuts
 
 | Key                    | Function                                   |
 | ---------------------- | ------------------------------------------ |
-| cmd + ` (grave accent) | switch between windows of a same program |
+| cmd + ` (grave accent) | switch between windows of a same program   |
 
 Shortcut List
  * [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236) - support.apple.com
  * [Mac OS X Finder Keyboard Shortcuts](https://www.dummies.com/computers/macs/macbook/mac-os-x-finder-keyboard-shortcuts/) - dummies.com
 
-## BSD Bash Usage
+## BSD Bash/Zsh
 
 Display disk usage statistics sorted by human readable numbers ([ref](https://serverfault.com/a/156648))
 ```bash
@@ -34,6 +34,23 @@ $ open x-man-page://<name>
     # unzip specific file and drop directory structures in archive
     unzip -j file.zip path/to/file.txt  # this will create "./file.txt"
     ```
+
+- Remove duplicates in zsh history ([ref](https://qr.ae/pNk9yZ))
+  ```bash
+  cat -n $HISTFILE | sort -t ';' -uk2 | sort -nk1 | cut -f2- > .zsh_short_history
+  ```
+  problematic with multiline history entries
+
+
+## GNU CLI Tools
+* Show dependencies as a tree: `brew deps --tree <formula>`
+
+| Name    | Homebrew formula    |
+| ------- | ------------------- |
+| `ggrep` | `brew info grep`    |
+| `gsed`  | `brew info gnu-sed` |
+| `gsort` | `brew info coreutils` |
+
 
 ## Homebrew
 
@@ -92,14 +109,6 @@ https://docs.brew.sh/Manpage
 - [`version` Stanza Details](https://github.com/Homebrew/homebrew-cask/blob/master/doc/cask_language_reference/stanzas/version.md)
   - Example: [Homebrew/homebrew-cask-fonts#2082](https://github.com/Homebrew/homebrew-cask-fonts/issues/2082)
 
-## GNU, instead of BSD CLI Tools
-* Show dependencies as a tree: `brew deps --tree <formula>`
-
-| Name    | Homebrew formula    |
-| ------- | ------------------- |
-| `ggrep` | `brew info grep`    |
-| `gsed`  | `brew info gnu-sed` |
-| `gsort` | `brew info coreutils` |
 
 ## Where do PATHs come from
 
@@ -108,10 +117,3 @@ https://docs.brew.sh/Manpage
 1. `/etc/paths` + file lines under `/etc/paths.d`
 1. shell profiles (e.g., [zsh startup files](http://zsh.sourceforge.net/Doc/Release/Files.html#Startup_002fShutdown-Files))
 see [ref](https://scriptingosx.com/2017/05/where-paths-come-from/)
-
-## Zsh
-
-Remove duplicates in zsh history ([ref](https://qr.ae/pNk9yZ))
-```bash
-cat -n $HISTFILE | sort -t ';' -uk2 | sort -nk1 | cut -f2- > .zsh_short_history
-```

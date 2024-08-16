@@ -10,9 +10,9 @@ These are some notes in the result of my daily web searching and time wasting.
 * Computer
   * [Computer Science](sub/computer-science.md)
   * [Computer Usage](sub/computer-usage.md)
+  * [macOS Usage](sub/macos-usage.md)
   * [Software Usage](sub/software-usage.md)
   * [Website Usage](sub/website-usage.md)
-  * [macOS Only](sub/macos.md)
 * (La)TeX
   * Guideline to docs and other resources
     * recommended LaTeX packages (TODO)
