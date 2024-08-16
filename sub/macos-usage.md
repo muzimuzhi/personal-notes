@@ -52,6 +52,12 @@ $ open x-man-page://<name>
 | `gsort` | `brew info coreutils` |
 
 
+## CLI Tricks
+
+- Skip "unidentified developer" prompt
+  `xattr -dr com.apple.quarantine /Applications/texstudio.app`
+  https://apple.stackexchange.com/a/202172
+
 ## Homebrew
 
 ### `brew` CLI program
