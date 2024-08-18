@@ -69,7 +69,8 @@ Show status
 
 Clone and fetch
 
-- Shallow clone: `git clone --depth=<num>`
+- Shallow clone: `git clone --depth=<num> [--no-single-branch]`
+  `--depth` implies `--single-branch`, thus the `fetch = +refs/heads/DEFAULT_BRANCH:refs/remotes/origin/DEFAULT_BRANCH` line in `.git/config`, which makes new branches pushed to remote not auto-tracked locally
 - Convert a shallow clone to full clone ([ref](https://stackoverflow.com/a/17937889))
   ```bash
   git fetch --unshallow
