@@ -247,13 +247,17 @@ About the `webrick` workaround
 
 - workflow
   a `.github/workflows/filename.(yml|yaml)` file
-  - each workflow contains one or more jobs; each job contains one or more steps
-  - use an action in a step
+  - structure
+    - each workflow contains one or more jobs
+    - each job either contains one or more steps (`jobs.<job_id>.steps`) or uses another (reusable) workflow (`jobs.<job_id>.uses`)
+      see https://github.com/github/vscode-github-actions/issues/291
+    - each step either uses an action (`jobs.<job_id>.steps[*].uses`) or runs some code (`jobs.<job_id>.steps[*].run`)
+  - actions used by steps
     - `uses: actions/checkout@main`
     - such actions are one of "Docker container action", "JavaScript action", and "composite action"
-  - use a workflow in a job
+  - reusable workflows used by jobs
     - `jobs.<job_id>.uses: {owner}/{repo}/.github/workflows/{filename}@{ref}`
-    - such workflows are called reusable workflows which must include `on.workflow_call`
+    - reusable workflows must have the `on.workflow_call` event
       https://docs.github.com/en/actions/sharing-automations/reusing-workflows
   - composite actions vs reusable workflows
     https://docs.github.com/en/actions/sharing-automations/avoiding-duplication#comparison-of-reusable-workflows-and-composite-actions
