@@ -44,6 +44,12 @@ Shortcut List
   ```
   problematic with multiline history entries
 
+### Zsh
+
+- https://zsh.sourceforge.io/
+- repo https://sourceforge.net/projects/zsh/
+  github mirror https://github.com/zsh-users/zsh/
+  (see intro https://zsh.sourceforge.io/Arc/git.html)
 
 ## GNU CLI Tools
 * Show dependencies as a tree: `brew deps --tree <formula>`
