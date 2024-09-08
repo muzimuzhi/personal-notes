@@ -10,6 +10,8 @@ Shortcut List
  * [Mac keyboard shortcuts](https://support.apple.com/en-us/HT201236) - support.apple.com
  * [Mac OS X Finder Keyboard Shortcuts](https://www.dummies.com/computers/macs/macbook/mac-os-x-finder-keyboard-shortcuts/) - dummies.com
 
+<!-- # bash -->
+<!-- # zsh -->
 ## BSD Bash/Zsh
 
 - Display disk usage statistics sorted by human readable numbers
