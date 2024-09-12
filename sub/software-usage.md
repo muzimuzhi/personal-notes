@@ -160,14 +160,14 @@ git stash drop [stash@{0}]
 Restore files from index or some commit
 
 ```bash
-# restore from HEAD
-git restore <pathspec>...
-# restore from index
-git restore --staged <pathspec>...
-# restore from <tree>
-git restore --source=<tree> [--] <pathspec>...
+# restore working tree (-W/--worktree) from HEAD
+git restore [--] <pathspec>...
+# restore index from HEAD
+git restore --staged [--] <pathspec>...
 
+# -S/--staged and -W/--worktree can be used in together
 # -p/--patch: select hunks interactively
+# -s/--source=<tree>: restore from <tree>
 ```
 
 Tags
