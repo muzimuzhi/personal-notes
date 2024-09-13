@@ -299,6 +299,21 @@ About the `webrick` workaround
     - first saw in https://github.com/latex3/latex2e/blob/f7ccd3168fd1fee22d6bf574bd96876124b9ef6b/.github/workflows/main.yaml#L122C39-L122C99
       common reference https://github.com/actions/runner/issues/409#issuecomment-752775072
 
+- frequently used actions
+  - `actions/checkout`
+    https://github.com/actions/checkout
+    - by default checks out `${{ github.repository }}` to `${{ github.workspace }}`
+      - configurable via `repository` and `path` (relative path, sub-dir only) inputs
+    - in most cases the `path` directory is erased before checkout
+      - for example, when `path` doesn't contain a pre-existing `.git` dir
+        https://github.com/actions/checkout/pull/561
+      - job log `Deleting the contents of '/home/runner/work/REPO/REPO'`
+    - default setting `set-safe-directory: true` doesn't work for containers
+      - workaround: `git config set --global safe.directory "*"` (too loose?)
+      - https://github.com/actions/runner/issues/2033 "git config safe.directory inside docker containers"
+        https://github.com/actions/checkout/issues/766 "fatal: unsafe repository (REPO is owned by someone else) in other workflow steps after running checkout"
+        https://github.com/actions/checkout/issues/1169 "/github/home/.gitconfig does not exist for container runs"
+
 ### Design System
 
 - https://primer.style/
