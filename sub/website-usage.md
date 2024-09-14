@@ -328,6 +328,7 @@ About the `webrick` workaround
     https://docs.github.com/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging
     - can be set by one or more of `defaults.run.working-directory`, `jobs.<job_id>.defaults.run.working-directory`, and `jobs.<job_id>.steps[*].working-directory`
     - only `shell` and `env` are always logged for all steps. Quite some other step properties are similarly hidden in logs
+    - Sep 15, 2024: feedback submitted https://github.com/orgs/community/discussions/138657
 
 - frequently used actions
   - `actions/checkout`
