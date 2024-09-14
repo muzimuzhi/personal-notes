@@ -245,6 +245,19 @@ About the `webrick` workaround
 
 ### GitHub Actions
 
+- meta
+  - general
+    https://github.com/features/#features-automation
+    https://github.com/features/actions
+  - docs
+    https://docs.github.com/actions
+  - marketplace of actions
+    https://github.com/marketplace?type=actions
+  - repos
+    https://github.com/actions/runner
+    https://github.com/actions/runner-images
+    - GitHub-hosted runners, their YAML labels and included softwares
+
 - workflow
   a `.github/workflows/filename.(yml|yaml)` file
   - structure
