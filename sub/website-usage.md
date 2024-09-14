@@ -299,6 +299,12 @@ About the `webrick` workaround
     - first saw in https://github.com/latex3/latex2e/blob/f7ccd3168fd1fee22d6bf574bd96876124b9ef6b/.github/workflows/main.yaml#L122C39-L122C99
       common reference https://github.com/actions/runner/issues/409#issuecomment-752775072
 
+- run logs
+  - `working-directory` is never logged, even when [debug logging] is enabled
+    https://docs.github.com/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging
+    - can be set by one or more of `defaults.run.working-directory`, `jobs.<job_id>.defaults.run.working-directory`, and `jobs.<job_id>.steps[*].working-directory`
+    - only `shell` is always logged and quite some other step properties are similarly hidden in logs
+
 - frequently used actions
   - `actions/checkout`
     https://github.com/actions/checkout
