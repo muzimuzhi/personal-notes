@@ -308,6 +308,24 @@ About the `webrick` workaround
 - frequently used actions
   - `actions/checkout`
     https://github.com/actions/checkout
+    ```yaml
+    - name: Checkout
+      uses: actions/checkout@v<n>
+      with:
+        # when possible, default values are listed
+        repository: ${{ github.repository }}
+        ref: "${{ github.ref }} or the HEAD of default branch"
+        path: .               # relative path under ${{ github.workspace }}
+        fetch-depth: 1        # 0 indicates "all history for all branches and tags"
+        fetch-tags: false
+        lfs: false
+        submodules: false
+        # more sophisticated inputs
+        filter: ''            # see `git clone --filter=<filter-spec>`
+                              # https://git-scm.com/docs/git-clone#Documentation/git-clone.txt-code--filtercodeemltfilter-specgtem
+        sparse-checkout: null # see `git sparse-checkout`
+                              # https://git-scm.com/docs/git-sparse-checkout
+    ```
     - by default checks out `${{ github.repository }}` to `${{ github.workspace }}`
       - configurable via `repository` and `path` (relative path, sub-dir only) inputs
     - in most cases the `path` directory is erased before checkout
