@@ -324,7 +324,7 @@ About the `webrick` workaround
       common reference https://github.com/actions/runner/issues/409#issuecomment-752775072
 
 - run logs
-  - `working-directory` is never logged, even when [debug logging] is enabled
+  - `working-directory` is never logged, even when debug logging is enabled
     https://docs.github.com/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging
     - can be set by one or more of `defaults.run.working-directory`, `jobs.<job_id>.defaults.run.working-directory`, and `jobs.<job_id>.steps[*].working-directory`
     - only `shell` and `env` are always logged for all steps. Quite some other step properties are similarly hidden in logs
