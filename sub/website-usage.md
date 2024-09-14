@@ -4,6 +4,10 @@
 
 ### meta
 
+- features
+  https://github.com/features/
+- changelog
+  https://github.blog/changelog
 - public roadmap
   https://github.com/orgs/github/projects/4247
 
@@ -258,6 +262,8 @@ About the `webrick` workaround
     https://docs.github.com/actions
   - marketplace of actions
     https://github.com/marketplace?type=actions
+  - changelog
+    https://github.blog/changelog/label/actions/
   - repos
     https://github.com/actions/runner
     https://github.com/actions/runner-images
