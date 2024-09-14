@@ -262,6 +262,15 @@ About the `webrick` workaround
   - composite actions vs reusable workflows
     https://docs.github.com/en/actions/sharing-automations/avoiding-duplication#comparison-of-reusable-workflows-and-composite-actions
 
+- workflow syntax
+  https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+  - glob pattern `*` doesn't match `/`, use `**` instead
+    https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+    - misuse: using `on.push.branches: ["*"]` to accept all branches, but actually branches containing `/` are filtered out
+      https://github.com/latex3/latex3/pull/1293
+  - `on.(push|pull_request).(paths|paths_ignore)` should match a (relative) path to file, so `paths: dir/**` works but `paths: dir` doesn't
+    https://github.com/muzimuzhi/hello-github-actions/commit/c84ebdc31cc0af60d02ed74ceffb3a069ee772e1
+
 - variables
   - default environment variables
     https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables
@@ -281,15 +290,6 @@ About the `webrick` workaround
       - if non-existent or empty -> falsy value `""` (string) -> `false` (boolean)
       - otherwise -> truthy value (string) -> `true` (boolean)
       - So with `env.MY_ENV_VAR: false`, `if: $MY_ENV_VAR` evaluates to true
-
-- workflow syntax
-  https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
-  - glob pattern `*` doesn't match `/`, use `**` instead
-    https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
-    - misuse: using `on.push.branches: ["*"]` to accept all branches, but actually branches containing `/` are filtered out
-      https://github.com/latex3/latex3/pull/1293
-  - `on.(push|pull_request).(paths|paths_ignore)` should match a (relative) path to file, so `paths: dir/**` works but `paths: dir` doesn't
-    https://github.com/muzimuzhi/hello-github-actions/commit/c84ebdc31cc0af60d02ed74ceffb3a069ee772e1
 
 - expressions
   - if-else (ternary operator) in expressions
