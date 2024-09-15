@@ -363,6 +363,19 @@ About the `webrick` workaround
         https://github.com/actions/checkout/issues/766 "fatal: unsafe repository (REPO is owned by someone else) in other workflow steps after running checkout"
         https://github.com/actions/checkout/issues/1169 "/github/home/.gitconfig does not exist for container runs"
 
+- tools
+  - vscode extensions (not actively maintained)
+    - https://github.com/github/vscode-github-actions
+      https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions "GitHub Actions"
+      it's linter is not as comprehensive and updated as others'
+      - important dependency https://github.com/actions/languageservices
+    - https://github.com/redhat-developer/vscode-yaml
+      https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml "YAML"
+      uses JSON schemas for workflow and action files from https://www.schemastore.org/json/
+  - linter
+    - https://github.com/rhysd/actionlint
+      playground https://rhysd.github.io/actionlint/
+
 ### Design System
 
 - https://primer.style/
