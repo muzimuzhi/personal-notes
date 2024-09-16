@@ -67,6 +67,9 @@
       (source directory https://github.com/microsoft/vscode/tree/main/extensions/json-language-features)
     - new in v1.76.0 https://code.visualstudio.com/updates/v1_76#_jsonc-document-sorting,
       added by https://github.com/microsoft/vscode/pull/174352
+  - Debug: Start Debugging
+    debug extension in a new window
+    https://code.visualstudio.com/api/get-started/your-first-extension
 
 - features
   - Floating editor windows
