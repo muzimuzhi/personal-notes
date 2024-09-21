@@ -181,6 +181,12 @@ All my subscriptions
 
 ### Pull Requests
 
+- special git refs
+  head commit `refs/pull/PR_NUMBER/head`
+  merge branch `refs/pull/PR_NUMBER/merge` (only for open PRs)
+  - `git ls-remote REMOTE <pattern>...`
+  - see also https://fluffyandflakey.blog/2022/12/21/what-is-a-github-pull-request-merge-branch/
+
 Check out a PR locally
 - doc https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
 - create a local branch
