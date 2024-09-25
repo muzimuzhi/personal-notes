@@ -189,11 +189,17 @@ All my subscriptions
 
 Check out a PR locally
 - doc https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
-- create a local branch
-  `git fetch origin pull/<pr_number>/head:<branch-name> && git switch <branch-name>`
-- without creating a local branch
-  `git fetch origin pull/<pr_number>/head && git switch --detach FETCH_HEAD`
-  https://stackoverflow.com/a/45967995
+
+```shell
+# fetch and create a local branch
+git fetch origin pull/PR_NUMBER/head:BRANCH && git switch BRANCH
+# fetch only
+# https://stackoverflow.com/a/45967995
+git fetch origin pull/PR_NUMBER/head && git switch --detach FETCH_HEAD
+# update
+# --force is needed for divergent branches
+git fetch --force --update-head-ok origin pull/PR_NUMBER/head:BRANCH
+```
 - via the GitHub CLI
   `gh pr checkout <pr_number>`
   This fails with non-glob `remote.<name>.fetch` git config (usually resulted from a shallow clone), see https://github.com/cli/cli/issues/4287
