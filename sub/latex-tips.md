@@ -164,7 +164,14 @@ Specials
 
 ### LuaTeX
 
-* `\immediateassignment` and `\immediateassigned`, `texdoc luatex` sec. 2.8.8
+- the LuaTeX Reference manual
+  - source files of the doc
+    https://tug.org/svn/texlive/trunk/Master/texmf-dist/doc/luatex/base/
+    https://ctan.org/tex-archive/systems/doc/luatex
+  - compile from source `context -luatex luatex.tex`
+    https://tug.org/pipermail/tex-live/2024-February/049963.html
+
+- `\immediateassignment` and `\immediateassigned`, `texdoc luatex` sec. 2.8.8
    ```tex
    \newcount\mycount
 
