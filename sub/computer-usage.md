@@ -230,18 +230,16 @@ Format of an outline
 
 ### Use `QPDF` to check and fix PDF file
 ```bash
-# program info
 brew info qpdf
-# usage
+
 qpdf --check file.pdf
 qpdf --qdf input.pdf - | fix-qdf > output.pdf
 ```
 
 ### Use `mutool` to generate human readable and editable PDF
 ```bash
-# aquire program
 brew info mupdf
-# usage
+
 mutool clean -ad input.pdf output.pdf
 ```
 
@@ -250,11 +248,9 @@ doc: https://mupdf.readthedocs.io/en/latest/mutool-clean.html
 
 ### `poppler` utilities
 ```bash
-# info
 brew info poppler
 brew list poppler
 
-# utilities
 pdfinfo     # show pdf info
 pdffonts    # list used fonts in a pdf
 pdfdetach   # extract embedded files from pdf
