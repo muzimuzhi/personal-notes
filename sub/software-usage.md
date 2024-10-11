@@ -292,3 +292,7 @@ Misc
     - so `gh api /repos/muzimuzhi/hello-github-actions/issues/26/comments -f body='Send by GitHub CLI'` works but `gh api /repos/denoland/vscode_deno/commits -f per_page=2` (without `-X GET`) failed with error `gh: Not Found (HTTP 404)`
     - feature request to only switch to `POST` when body parameters were added is made in
       https://github.com/cli/cli/issues/6877#issuecomment-2406540679
+- debug
+  `PAGER= GH_DEBUG=1`
+  https://cli.github.com/manual/gh_help_environment
+  - `GH_DEBUG=api` also logs HTTP traffic
