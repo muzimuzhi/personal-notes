@@ -281,3 +281,14 @@ Misc
   ```bash
   git rev-list --count HEAD
   ```
+
+<!-- ## gh -->
+## GitHub CLI
+
+- `gh api`
+  https://cli.github.com/manual/gh_api
+  - adding parameters (via `-f/--raw-field` or `-F/--field`) changes the default HTTP method from `GET` to `POST`
+    > The default HTTP request method is `GET` normally and `POST` if any parameters were added. Override the method with `-X/--method`.
+    - so `gh api /repos/muzimuzhi/hello-github-actions/issues/26/comments -f body='Send by GitHub CLI'` works but `gh api /repos/denoland/vscode_deno/commits -f per_page=2` (without `-X GET`) failed with error `gh: Not Found (HTTP 404)`
+    - feature request to only switch to `POST` when body parameters were added is made in
+      https://github.com/cli/cli/issues/6877#issuecomment-2406540679
