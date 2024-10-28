@@ -39,6 +39,8 @@ These are some notes in the result of my daily web searching and time wasting.
   * PDF Reference
     * [v1.7](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdf_reference_archive/pdf_reference_1-7.pdf) (with [errata](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdf_reference_archive/pdf_17_errata.pdf)) is freely downloadable from [adobe.com](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html).
     * [v2.0](https://www.iso.org/standard/63534.html) charges 198 Swiss francs on iso<span></span>.org.
+    * ISO 32000-2:2020 (PDF 2.0) and PDF/UA (ISO 14289) & ISO TS 32005, available at no cost
+      https://pdfa.org/sponsored-standards/
   * [Cheatsheet](sub/pdf-ref-cheatsheet.md) for PDF Reference v1.7
   * Helpful links
     * [Adobe documents](https://reference.pdfa.org/iso/32000/) referenced from ISO 32000-2:2017 | pdfa.org
