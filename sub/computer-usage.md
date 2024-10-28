@@ -316,6 +316,19 @@ https://imagemagick.org/script/compare.php
 magick compare old.png new.png -highlight-color blue diff.png
 ```
 
+## Video Processing
+
+- get video duration
+  ```shell
+  brew info ffmpeg
+  ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 -sexagesimal input.mp4
+  0:00:30.024000
+  # in form of HOURS:MM:SS.MICROSECONDS
+  ```
+  https://superuser.com/a/945604
+  https://trac.ffmpeg.org/wiki/FFprobeTips#Duration
+
+
 ## Font Selection
 
 ### Source Code Pro (before v2.032) can't be styled/colored in Chrome
