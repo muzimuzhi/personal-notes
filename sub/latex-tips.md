@@ -235,9 +235,10 @@ Only `texdoc` names listed.
 #### Format version
 
 - `\fmtversion`, `\patch@level`, and `\ExplFileDate`
-- All-in-one
+- Typeset release info, all-in-one
   ```tex
-  \ExpandArgs{c}\def{show@release@info}#1{#1\par}\texttt{\the\LaTeXReleaseInfo}
+  % by default "\the\LaTeXReleaseInfo" only writes to log
+  {\UseName{@namedef}{show@release@info}#1{#1\par}\ttfamily\the\LaTeXReleaseInfo}
   % LaTeX2e <2024-06-01> patch level 2
   % L3 programming layer <2024-05-27>
   ```
