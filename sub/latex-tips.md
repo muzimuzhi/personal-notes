@@ -232,6 +232,16 @@ Only `texdoc` names listed.
 
 \*: with variants `-doc` and `-code`
 
+#### Dependencies of `latex.ltx`
+
+- `latex.ltx`
+  - `expl3.ltx` (near beginning)
+    - `expl3-code.tex`
+  - `latex2e-first-aid-for-external-files.ltx` (near end)
+- extra
+  - `documentmetadata-support.ltx` loaded by `\DocumentMetadata`, usually used _before_ `\documentclass`
+  - `l3backend-<engine>.def` loaded at the beginning of `\document` or by `\sys_load_backend:n`
+
 #### Format version
 
 - `\fmtversion`, `\patch@level`, and `\ExplFileDate`
