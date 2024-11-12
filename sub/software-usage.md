@@ -281,6 +281,17 @@ Misc
   ```bash
   git rev-list --count HEAD
   ```
+- Describe a commit even without reachable tags
+  ```bash
+  git describe --tags --always
+  # the first reachable tag is "v3.1.2"
+  # v3.1.2-21-gc6cd52d
+  # no tag is reachable
+  # gc6cd52d
+  ```
+  https://git-scm.com/docs/git-describe#Documentation/git-describe.txt---always
+  saw in https://github.com/tuna/thuthesis/commit/bd0481059cf97bf9fa89638ab5cd5bc2abd27fa9, for the request raised in https://github.com/tuna/thuthesis/pull/979
+
 
 <!-- ## gh -->
 ## GitHub CLI
