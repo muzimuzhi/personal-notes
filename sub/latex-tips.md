@@ -240,7 +240,7 @@ Only `texdoc` names listed.
   - `latex2e-first-aid-for-external-files.ltx` (near end)
 - extra
   - `documentmetadata-support.ltx` loaded by `\DocumentMetadata`, usually used _before_ `\documentclass`
-  - `l3backend-<engine>.def` loaded at the beginning of `\document` or by `\sys_load_backend:n`
+  - `l3backend-<engine>.def` loaded at the beginning of `\document`, or in the preamble by `\sys_load_backend:n` or `\sys_ensure_backend:`
 
 #### Format version
 
