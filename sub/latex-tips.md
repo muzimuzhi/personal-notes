@@ -722,6 +722,15 @@ Variable Rule width
 ### Produce uncompressed PDF
 
 ```tex
+\sys_ensure_backend:
+\pdf_uncompress:
+% or
+\DocumentMetadata{uncompress}
+```
+https://tex.stackexchange.com/a/581841
+
+old
+```tex
 \ifdefined\directlua
   % if luatex
   \edef\pdfcompresslevel{\pdfvariable compresslevel}
