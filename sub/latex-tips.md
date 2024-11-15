@@ -170,22 +170,22 @@ Specials
     https://ctan.org/tex-archive/systems/doc/luatex
   - compile from source `context -luatex luatex.tex`
     https://tug.org/pipermail/tex-live/2024-February/049963.html
+- primitives
+  - `\immediateassignment` and `\immediateassigned`, `texdoc luatex` sec. 2.8.8
+    ```tex
+    \newcount\mycount
 
-- `\immediateassignment` and `\immediateassigned`, `texdoc luatex` sec. 2.8.8
-   ```tex
-   \newcount\mycount
+    \edef\TestMe{\advance\mycount 1 foo:\the\mycount}
+    \show\TestMe % ->\advance \mycount 1 foo:0.
 
-   \edef\TestMe{\advance\mycount 1 foo:\the\mycount}
-   \show\TestMe % ->\advance \mycount 1 foo:0.
+    \mycount=0
+    \edef\TestMe{\immediateassignment\advance\mycount 1 foo:\the\mycount}
+    \show\TestMe % ->foo:1.
 
-   \mycount=0
-   \edef\TestMe{\immediateassignment\advance\mycount 1 foo:\the\mycount}
-   \show\TestMe % ->foo:1.
-
-   \mycount=0
-   \edef\TestMe{\immediateassigned{\advance\mycount 1 }foo:\the\mycount}
-   \show\TestMe % ->foo:1.
-   ```
+    \mycount=0
+    \edef\TestMe{\immediateassigned{\advance\mycount 1 }foo:\the\mycount}
+    \show\TestMe % ->foo:1.
+    ```
 
 ### dvipdfm-x
 
