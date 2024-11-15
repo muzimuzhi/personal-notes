@@ -186,6 +186,11 @@ Specials
     \edef\TestMe{\immediateassigned{\advance\mycount 1 }foo:\the\mycount}
     \show\TestMe % ->foo:1.
     ```
+- Lua
+  Lua 5.3.* is used (LuaTeX 1.18.0, TeX Live 2024)
+  - `os.execute()` in LuaTeX still returns a single value, representing the exit code
+    while the vanilla `os.execute()` returns three values, since Lua 5.2
+    https://www.lua.org/manual/5.3/manual.html#pdf-os.execute
 
 ### dvipdfm-x
 
