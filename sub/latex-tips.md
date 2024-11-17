@@ -450,6 +450,19 @@ end
 \end{document}
 ```
 
+### [amsmath] [amstext] Commands silenced by `\text`
+
+`\text` uses `\mathchoice` to typeset text in current math style. To avoid 4 executions of specific codes, in the three non-`\displaystyle` cases, following commands are silenced
+
+- `\stepcounter` and `\addtocounter`
+- `\GenericInfo`, `\GenericWarning`, and `\GenericError`
+
+Most recently hit when digging into
+https://github.com/gpoore/minted/issues/423 "minted loops in amsmath \text".
+
+BTW, since 2016, both `amsmath` and `amstext` are maintained in the latex2e repo, under `./required/amsmath`.
+https://github.com/latex3/latex2e/commits/develop/required/amsmath/
+
 ### [hyperref] Allow `unicode-math` math symbols in bookmark
 
 ```latex
