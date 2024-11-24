@@ -231,11 +231,16 @@ Only `texdoc` names listed.
   - First aid: `firstaid`
   - see also https://www.latex-project.org/help/documentation/ and https://ctan.org/tex-archive/macros/latex/base
 - LaTeX-lab: `documentmetadata-support`\*, `latex-lab-footnotes`, `latex-lab-new-or`, `latex-lab-prototype`, `latex-lab-testphase`
-- LaTeX3: `interface3` (alias `expl3` and `l3`), `source3`, `expl3.pdf`, `l3backend`, `l3prefixes`
-  - texdoc v4.1 adds aliases so now `texdoc expl3` opens `interface3.pdf` and to open `expl3.pdf` one needs `texdoc expl3.pdf`.
-    TeX-Live/texdoc@de1ebc7 (aliases for expl3 and xparse, requested by LaTeX team, 2024-02-23)
+- LaTeX3:
+  - `expl3.pdf`, `interface3` (aliases `expl3` and `l3`), `l3doc`, `source3`, `l3backend`
+    - due to new `texdoc` aliases added in texdoc v4.1, now `texdoc expl3` opens `interface3.pdf` and to open `expl3.pdf` one needs `texdoc expl3.pdf`.\
+      [TeX-Live/texdoc@de1ebc7][texdoc-new-alias] (aliases for expl3 and xparse, requested by LaTeX team, 2024-02-23)
+  - `l3prefixes`, `l3styleguide`, `l3syntax-changes`, `l3term-glossary`
+  - historic: `l3docstrip` (moved to `docstrip`), `l3news`, `l3news(01..12)`
 
 \*: with variants `-doc` and `-code`
+
+[texdoc-new-alias]: https://github.com/TeX-Live/texdoc/commit/de1ebc7919e3a505988b2d3184df79ff1aec777e
 
 #### Dependencies of `latex.ltx`
 
