@@ -144,6 +144,24 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
 
 ## Engines and Backends
 
+### general
+
+- width of box overflows at ~`2\maxdimen`
+  ```tex
+  \documentclass{article}
+  \begin{document}
+  \setbox0=\hbox{\hskip\maxdimen}
+  \the\wd0 % 16383.99998pt
+
+  \setbox0=\hbox{\hskip\maxdimen\hskip\maxdimen}
+  \the\wd0 % 32767.99997pt
+
+  \setbox0=\hbox{\hskip\maxdimen\hskip\maxdimen\hskip1pt}
+  \the\wd0 % -32767.00003pt, overflows
+  \end{document}
+  ```
+  posted in https://github.com/gpoore/fvextra/issues/28#issuecomment-2510129720, for https://github.com/T-F-S/tcolorbox/issues/304
+
 ### pdfTeX
 
 * TUG page: https://www.tug.org/applications/pdftex/
