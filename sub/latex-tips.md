@@ -486,6 +486,11 @@ https://github.com/gpoore/minted/issues/423 "minted loops in amsmath \text".
 BTW, since 2016, both `amsmath` and `amstext` are maintained in the latex2e repo, under `./required/amsmath`.
 https://github.com/latex3/latex2e/commits/develop/required/amsmath/
 
+### [graphics bundle] Graphics driver may change page size to letter paper
+
+By default TeX Live chooses to use A4 paper (check stdout of `tlmgr paper`), but LaTeX wants to use letter paper. When graphics driver is not loaded, TeX Live wins; otherwise, LaTeX wins.
+https://github.com/latex3/graphics-def/issues/36
+
 ### [hyperref] Allow `unicode-math` math symbols in bookmark
 
 ```latex
