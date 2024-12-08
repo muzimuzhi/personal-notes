@@ -683,6 +683,13 @@ fullflexible:
 \end{document}
 ```
 
+### [memoize] Install required Perl library `PDF::API2`
+
+```
+$ sudo cpan PDF::API2
+```
+This is easier than installing it through `perlbrew`, and works for TeXstudio with no `PATH` modifications. 
+
 ### [equation] Disregard indent of displayed equations inside list env
 
 ```latex
