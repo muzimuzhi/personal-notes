@@ -81,6 +81,13 @@ Clone and fetch
   ```
   git fetch --depth=1 origin <commit>
   ```
+- Fetch a specific tag
+  ```
+  git fetch --no-tags origin tag <tag>
+  ```
+  https://stackoverflow.com/a/54635270
+  short form `-n` https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt--n
+  see also Git config [`remote.<name>.tagOpt`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-remoteltnamegttagOpt).
 
 Commit changes
 
