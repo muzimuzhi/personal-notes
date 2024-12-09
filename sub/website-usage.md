@@ -61,9 +61,18 @@ where
 ```
 REF_OR_COMMIT ::= REFERENCE | COMMIT
 REFERENCE     ::= BRANCH | TAG
+
+# top-level misc
+https://github.com/OWNER/REPO#readme-ov-file  # readme
+https://github.com/OWNER/REPO/contribute
+https://github.com/OWNER/REPO/stargazers
+https://github.com/OWNER/REPO/watchers
+https://github.com/OWNER/REPO/forks
 ```
 - `raw` pattern first saw in 
   https://github.com/CTeX-org/ctex-kit/issues/686#issuecomment-1827190097
+- `contribute` page first saw in
+  https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels#about-default-labels
 
 <!-- ### GFM -->
 ### GitHub Flavored Markdown
