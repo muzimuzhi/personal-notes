@@ -46,6 +46,26 @@ Shortcut List
   ```
   problematic with multiline history entries
 
+- Find the source and definition of a function or command
+  ```shell
+  # locate the source
+  whence -v function_name # or type function_name
+  # print the definition
+  whence -f function_name # or type -f function_name
+  ```
+  both are shell builtins
+  Examples
+  ```
+  $ type l
+  l is an alias for ls -lah
+  $ type -f azure_prompt_info
+  azure_prompt_info () {
+    return 1
+  }
+  ```
+  https://superuser.com/a/1018289
+
+
 ### Zsh
 
 - https://zsh.sourceforge.io/
