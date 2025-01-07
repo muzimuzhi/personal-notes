@@ -210,6 +210,11 @@ Specials
     while the vanilla `os.execute()` returns three values, since Lua 5.2
     https://www.lua.org/manual/5.3/manual.html#pdf-os.execute
 
+### LuaMetaTeX
+
+- uses Lua 5.4
+  `texdoc luametatex`, sec. 2.2.1 "The Lua version"
+
 ### dvipdfm-x
 
 * Source directory in TeX Live's [SVN repo][dvipdfm-x-svn] and [GitHub mirror][dvipdfm-x-github]
