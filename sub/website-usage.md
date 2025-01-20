@@ -173,6 +173,12 @@ Special Usages
     https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
     https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
 
+- no-backlink references
+  Replace `github.com` with `redirect.github.com`. Shortage: no link shortening is applied any more.
+  https://github.com/github/docs/pull/35987
+  https://github.com/orgs/community/discussions/23123#discussioncomment-11891227 Linking to an issue without creating a reference
+  - https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls Autolinked references and URLs
+
 ### Searching on GitHub
 
 Filter issues and pull requests
