@@ -63,6 +63,9 @@
 | `navigator`       | PDF feature         | format-independent `hyperref`                                |
 | `lwarp`           | convert format      | Convert LaTeX output (PDF) to HTML.                          |
 
+- math
+  - `minum-math` - OpenType math for Lua(La)TeX
+
 ## Font Packages
 
 | Name                  | Category   | Description                                  |
