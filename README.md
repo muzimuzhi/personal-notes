@@ -1,5 +1,4 @@
 # Personal Notes
-These are some notes in the result of my daily web searching and time wasting.
 
 * Logic
   * [Stanford Introduction to Logic](http://logic.stanford.edu/intrologic/homepage/index.html), an online course on symbolic logic
