@@ -398,6 +398,14 @@ About the `webrick` workaround
     - https://github.com/rhysd/actionlint
       playground https://rhysd.github.io/actionlint/
 
+- actions
+  - `crate-ci/typos`: spell checker
+    https://github.com/crate-ci/typos
+    https://github.com/crate-ci/typos/blob/master/docs/github-action.md
+    - usages
+      https://github.com/bootandy/dust/commit/bfe7323b20d443f6a4ac59554897bce45b45b0d1
+      https://github.com/muzimuzhi/tabularray-dev/commit/5bcd734da5d613972a6e07bc444cf6c99a4ca5b3
+
 ### Design System
 
 - https://primer.style/
