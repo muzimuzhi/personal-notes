@@ -24,6 +24,9 @@ https://github.com/OWNER/REPO/PAT/REF_OR_COMMIT/path/to/dir
 # PAT ::= "blob" | "blame" | "commits" | "edit" | "raw"
 https://github.com/OWNER/REPO/PAT/REF_OR_COMMIT/path/to/file
 
+# activity
+https://github.com/latex3/latex3/activity?ref=BRANCH
+
 # "commit"
 https://github.com/OWNER/REPO/commit/SHA (shortened SHA works too)
 https://github.com/OWNER/REPO/commit/SHA.diff
