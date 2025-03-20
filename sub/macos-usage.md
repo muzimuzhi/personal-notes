@@ -116,6 +116,10 @@ https://docs.brew.sh/Manpage
   https://docs.brew.sh/Manpage#deps-options-formulacask-
   `brew deps FORMULA`
 
+- List non-dependency installed formulae
+  https://docs.brew.sh/Manpage#leaves---installed-on-request---installed-as-dependency
+  `brew leaves`
+
 - List formulae and casks in a tap
   https://docs.brew.sh/Manpage#tap-info---installed---json-tap-
   ```bash
