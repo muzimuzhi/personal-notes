@@ -357,6 +357,10 @@ $ tlmgr conf texmf OSFONTDIR <path>
 - pgfplots https://tikz.dev/pgfplots
 - beamer https://www.beamer.plus/home.html
 
+### In-browser tools
+
+- PGFPlotsEdt https://logcreative.github.io/PGFPlotsEdt/
+
 ### `latex3`
 
 CHANGELOG
