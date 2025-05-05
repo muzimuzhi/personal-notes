@@ -349,6 +349,25 @@ bold.otf
 $ tlmgr conf texmf OSFONTDIR <path>
 ```
 
+## Tools
+
+### In-browser tools
+
+- PGFPlotsEdt https://logcreative.github.io/PGFPlotsEdt/
+
+### `explcheck`
+
+- Use developping `explcheck`
+  ```bash
+  cd /path/to/explcheck-repo
+  # generate "explcheck-obsolete.lua" from l3kernel "l3obsolete.txt"
+  l3build tag
+  export LUAINPUTS=explcheck/src
+  texlua explcheck/src/explcheck.lua <options> <files>
+  # or
+  # texlua "$(kpsewhich explcheck.lua)" <options> <files>
+  ```
+
 ## Packages
 
 ### HTML docs
@@ -356,10 +375,6 @@ $ tlmgr conf texmf OSFONTDIR <path>
 - tikz https://tikz.dev/
 - pgfplots https://tikz.dev/pgfplots
 - beamer https://www.beamer.plus/home.html
-
-### In-browser tools
-
-- PGFPlotsEdt https://logcreative.github.io/PGFPlotsEdt/
 
 ### `latex3`
 
