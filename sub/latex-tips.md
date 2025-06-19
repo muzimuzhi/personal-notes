@@ -351,10 +351,6 @@ $ tlmgr conf texmf OSFONTDIR <path>
 
 ## Tools
 
-### In-browser tools
-
-- PGFPlotsEdt https://logcreative.github.io/PGFPlotsEdt/
-
 ### `explcheck`
 
 - Use developping `explcheck`

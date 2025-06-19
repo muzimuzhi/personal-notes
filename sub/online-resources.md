@@ -41,6 +41,7 @@ For basic uses, some guidelines of MathJax can be a good learning resource of La
   Draw commutative diagram interactively with multiple kinds of arrows, and export it as LaTeX codes based on package `tikzcd`.
 * [Chemical molecules editor](https://py-chemist.com/mol_2_chemfig)<br />
   Input with mouse, name of compound, or `mol` format, and get chemical molecules in PDF, LaTeX package `chemfig`, or `mol` format.
+* PGFPlotsEdt https://logcreative.github.io/PGFPlotsEdt/
 
 ## Collections
 
