@@ -317,6 +317,7 @@ About the `webrick` workaround
     https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
     - misuse: using `on.push.branches: ["*"]` to accept all branches, but actually branches containing `/` are filtered out
       https://github.com/latex3/latex3/pull/1293
+  - `run-name`: if whitespace-only, use the event-specific default value
   - `on.(push|pull_request).(paths|paths_ignore)` should match a (relative) path to file, so `paths: dir/**` works but `paths: dir` doesn't
     https://github.com/muzimuzhi/hello-github-actions/commit/c84ebdc31cc0af60d02ed74ceffb3a069ee772e1
 
