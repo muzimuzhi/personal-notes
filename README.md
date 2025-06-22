@@ -23,6 +23,11 @@
     * [`ctex`](sub/latex-ctex.md), under construction
   * [Default settings](sub/latex-default.md) of packages/classes
   * [Tips](sub/latex-tips.md)
+  * wip
+    - [`menukeys` package cheatsheet](sub/latex-menukeys.md)
+    - [`xsim` package cheatsheet](sub/latex-xsim.md)
+    - [`pgf-tikz` package notes](sub/latex-pgf-tikz.md)
+    - [`pgfkeys2` package design draft](sub/latex-pgfkeys2-design.md)
 * Font
   * Fonts included with OS
     - [Windows 11](https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list)
