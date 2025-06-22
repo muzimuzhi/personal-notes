@@ -1,9 +1,4 @@
 # https://github.com/crate-ci/typos/blob/master/docs/reference.md
-[files]
-extend-exclude = [
-  "_typos.toml",
-]
-
 [default]
 locale = "en-us"
 extend-ignore-re =[
