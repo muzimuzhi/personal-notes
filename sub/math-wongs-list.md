@@ -66,4 +66,3 @@ Algebra
  - Introduction to Lie Algebras and Representation Theory, by J. Humphreys
  - Commutative Algebra, by D. Eisenbud
  - Abstract and Concrete Categories, The Joy of Cats, by J. Adamek et al
-

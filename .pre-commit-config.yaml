@@ -1,0 +1,24 @@
+# https://pre-commit.com/
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  # run "pre-commit autoupdate --freeze" to update the version
+  rev: cef0300fd0fc4d2a87a85fa2093c6b283ea36f4b  # frozen: v5.0.0
+  hooks:
+  - id: check-illegal-windows-names
+  - id: check-toml
+    files: _typos\.toml
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+# https://pre-commit.com/#repository-local-hooks
+- repo: local
+  hooks:
+  - id: typos
+    name: check typos
+    # https://pre-commit.com/#supported-languages
+    # https://pre-commit.com/#system
+    language: system
+    entry: typos
+    # https://pre-commit.com/#creating-new-hooks
+    pass_filenames: false

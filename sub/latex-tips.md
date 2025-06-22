@@ -136,7 +136,7 @@ tlmgr info --list --json collection-basic | jq --compact-output '.[].depends[0:5
     -exec ln \{\} ~/Library/Fonts/texlive-opentype \;
   find `kpsewhich -var-value TEXMFDIST`/fonts/truetype -name '*.ttf' -type f \
     -exec ln \{\} ~/Library/Fonts/texlive-truetype \;
-  
+
   # for luatex
   sudo tlmgr conf texmf OSFONTDIR /System/Library/AssetsV2/com_apple_MobileAsset_Font7
   ```
@@ -249,7 +249,7 @@ Only `texdoc` names listed.
 
 - Basic: `source2e`, `classes`, `clsguide`, `usrguide`, `fntguide`, `encguide`
 - Per module
-  - Hook management\*: `lthooks`, `ltcmdhooks`, `ltfilehook`, `ltshipout`, `ltpara` 
+  - Hook management\*: `lthooks`, `ltcmdhooks`, `ltfilehook`, `ltshipout`, `ltpara`
   - Other new modules\*: `ltsockets`, `lttemplates`, `ltproperties`, `ltmarks`
   - First aid: `firstaid`
   - see also https://www.latex-project.org/help/documentation/ and https://ctan.org/tex-archive/macros/latex/base
@@ -708,7 +708,7 @@ fullflexible:
 ```
 $ sudo cpan PDF::API2
 ```
-This is easier than installing it through `perlbrew`, and works for TeXstudio with no `PATH` modifications. 
+This is easier than installing it through `perlbrew`, and works for TeXstudio with no `PATH` modifications.
 
 ### [equation] Disregard indent of displayed equations inside list env
 
@@ -824,7 +824,7 @@ old
   The uppercase/lowercase table in tex (unfortunately) is fixed based on the T1 font encoding.
   ([issue comment](https://github.com/latex3/latex2e/issues/103#issuecomment-450581689) on GitHub)
 * Special tokens
-  * frozen `\relax` ([`texdoc interface3`, sec XVI.7](https://github.com/latex3/latex3/blob/c297e780ff706dab7b30f9ad5153f2f58f542de9/l3kernel/l3token.dtx#L1162-L1164) and [TeX-SX Q&A](https://tex.stackexchange.com/a/57417)) 
+  * frozen `\relax` ([`texdoc interface3`, sec XVI.7](https://github.com/latex3/latex3/blob/c297e780ff706dab7b30f9ad5153f2f58f542de9/l3kernel/l3token.dtx#L1162-L1164) and [TeX-SX Q&A](https://tex.stackexchange.com/a/57417))
 * Significance of MWE<br />
   Writing up a good issue report including a clear MWE (Minimal Working Example) takes some effort, but it is also essential to help us identifying and fixing issues. ([LaTeX news article](https://www.latex-project.org/news/2018/12/10/issue29-of-latex2e-news-released/) on latex-project.org)
 * How to report bug to LaTeX2e core<br />

@@ -86,7 +86,7 @@
 - Configure -> Commands
   - Make "External PDF Viewer" respect additional PDF search paths (Configure -> Build)
     `open ?p{pdf}:ame" > /dev/null`
-    also applies to "DVI Viewer" and "PS Viewer" 
+    also applies to "DVI Viewer" and "PS Viewer"
     https://texstudio-org.github.io/configuration.html#command-syntax-in-detail
 
 - Magic comments

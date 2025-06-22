@@ -72,7 +72,7 @@ https://github.com/OWNER/REPO/stargazers
 https://github.com/OWNER/REPO/watchers
 https://github.com/OWNER/REPO/forks
 ```
-- `raw` pattern first saw in 
+- `raw` pattern first saw in
   https://github.com/CTeX-org/ctex-kit/issues/686#issuecomment-1827190097
 - `contribute` page first saw in
   https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels#about-default-labels
@@ -133,7 +133,7 @@ Links
     - > A shortcut reference link consists of a link label that matches a link reference definition elsewhere in the document and is not followed by `[]` or a link label. The contents of the **first link label** are parsed as inlines, which are used as the link’s text.
       https://github.github.com/gfm/#shortcut-reference-link
     - Q: What does "first link label" here mean?
-    - Can be traced back to commonmark spec. 
+    - Can be traced back to commonmark spec.
       https://github.com/commonmark/commonmark-spec/issues/746
     - On 2023-10-18, CommonMark has removed the two occurrences of word "first". Waiting for GFM to catch up.
 
@@ -153,7 +153,7 @@ Special Usages
     |cursor position
 
     </p>
-    </details> 
+    </details>
     ```
     https://github.blog/changelog/2023-03-15-introducing-the-github-markdown-helpers-public-beta/
     https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands

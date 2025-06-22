@@ -159,7 +159,7 @@ Back to clean working directory
 git stash list
 # -a/--all also takes ignored files into consideration
 git stash [push] [-u | --include-untracked] [(-m | --message) <message>]
-git stash pop 
+git stash pop
 git stash show [--stat] [--patch] [-u | --include-untracked] [stash@{0}]
 git stash drop [stash@{0}]
 ```
