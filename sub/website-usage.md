@@ -141,6 +141,9 @@ Special Usages
 
 - Using `<span>` tag to disable auto-linking
   https://gist.github.com/alexpeattie/4729247
+- `redirect.github.com` to avoid backlinks to linked references
+  https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#avoiding-backlinks-to-linked-references
+  - added by https://github.com/github/docs/pull/35987
 - Using `<details>` and `<summary>` tags to create collapsed sections
   - shortcut: typing `/details`, a GitHub slash command
     ```html
