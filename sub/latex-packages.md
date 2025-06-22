@@ -64,7 +64,7 @@
 | `lwarp`           | convert format      | Convert LaTeX output (PDF) to HTML.                          |
 
 - math
-  - `minum-math` - OpenType math for Lua(La)TeX
+  - `minim-math` - OpenType math for Lua(La)TeX
 
 ## Font Packages
 

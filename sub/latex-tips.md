@@ -353,7 +353,7 @@ $ tlmgr conf texmf OSFONTDIR <path>
 
 ### `explcheck`
 
-- Use developping `explcheck`
+- Use developing `explcheck`
   ```bash
   cd /path/to/explcheck-repo
   # generate "explcheck-obsolete.lua" from l3kernel "l3obsolete.txt"
@@ -375,7 +375,7 @@ $ tlmgr conf texmf OSFONTDIR <path>
 ### `latex3`
 
 CHANGELOG
-  - [`l3kernal`](https://github.com/latex3/latex3/blob/master/l3kernel/CHANGELOG.md)
+  - [`l3kernel`](https://github.com/latex3/latex3/blob/master/l3kernel/CHANGELOG.md)
   - [`l3packages`](https://github.com/latex3/latex3/blob/master/l3packages/CHANGELOG.md)
 
 Docs

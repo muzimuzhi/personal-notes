@@ -278,7 +278,7 @@ Docs and useful links
 
 About the `webrick` workaround
  - `jekyll` depends on `webrick`, but the latter one is [no longer a bundled gem in Ruby 3.0](https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/).
- - Once `jekyll` releases a new version (most likely [v4.3](https://github.com/jekyll/jekyll/milestone/72?closed=1)) including the [PR resolving this](https://github.com/jekyll/jekyll/pull/8524), and gem `gihub-pages` uses that newer `jekyll`, then the workaround is not needed.
+ - Once `jekyll` releases a new version (most likely [v4.3](https://github.com/jekyll/jekyll/milestone/72?closed=1)) including the [PR resolving this](https://github.com/jekyll/jekyll/pull/8524), and gem `github-pages` uses that newer `jekyll`, then the workaround is not needed.
 
 ### GitHub Actions
 
@@ -295,7 +295,7 @@ About the `webrick` workaround
   - repos
     https://github.com/actions/runner
     https://github.com/actions/runner-images
-    - GitHub-hosted runners, their YAML labels and included softwares
+    - GitHub-hosted runners, their YAML labels and included software
 
 - workflow
   a `.github/workflows/filename.(yml|yaml)` file

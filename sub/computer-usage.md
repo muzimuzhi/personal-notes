@@ -1,6 +1,6 @@
 # Computer Usage
 
-## Tiny GUI Softwares
+## Tiny GUI Software
 
 * Show live battery information of Mac and iOS device<br />
   [coconut Battery](https://www.coconut-flavour.com/coconutbattery/)<br />

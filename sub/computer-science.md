@@ -18,7 +18,7 @@ Load racket package, when `#lang sicp` is used
 * load selected identifiers from package
     ```racket
     (#%require (only <racket package name>
-                     <identifiers, space seperated>))
+                     <identifiers, space separated>))
 
     ;; e.g.
     ; load `provide` and `all-defined-out` from racket base,
@@ -32,7 +32,7 @@ Load sub file, when `#lang sicp` is used
     ```racket
     ;; sub file
     ; export selected identifiers
-    (provide <identifiers, space seperated>)
+    (provide <identifiers, space separated>)
 
     ; export all defined identifiers in the current file
     (provide (all-defined-out))
