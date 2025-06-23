@@ -320,3 +320,20 @@ Misc
   `PAGER= GH_DEBUG=1`
   https://cli.github.com/manual/gh_help_environment
   - `GH_DEBUG=api` also logs HTTP traffic
+
+
+## just
+
+- just a command runner
+  https://github.com/casey/just (README contains single-page doc)
+  https://just.systems/ (multi-page doc)
+- cheatsheet https://cheatography.com/linux-china/cheat-sheets/justfile/
+- notice
+  - each recipe line is executed by a new shell
+    https://github.com/casey/just?tab=readme-ov-file#setting-variables-in-a-recipe
+    https://github.com/casey/just?tab=readme-ov-file#changing-the-working-directory-in-a-recipe
+  - `if ... { ... } else { ... }` must has an `else` branch
+- limitations
+  - not enough shell-portable utilities
+  - no recipe variable
+  - no recursive call (run `just` in a recipe and inherit current settings and variables)
