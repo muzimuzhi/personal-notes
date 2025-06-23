@@ -44,6 +44,7 @@
 |                   |                     |                                                              |
 | `beamertheme-tcolorbox` | beamer        | Beamer inner theme reproducing standard beamer blocks in `tcolorbox` |
 | `lstaddons`       | code listing        | `listings` add-ons: autogobble and line background           |
+| `visualtoks`      | macro demonstration | Visualizes token list in TeXbook style, with catcodes in subscript  |
 |                   |                     |                                                              |
 | `changes`         | editorial           | Markup change in text manually                               |
 |                   |                     |                                                              |
