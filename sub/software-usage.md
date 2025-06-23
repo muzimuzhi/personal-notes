@@ -337,3 +337,66 @@ Misc
   - not enough shell-portable utilities
   - no recipe variable
   - no recursive call (run `just` in a recipe and inherit current settings and variables)
+
+
+## pre-commit
+
+- https://pre-commit.com/ (only 1st-level ToC bookmarks, pity)
+  https://github.com/pre-commit/pre-commit
+- usage
+  ```shell
+  # install
+  $ uv tool install pre-commit
+
+  # add .pre-commit-config.yaml (".yml" is NOT supported)
+  # ...
+
+  # install the ".git/hooks/pre-commit" script
+  $ pre-commit install
+
+  # run against all files (init run)
+  $ pre-commit run --all-files [<hook-id>]
+
+  # run against staged files
+  # the "pre-commit" hook runs "pre-commit run"
+  $ pre-commit run [--files FILE...] [<hook-id>]
+  ```
+- config
+  - starter `.pre-commit-config.yaml`
+    https://pre-commit.com/#2-add-a-pre-commit-configuration
+    ```yaml
+    repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v5.0.0
+      hooks:
+      - id: check-case-conflict
+      - id: check-illegal-windows-names
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+    ```
+  - run arbitrary commands
+    ```yaml
+    repos:
+    - repo: local
+      hooks:
+      - id: just-lint-all
+        name: run just lint-all recipe
+        language: system
+        entry: just lint-all
+        pass_filenames: false
+    ```
+  - `pre-commit autoupdate [--freeze]` update repo versions
+    https://pre-commit.com/#pre-commit-autoupdate
+- caches
+  - `pre-commit gc` clean unused cached repos
+    https://pre-commit.com/#pre-commit-gc
+  - location `~/.cache/pre-commit`
+    https://pre-commit.com/#managing-ci-caches
+- `git commit --no-verify` bypass the `pre-commit` hooks (and several more)
+  https://git-scm.com/docs/githooks#_pre_commit
+- practices
+  https://github.com/muzimuzhi/latex-zutil/blob/main/.pre-commit-config.yaml
+  https://github.com/crate-ci/typos/blob/master/.pre-commit-hooks.yaml
