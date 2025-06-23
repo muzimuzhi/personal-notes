@@ -113,6 +113,7 @@ Workflow
   # The resulted commit message will be "fixup! <msg of referred commit>"
   git commit --fixup <commit>
   # `--autosquash` automatically organizes merging of  fixup commits and associated normal commits
+  # see also boolean config `rebase.autoSquash`
   git rebase [-i] --autosquash <commit>
   ```
 
