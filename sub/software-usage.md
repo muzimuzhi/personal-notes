@@ -343,6 +343,11 @@ Misc
 
 - https://pre-commit.com/ (only 1st-level ToC bookmarks, pity)
   https://github.com/pre-commit/pre-commit
+- CI, free for open source repos
+  https://pre-commit.ci/
+  - auto fix PR commits
+  - autoupdate hooks
+  - config https://pre-commit.ci/#configuration
 - usage
   ```shell
   # install
