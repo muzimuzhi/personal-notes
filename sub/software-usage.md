@@ -99,6 +99,11 @@ Commit changes
 - Batch sign-off
   [`--signoff`][git-rebase-signoff], no short form
   `git rebase --signoff <commit>`
+- Reuse last commit message (after a failed attempt)
+  ```shell
+  # -e/--edit -F/--file
+  git commit [--edit] --file .git/COMMIT_EDITMSG
+  ```
 
 Workflow
 
