@@ -400,3 +400,43 @@ Misc
 - practices
   https://github.com/muzimuzhi/latex-zutil/blob/main/.pre-commit-config.yaml
   https://github.com/crate-ci/typos/blob/master/.pre-commit-hooks.yaml
+
+
+## typos
+
+- Low false-positive source code spell checker
+  https://github.com/crate-ci/typos
+  https://github.com/crate-ci/typos/blob/master/docs/reference.md
+- usage
+  ```shell
+  # run
+  typos
+  # auto fix (-w/--write-chagnes)
+  typos -w
+  ```
+- config
+  https://github.com/crate-ci/typos/blob/master/docs/reference.md
+  - config file
+    - `[._]?typos.toml` in non-Python projects
+    - `typos -c/--config <CUSTOM_CONFIG>`
+  - config reference
+    - Rust `regex` pattern
+    - examples
+      - https://github.com/latex3/latex3/blob/develop/.github/typos.toml
+      - [`_typos.toml` in this repo](./../_typos.toml)
+- GitHub Actions integration
+  https://github.com/crate-ci/typos/blob/master/docs/github-action.md
+  ```yaml
+  jobs:
+    spelling:
+      name: Spell check with Typos
+      runs-on: ubuntu-latest
+      # one workaround https://github.com/crate-ci/typos/pull/1192
+      # already used in https://github.com/muzimuzhi/latex-zutil
+      - name: Install wget
+        if: runner.os == 'Windows'
+        run: choco install wget --no-progress
+      # needs "wget", which is missing from GH Windows runners
+      - name: Spell Check Repo
+        uses: crate-ci/typos@v1.33.1
+  ```
